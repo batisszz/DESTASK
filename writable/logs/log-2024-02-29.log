@@ -1,0 +1,332 @@
+INFO - 2024-02-29 09:46:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 09:46:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 09:47:52 --> CSRF token verified.
+CRITICAL - 2024-02-29 09:47:52 --> Undefined array key "g-recaptcha-response"
+in APPPATH\Controllers\Autentikasi.php on line 27.
+ 1 APPPATH\Controllers\Autentikasi.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "g-recaptcha-response"', 'C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\app\\Controllers\\Autentikasi.php', 27)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Autentikasi->login()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Autentikasi))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\public\\index.php')
+INFO - 2024-02-29 09:47:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 09:48:08 --> CSRF token verified.
+INFO - 2024-02-29 09:48:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 09:48:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-02-29 10:09:47 --> mysqli_sql_exception: Can't create table `destask`.`personil` (errno: 150 "Foreign key constraint is incorrectly formed") in C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `p...', 0)
+#1 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `p...')
+#2 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `p...')
+#3 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `p...')
+#4 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\app\Database\Migrations\2024-01-20-143250_Personil.php(49): CodeIgniter\Database\Forge->createTable('personil')
+#5 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(873): App\Database\Migrations\Personil->up()
+#6 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\CLI\BaseCommand.php(115): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Commands\Database\MigrateRefresh.php(85): CodeIgniter\CLI\BaseCommand->call('migrate', Array)
+#11 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\spark(102): CodeIgniter\CLI\Console->run()
+#14 {main}
+ERROR - 2024-02-29 10:10:53 --> mysqli_sql_exception: Can't create table `destask`.`personil` (errno: 150 "Foreign key constraint is incorrectly formed") in C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `p...', 0)
+#1 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `p...')
+#2 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `p...')
+#3 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `p...')
+#4 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\app\Database\Migrations\2024-01-20-143250_Personil.php(49): CodeIgniter\Database\Forge->createTable('personil')
+#5 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(873): App\Database\Migrations\Personil->up()
+#6 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\CLI\BaseCommand.php(115): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Commands\Database\MigrateRefresh.php(85): CodeIgniter\CLI\BaseCommand->call('migrate', Array)
+#11 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\spark(102): CodeIgniter\CLI\Console->run()
+#14 {main}
+ERROR - 2024-02-29 10:12:08 --> mysqli_sql_exception: Can't create table `destask`.`personil` (errno: 150 "Foreign key constraint is incorrectly formed") in C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `p...', 0)
+#1 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `p...')
+#2 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `p...')
+#3 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `p...')
+#4 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\app\Database\Migrations\2024-01-20-143250_Personil.php(49): CodeIgniter\Database\Forge->createTable('personil')
+#5 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(873): App\Database\Migrations\Personil->up()
+#6 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2024-02-29 10:13:18 --> mysqli_sql_exception: Can't create table `destask`.`personil` (errno: 150 "Foreign key constraint is incorrectly formed") in C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `p...', 0)
+#1 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `p...')
+#2 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `p...')
+#3 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `p...')
+#4 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\app\Database\Migrations\2024-01-20-143250_Personil.php(49): CodeIgniter\Database\Forge->createTable('personil')
+#5 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(873): App\Database\Migrations\Personil->up()
+#6 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2024-02-29 10:13:21 --> mysqli_sql_exception: Can't create table `destask`.`personil` (errno: 150 "Foreign key constraint is incorrectly formed") in C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `p...', 0)
+#1 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `p...')
+#2 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `p...')
+#3 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `p...')
+#4 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\app\Database\Migrations\2024-01-20-143250_Personil.php(49): CodeIgniter\Database\Forge->createTable('personil')
+#5 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(873): App\Database\Migrations\Personil->up()
+#6 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\CLI\BaseCommand.php(115): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Commands\Database\MigrateRefresh.php(85): CodeIgniter\CLI\BaseCommand->call('migrate', Array)
+#11 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\spark(102): CodeIgniter\CLI\Console->run()
+#14 {main}
+ERROR - 2024-02-29 10:13:26 --> mysqli_sql_exception: Can't create table `destask`.`personil` (errno: 150 "Foreign key constraint is incorrectly formed") in C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `p...', 0)
+#1 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `p...')
+#2 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `p...')
+#3 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `p...')
+#4 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\app\Database\Migrations\2024-01-20-143250_Personil.php(49): CodeIgniter\Database\Forge->createTable('personil')
+#5 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(873): App\Database\Migrations\Personil->up()
+#6 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2024-02-29 10:34:03 --> mysqli_sql_exception: Can't create table `destask`.`personil` (errno: 150 "Foreign key constraint is incorrectly formed") in C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `p...', 0)
+#1 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `p...')
+#2 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `p...')
+#3 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `p...')
+#4 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\app\Database\Migrations\2024-01-20-143250_Personil.php(49): CodeIgniter\Database\Forge->createTable('personil')
+#5 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(873): App\Database\Migrations\Personil->up()
+#6 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\CLI\BaseCommand.php(115): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Commands\Database\MigrateRefresh.php(85): CodeIgniter\CLI\BaseCommand->call('migrate', Array)
+#11 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\spark(102): CodeIgniter\CLI\Console->run()
+#14 {main}
+ERROR - 2024-02-29 10:38:54 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`destask`.`user`, CONSTRAINT `user_id_usergroup_foreign` FOREIGN KEY (`id_usergroup`) REFERENCES `usergroup` (`id_usergroup`)) in C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1800): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', NULL, false)
+#4 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2191): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\app\Database\Seeds\UserSeeder.php(81): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\Seeder.php(146): App\Database\Seeds\UserSeeder->run()
+#7 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#8 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#9 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#10 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+INFO - 2024-02-29 10:43:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 10:44:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 10:44:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 10:44:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 10:44:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 10:44:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 10:44:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 10:44:26 --> CSRF token verified.
+INFO - 2024-02-29 10:44:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 10:44:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 10:44:33 --> CSRF token verified.
+INFO - 2024-02-29 10:44:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 10:44:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 10:44:41 --> CSRF token verified.
+INFO - 2024-02-29 10:44:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 10:44:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 10:44:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 10:44:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 10:44:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 10:44:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 10:44:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 12:50:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 12:50:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 12:50:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 12:50:33 --> CSRF token verified.
+INFO - 2024-02-29 12:50:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 12:50:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 12:55:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 12:55:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 12:57:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 12:57:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 12:58:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 12:58:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 12:58:09 --> CSRF token verified.
+INFO - 2024-02-29 12:58:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 12:58:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 12:58:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 12:58:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 12:58:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 12:58:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 12:58:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 12:58:29 --> CSRF token verified.
+INFO - 2024-02-29 12:58:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 12:58:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 12:58:35 --> CSRF token verified.
+INFO - 2024-02-29 12:58:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 12:58:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 13:10:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 13:18:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 13:18:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 13:18:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 13:18:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 13:18:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 13:18:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-29 13:18:30 --> Invalid file: "pekerjaan/tambah_pekerjaan.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pekerjaan/tambah_pekerjaan.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('pekerjaan/tambah_pekerjaan', [], true)
+ 3 APPPATH\Controllers\Pekerjaan.php(15): view('pekerjaan/tambah_pekerjaan', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pekerjaan->add_pekerjaan()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pekerjaan))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\public\\index.php')
+INFO - 2024-02-29 13:19:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-29 13:19:28 --> Undefined variable $usergroup
+in APPPATH\Views\user\modal_add_user.php on line 56.
+ 1 APPPATH\Views\user\modal_add_user.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usergroup', 'C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\app\\Views\\user\\modal_add_user.php', 56)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\app\\Views\\user\\modal_add_user.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('user/modal_add_user', null, true)
+ 5 APPPATH\Views\pekerjaan\add_pekerjaan.php(13): CodeIgniter\View\View->include('user/modal_add_user')
+ 6 SYSTEMPATH\View\View.php(228): include('C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\app\\Views\\pekerjaan\\add_pekerjaan.php')
+ 7 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('pekerjaan/add_pekerjaan', [], true)
+ 9 APPPATH\Controllers\Pekerjaan.php(15): view('pekerjaan/add_pekerjaan', [...])
+10 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pekerjaan->add_pekerjaan()
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pekerjaan))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\public\\index.php')
+INFO - 2024-02-29 13:20:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 13:20:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 13:20:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 13:20:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 13:20:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 13:22:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 13:22:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 13:22:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 13:27:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 13:27:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 13:27:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 13:29:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 13:30:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 13:30:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 13:30:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 13:30:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 13:30:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 13:31:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 13:31:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 13:31:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 13:31:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 13:31:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 13:36:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 13:38:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 13:43:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 13:44:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 13:45:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 13:46:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 13:51:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 13:51:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 13:51:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 13:51:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 13:51:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 14:00:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 14:06:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 14:10:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 14:13:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 14:15:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 14:23:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 14:25:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 14:33:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 14:34:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 14:34:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 14:34:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 14:36:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-29 14:47:55 --> Invalid file: "layout/template.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout/template.php')
+ 2 SYSTEMPATH\View\View.php(244): CodeIgniter\View\View->render('layout/template', [], true)
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('pekerjaan/add_pekerjaan', [], true)
+ 4 APPPATH\Controllers\Pekerjaan.php(15): view('pekerjaan/add_pekerjaan', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pekerjaan->add_pekerjaan()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pekerjaan))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\public\\index.php')
+INFO - 2024-02-29 14:48:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 14:49:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 14:50:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-29 14:55:42 --> Invalid file: "layout/template.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout/template.php')
+ 2 SYSTEMPATH\View\View.php(244): CodeIgniter\View\View->render('layout/template', [], true)
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('pekerjaan/add_pekerjaan', [], true)
+ 4 APPPATH\Controllers\Pekerjaan.php(15): view('pekerjaan/add_pekerjaan', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pekerjaan->add_pekerjaan()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pekerjaan))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\public\\index.php')
+CRITICAL - 2024-02-29 14:56:07 --> Invalid file: "layout/template.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout/template.php')
+ 2 SYSTEMPATH\View\View.php(244): CodeIgniter\View\View->render('layout/template', [], true)
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('pekerjaan/add_pekerjaan', [], true)
+ 4 APPPATH\Controllers\Pekerjaan.php(15): view('pekerjaan/add_pekerjaan', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pekerjaan->add_pekerjaan()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pekerjaan))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\public\\index.php')
+INFO - 2024-02-29 14:57:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 14:57:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 14:58:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 14:59:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 15:02:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 15:03:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 15:07:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 15:08:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 15:08:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 15:08:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 15:10:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 15:12:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 15:12:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-29 15:15:50 --> Invalid file: "layout/template.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout/template.php')
+ 2 SYSTEMPATH\View\View.php(244): CodeIgniter\View\View->render('layout/template', [], true)
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('pekerjaan/add_pekerjaan', [], true)
+ 4 APPPATH\Controllers\Pekerjaan.php(15): view('pekerjaan/add_pekerjaan', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pekerjaan->add_pekerjaan()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pekerjaan))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\public\\index.php')
+INFO - 2024-02-29 15:16:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 15:16:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 15:17:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 15:17:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 15:18:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 15:19:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 15:20:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

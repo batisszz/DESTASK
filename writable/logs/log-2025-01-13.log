@@ -1,0 +1,844 @@
+ERROR - 2025-01-13 21:53:42 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')
+AND `tgl_planing` < '2025-01-13'
+AND `id_status_task` IN (1,4)
+AND `task`.`...' at line 3 in /www/Destask/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /www/Destask/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query()
+#4 /www/Destask/vendor/codeigniter4/framework/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /www/Destask/vendor/codeigniter4/framework/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#6 /www/Destask/app/Models/TaskModel.php(557): CodeIgniter\BaseModel->findAll()
+#7 /www/Destask/app/Controllers/Dashboard.php(176): App\Models\TaskModel->countTaskOverdue_OnProgress_Cancel_At_Pekerjaan_Presales_OnProgress_Support()
+#8 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(941): App\Controllers\Dashboard->lihat_dashboard()
+#9 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#10 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#11 /www/Destask/public/index.php(80): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2025-01-13 21:53:42 --> Error: Call to a member function getResult() on bool
+in SYSTEMPATH/Model.php on line 243.
+ 1 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 2 APPPATH/Models/TaskModel.php(557): CodeIgniter\BaseModel->findAll()
+ 3 APPPATH/Controllers/Dashboard.php(176): App\Models\TaskModel->countTaskOverdue_OnProgress_Cancel_At_Pekerjaan_Presales_OnProgress_Support()
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Dashboard->lihat_dashboard()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-01-13 21:53:45 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')
+AND `tgl_planing` < '2025-01-13'
+AND `id_status_task` IN (1,4)
+AND `task`.`...' at line 3 in /www/Destask/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /www/Destask/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query()
+#4 /www/Destask/vendor/codeigniter4/framework/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /www/Destask/vendor/codeigniter4/framework/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#6 /www/Destask/app/Models/TaskModel.php(557): CodeIgniter\BaseModel->findAll()
+#7 /www/Destask/app/Controllers/Dashboard.php(176): App\Models\TaskModel->countTaskOverdue_OnProgress_Cancel_At_Pekerjaan_Presales_OnProgress_Support()
+#8 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(941): App\Controllers\Dashboard->lihat_dashboard()
+#9 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#10 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#11 /www/Destask/public/index.php(80): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2025-01-13 21:53:45 --> Error: Call to a member function getResult() on bool
+in SYSTEMPATH/Model.php on line 243.
+ 1 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 2 APPPATH/Models/TaskModel.php(557): CodeIgniter\BaseModel->findAll()
+ 3 APPPATH/Controllers/Dashboard.php(176): App\Models\TaskModel->countTaskOverdue_OnProgress_Cancel_At_Pekerjaan_Presales_OnProgress_Support()
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Dashboard->lihat_dashboard()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-01-13 21:53:47 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')
+AND `tgl_planing` < '2025-01-13'
+AND `id_status_task` IN (1,4)
+AND `task`.`...' at line 3 in /www/Destask/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /www/Destask/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query()
+#4 /www/Destask/vendor/codeigniter4/framework/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /www/Destask/vendor/codeigniter4/framework/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#6 /www/Destask/app/Models/TaskModel.php(557): CodeIgniter\BaseModel->findAll()
+#7 /www/Destask/app/Controllers/Dashboard.php(176): App\Models\TaskModel->countTaskOverdue_OnProgress_Cancel_At_Pekerjaan_Presales_OnProgress_Support()
+#8 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(941): App\Controllers\Dashboard->lihat_dashboard()
+#9 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#10 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#11 /www/Destask/public/index.php(80): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2025-01-13 21:53:47 --> Error: Call to a member function getResult() on bool
+in SYSTEMPATH/Model.php on line 243.
+ 1 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 2 APPPATH/Models/TaskModel.php(557): CodeIgniter\BaseModel->findAll()
+ 3 APPPATH/Controllers/Dashboard.php(176): App\Models\TaskModel->countTaskOverdue_OnProgress_Cancel_At_Pekerjaan_Presales_OnProgress_Support()
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Dashboard->lihat_dashboard()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-01-13 21:53:55 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')
+AND `tgl_planing` < '2025-01-13'
+AND `id_status_task` IN (1,4)
+AND `task`.`...' at line 3 in /www/Destask/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /www/Destask/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query()
+#4 /www/Destask/vendor/codeigniter4/framework/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /www/Destask/vendor/codeigniter4/framework/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#6 /www/Destask/app/Models/TaskModel.php(557): CodeIgniter\BaseModel->findAll()
+#7 /www/Destask/app/Controllers/Dashboard.php(176): App\Models\TaskModel->countTaskOverdue_OnProgress_Cancel_At_Pekerjaan_Presales_OnProgress_Support()
+#8 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(941): App\Controllers\Dashboard->lihat_dashboard()
+#9 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#10 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#11 /www/Destask/public/index.php(80): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2025-01-13 21:53:55 --> Error: Call to a member function getResult() on bool
+in SYSTEMPATH/Model.php on line 243.
+ 1 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 2 APPPATH/Models/TaskModel.php(557): CodeIgniter\BaseModel->findAll()
+ 3 APPPATH/Controllers/Dashboard.php(176): App\Models\TaskModel->countTaskOverdue_OnProgress_Cancel_At_Pekerjaan_Presales_OnProgress_Support()
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Dashboard->lihat_dashboard()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-01-13 21:54:45 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')
+AND `tgl_planing` < '2025-01-13'
+AND `id_status_task` IN (1,4)
+AND `task`.`...' at line 3 in /www/Destask/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /www/Destask/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query()
+#4 /www/Destask/vendor/codeigniter4/framework/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /www/Destask/vendor/codeigniter4/framework/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#6 /www/Destask/app/Models/TaskModel.php(557): CodeIgniter\BaseModel->findAll()
+#7 /www/Destask/app/Controllers/Dashboard.php(176): App\Models\TaskModel->countTaskOverdue_OnProgress_Cancel_At_Pekerjaan_Presales_OnProgress_Support()
+#8 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(941): App\Controllers\Dashboard->lihat_dashboard()
+#9 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#10 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#11 /www/Destask/public/index.php(80): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2025-01-13 21:54:45 --> Error: Call to a member function getResult() on bool
+in SYSTEMPATH/Model.php on line 243.
+ 1 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 2 APPPATH/Models/TaskModel.php(557): CodeIgniter\BaseModel->findAll()
+ 3 APPPATH/Controllers/Dashboard.php(176): App\Models\TaskModel->countTaskOverdue_OnProgress_Cancel_At_Pekerjaan_Presales_OnProgress_Support()
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Dashboard->lihat_dashboard()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-01-13 21:54:46 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')
+AND `tgl_planing` < '2025-01-13'
+AND `id_status_task` IN (1,4)
+AND `task`.`...' at line 3 in /www/Destask/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /www/Destask/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query()
+#4 /www/Destask/vendor/codeigniter4/framework/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /www/Destask/vendor/codeigniter4/framework/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#6 /www/Destask/app/Models/TaskModel.php(557): CodeIgniter\BaseModel->findAll()
+#7 /www/Destask/app/Controllers/Dashboard.php(176): App\Models\TaskModel->countTaskOverdue_OnProgress_Cancel_At_Pekerjaan_Presales_OnProgress_Support()
+#8 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(941): App\Controllers\Dashboard->lihat_dashboard()
+#9 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#10 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#11 /www/Destask/public/index.php(80): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2025-01-13 21:54:46 --> Error: Call to a member function getResult() on bool
+in SYSTEMPATH/Model.php on line 243.
+ 1 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 2 APPPATH/Models/TaskModel.php(557): CodeIgniter\BaseModel->findAll()
+ 3 APPPATH/Controllers/Dashboard.php(176): App\Models\TaskModel->countTaskOverdue_OnProgress_Cancel_At_Pekerjaan_Presales_OnProgress_Support()
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Dashboard->lihat_dashboard()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-01-13 21:54:47 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')
+AND `tgl_planing` < '2025-01-13'
+AND `id_status_task` IN (1,4)
+AND `task`.`...' at line 3 in /www/Destask/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /www/Destask/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query()
+#4 /www/Destask/vendor/codeigniter4/framework/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /www/Destask/vendor/codeigniter4/framework/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#6 /www/Destask/app/Models/TaskModel.php(557): CodeIgniter\BaseModel->findAll()
+#7 /www/Destask/app/Controllers/Dashboard.php(176): App\Models\TaskModel->countTaskOverdue_OnProgress_Cancel_At_Pekerjaan_Presales_OnProgress_Support()
+#8 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(941): App\Controllers\Dashboard->lihat_dashboard()
+#9 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#10 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#11 /www/Destask/public/index.php(80): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2025-01-13 21:54:47 --> Error: Call to a member function getResult() on bool
+in SYSTEMPATH/Model.php on line 243.
+ 1 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 2 APPPATH/Models/TaskModel.php(557): CodeIgniter\BaseModel->findAll()
+ 3 APPPATH/Controllers/Dashboard.php(176): App\Models\TaskModel->countTaskOverdue_OnProgress_Cancel_At_Pekerjaan_Presales_OnProgress_Support()
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Dashboard->lihat_dashboard()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-01-13 21:54:47 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')
+AND `tgl_planing` < '2025-01-13'
+AND `id_status_task` IN (1,4)
+AND `task`.`...' at line 3 in /www/Destask/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /www/Destask/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query()
+#4 /www/Destask/vendor/codeigniter4/framework/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /www/Destask/vendor/codeigniter4/framework/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#6 /www/Destask/app/Models/TaskModel.php(557): CodeIgniter\BaseModel->findAll()
+#7 /www/Destask/app/Controllers/Dashboard.php(176): App\Models\TaskModel->countTaskOverdue_OnProgress_Cancel_At_Pekerjaan_Presales_OnProgress_Support()
+#8 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(941): App\Controllers\Dashboard->lihat_dashboard()
+#9 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#10 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#11 /www/Destask/public/index.php(80): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2025-01-13 21:54:47 --> Error: Call to a member function getResult() on bool
+in SYSTEMPATH/Model.php on line 243.
+ 1 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 2 APPPATH/Models/TaskModel.php(557): CodeIgniter\BaseModel->findAll()
+ 3 APPPATH/Controllers/Dashboard.php(176): App\Models\TaskModel->countTaskOverdue_OnProgress_Cancel_At_Pekerjaan_Presales_OnProgress_Support()
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Dashboard->lihat_dashboard()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-01-13 21:54:48 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')
+AND `tgl_planing` < '2025-01-13'
+AND `id_status_task` IN (1,4)
+AND `task`.`...' at line 3 in /www/Destask/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /www/Destask/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query()
+#4 /www/Destask/vendor/codeigniter4/framework/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /www/Destask/vendor/codeigniter4/framework/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#6 /www/Destask/app/Models/TaskModel.php(557): CodeIgniter\BaseModel->findAll()
+#7 /www/Destask/app/Controllers/Dashboard.php(176): App\Models\TaskModel->countTaskOverdue_OnProgress_Cancel_At_Pekerjaan_Presales_OnProgress_Support()
+#8 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(941): App\Controllers\Dashboard->lihat_dashboard()
+#9 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#10 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#11 /www/Destask/public/index.php(80): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2025-01-13 21:54:48 --> Error: Call to a member function getResult() on bool
+in SYSTEMPATH/Model.php on line 243.
+ 1 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 2 APPPATH/Models/TaskModel.php(557): CodeIgniter\BaseModel->findAll()
+ 3 APPPATH/Controllers/Dashboard.php(176): App\Models\TaskModel->countTaskOverdue_OnProgress_Cancel_At_Pekerjaan_Presales_OnProgress_Support()
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Dashboard->lihat_dashboard()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-01-13 21:58:03 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')
+AND `tgl_planing` < '2025-01-13'
+AND `id_status_task` IN (1,4)
+AND `task`.`...' at line 3 in /www/Destask/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /www/Destask/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query()
+#4 /www/Destask/vendor/codeigniter4/framework/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /www/Destask/vendor/codeigniter4/framework/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#6 /www/Destask/app/Models/TaskModel.php(557): CodeIgniter\BaseModel->findAll()
+#7 /www/Destask/app/Controllers/Dashboard.php(176): App\Models\TaskModel->countTaskOverdue_OnProgress_Cancel_At_Pekerjaan_Presales_OnProgress_Support()
+#8 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(941): App\Controllers\Dashboard->lihat_dashboard()
+#9 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#10 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#11 /www/Destask/public/index.php(80): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2025-01-13 21:58:03 --> Error: Call to a member function getResult() on bool
+in SYSTEMPATH/Model.php on line 243.
+ 1 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 2 APPPATH/Models/TaskModel.php(557): CodeIgniter\BaseModel->findAll()
+ 3 APPPATH/Controllers/Dashboard.php(176): App\Models\TaskModel->countTaskOverdue_OnProgress_Cancel_At_Pekerjaan_Presales_OnProgress_Support()
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Dashboard->lihat_dashboard()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-01-13 21:58:04 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')
+AND `tgl_planing` < '2025-01-13'
+AND `id_status_task` IN (1,4)
+AND `task`.`...' at line 3 in /www/Destask/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /www/Destask/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query()
+#4 /www/Destask/vendor/codeigniter4/framework/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /www/Destask/vendor/codeigniter4/framework/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#6 /www/Destask/app/Models/TaskModel.php(557): CodeIgniter\BaseModel->findAll()
+#7 /www/Destask/app/Controllers/Dashboard.php(176): App\Models\TaskModel->countTaskOverdue_OnProgress_Cancel_At_Pekerjaan_Presales_OnProgress_Support()
+#8 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(941): App\Controllers\Dashboard->lihat_dashboard()
+#9 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#10 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#11 /www/Destask/public/index.php(80): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2025-01-13 21:58:04 --> Error: Call to a member function getResult() on bool
+in SYSTEMPATH/Model.php on line 243.
+ 1 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 2 APPPATH/Models/TaskModel.php(557): CodeIgniter\BaseModel->findAll()
+ 3 APPPATH/Controllers/Dashboard.php(176): App\Models\TaskModel->countTaskOverdue_OnProgress_Cancel_At_Pekerjaan_Presales_OnProgress_Support()
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Dashboard->lihat_dashboard()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-01-13 21:58:05 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')
+AND `tgl_planing` < '2025-01-13'
+AND `id_status_task` IN (1,4)
+AND `task`.`...' at line 3 in /www/Destask/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /www/Destask/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query()
+#4 /www/Destask/vendor/codeigniter4/framework/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /www/Destask/vendor/codeigniter4/framework/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#6 /www/Destask/app/Models/TaskModel.php(557): CodeIgniter\BaseModel->findAll()
+#7 /www/Destask/app/Controllers/Dashboard.php(176): App\Models\TaskModel->countTaskOverdue_OnProgress_Cancel_At_Pekerjaan_Presales_OnProgress_Support()
+#8 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(941): App\Controllers\Dashboard->lihat_dashboard()
+#9 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#10 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#11 /www/Destask/public/index.php(80): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2025-01-13 21:58:05 --> Error: Call to a member function getResult() on bool
+in SYSTEMPATH/Model.php on line 243.
+ 1 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 2 APPPATH/Models/TaskModel.php(557): CodeIgniter\BaseModel->findAll()
+ 3 APPPATH/Controllers/Dashboard.php(176): App\Models\TaskModel->countTaskOverdue_OnProgress_Cancel_At_Pekerjaan_Presales_OnProgress_Support()
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Dashboard->lihat_dashboard()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-01-13 21:58:07 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')
+AND `tgl_planing` < '2025-01-13'
+AND `id_status_task` IN (1,4)
+AND `task`.`...' at line 3 in /www/Destask/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /www/Destask/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query()
+#4 /www/Destask/vendor/codeigniter4/framework/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /www/Destask/vendor/codeigniter4/framework/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#6 /www/Destask/app/Models/TaskModel.php(557): CodeIgniter\BaseModel->findAll()
+#7 /www/Destask/app/Controllers/Dashboard.php(176): App\Models\TaskModel->countTaskOverdue_OnProgress_Cancel_At_Pekerjaan_Presales_OnProgress_Support()
+#8 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(941): App\Controllers\Dashboard->lihat_dashboard()
+#9 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#10 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#11 /www/Destask/public/index.php(80): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2025-01-13 21:58:07 --> Error: Call to a member function getResult() on bool
+in SYSTEMPATH/Model.php on line 243.
+ 1 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 2 APPPATH/Models/TaskModel.php(557): CodeIgniter\BaseModel->findAll()
+ 3 APPPATH/Controllers/Dashboard.php(176): App\Models\TaskModel->countTaskOverdue_OnProgress_Cancel_At_Pekerjaan_Presales_OnProgress_Support()
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Dashboard->lihat_dashboard()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-01-13 21:58:08 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')
+AND `tgl_planing` < '2025-01-13'
+AND `id_status_task` IN (1,4)
+AND `task`.`...' at line 3 in /www/Destask/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /www/Destask/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query()
+#4 /www/Destask/vendor/codeigniter4/framework/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /www/Destask/vendor/codeigniter4/framework/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#6 /www/Destask/app/Models/TaskModel.php(557): CodeIgniter\BaseModel->findAll()
+#7 /www/Destask/app/Controllers/Dashboard.php(176): App\Models\TaskModel->countTaskOverdue_OnProgress_Cancel_At_Pekerjaan_Presales_OnProgress_Support()
+#8 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(941): App\Controllers\Dashboard->lihat_dashboard()
+#9 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#10 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#11 /www/Destask/public/index.php(80): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2025-01-13 21:58:08 --> Error: Call to a member function getResult() on bool
+in SYSTEMPATH/Model.php on line 243.
+ 1 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 2 APPPATH/Models/TaskModel.php(557): CodeIgniter\BaseModel->findAll()
+ 3 APPPATH/Controllers/Dashboard.php(176): App\Models\TaskModel->countTaskOverdue_OnProgress_Cancel_At_Pekerjaan_Presales_OnProgress_Support()
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Dashboard->lihat_dashboard()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-01-13 21:58:55 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')
+AND `tgl_planing` < '2025-01-13'
+AND `id_status_task` IN (1,4)
+AND `task`.`...' at line 3 in /www/Destask/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /www/Destask/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query()
+#4 /www/Destask/vendor/codeigniter4/framework/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /www/Destask/vendor/codeigniter4/framework/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#6 /www/Destask/app/Models/TaskModel.php(557): CodeIgniter\BaseModel->findAll()
+#7 /www/Destask/app/Controllers/Dashboard.php(176): App\Models\TaskModel->countTaskOverdue_OnProgress_Cancel_At_Pekerjaan_Presales_OnProgress_Support()
+#8 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(941): App\Controllers\Dashboard->lihat_dashboard()
+#9 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#10 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#11 /www/Destask/public/index.php(80): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2025-01-13 21:58:55 --> Error: Call to a member function getResult() on bool
+in SYSTEMPATH/Model.php on line 243.
+ 1 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 2 APPPATH/Models/TaskModel.php(557): CodeIgniter\BaseModel->findAll()
+ 3 APPPATH/Controllers/Dashboard.php(176): App\Models\TaskModel->countTaskOverdue_OnProgress_Cancel_At_Pekerjaan_Presales_OnProgress_Support()
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Dashboard->lihat_dashboard()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-01-13 22:03:03 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')
+AND `tgl_planing` < '2025-01-13'
+AND `id_status_task` IN (1,4)
+AND `task`.`...' at line 3 in /www/Destask/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /www/Destask/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query()
+#4 /www/Destask/vendor/codeigniter4/framework/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /www/Destask/vendor/codeigniter4/framework/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#6 /www/Destask/app/Models/TaskModel.php(557): CodeIgniter\BaseModel->findAll()
+#7 /www/Destask/app/Controllers/Dashboard.php(176): App\Models\TaskModel->countTaskOverdue_OnProgress_Cancel_At_Pekerjaan_Presales_OnProgress_Support()
+#8 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(941): App\Controllers\Dashboard->lihat_dashboard()
+#9 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#10 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#11 /www/Destask/public/index.php(80): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2025-01-13 22:03:03 --> Error: Call to a member function getResult() on bool
+in SYSTEMPATH/Model.php on line 243.
+ 1 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 2 APPPATH/Models/TaskModel.php(557): CodeIgniter\BaseModel->findAll()
+ 3 APPPATH/Controllers/Dashboard.php(176): App\Models\TaskModel->countTaskOverdue_OnProgress_Cancel_At_Pekerjaan_Presales_OnProgress_Support()
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Dashboard->lihat_dashboard()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-01-13 22:03:25 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')
+AND `tgl_planing` < '2025-01-13'
+AND `id_status_task` IN (1,4)
+AND `task`.`...' at line 3 in /www/Destask/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /www/Destask/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query()
+#4 /www/Destask/vendor/codeigniter4/framework/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /www/Destask/vendor/codeigniter4/framework/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#6 /www/Destask/app/Models/TaskModel.php(557): CodeIgniter\BaseModel->findAll()
+#7 /www/Destask/app/Controllers/Dashboard.php(176): App\Models\TaskModel->countTaskOverdue_OnProgress_Cancel_At_Pekerjaan_Presales_OnProgress_Support()
+#8 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(941): App\Controllers\Dashboard->lihat_dashboard()
+#9 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#10 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#11 /www/Destask/public/index.php(80): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2025-01-13 22:03:25 --> Error: Call to a member function getResult() on bool
+in SYSTEMPATH/Model.php on line 243.
+ 1 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 2 APPPATH/Models/TaskModel.php(557): CodeIgniter\BaseModel->findAll()
+ 3 APPPATH/Controllers/Dashboard.php(176): App\Models\TaskModel->countTaskOverdue_OnProgress_Cancel_At_Pekerjaan_Presales_OnProgress_Support()
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Dashboard->lihat_dashboard()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-01-13 22:03:56 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')
+AND `tgl_planing` < '2025-01-13'
+AND `id_status_task` IN (1,4)
+AND `task`.`...' at line 3 in /www/Destask/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /www/Destask/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query()
+#4 /www/Destask/vendor/codeigniter4/framework/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /www/Destask/vendor/codeigniter4/framework/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#6 /www/Destask/app/Models/TaskModel.php(557): CodeIgniter\BaseModel->findAll()
+#7 /www/Destask/app/Controllers/Dashboard.php(176): App\Models\TaskModel->countTaskOverdue_OnProgress_Cancel_At_Pekerjaan_Presales_OnProgress_Support()
+#8 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(941): App\Controllers\Dashboard->lihat_dashboard()
+#9 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#10 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#11 /www/Destask/public/index.php(80): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2025-01-13 22:03:56 --> Error: Call to a member function getResult() on bool
+in SYSTEMPATH/Model.php on line 243.
+ 1 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 2 APPPATH/Models/TaskModel.php(557): CodeIgniter\BaseModel->findAll()
+ 3 APPPATH/Controllers/Dashboard.php(176): App\Models\TaskModel->countTaskOverdue_OnProgress_Cancel_At_Pekerjaan_Presales_OnProgress_Support()
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Dashboard->lihat_dashboard()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-01-13 22:06:04 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')
+AND `tgl_planing` < '2025-01-13'
+AND `id_status_task` IN (1,4)
+AND `task`.`...' at line 3 in /www/Destask/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /www/Destask/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query()
+#4 /www/Destask/vendor/codeigniter4/framework/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /www/Destask/vendor/codeigniter4/framework/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#6 /www/Destask/app/Models/TaskModel.php(557): CodeIgniter\BaseModel->findAll()
+#7 /www/Destask/app/Controllers/Dashboard.php(176): App\Models\TaskModel->countTaskOverdue_OnProgress_Cancel_At_Pekerjaan_Presales_OnProgress_Support()
+#8 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(941): App\Controllers\Dashboard->lihat_dashboard()
+#9 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#10 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#11 /www/Destask/public/index.php(80): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2025-01-13 22:06:04 --> Error: Call to a member function getResult() on bool
+in SYSTEMPATH/Model.php on line 243.
+ 1 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 2 APPPATH/Models/TaskModel.php(557): CodeIgniter\BaseModel->findAll()
+ 3 APPPATH/Controllers/Dashboard.php(176): App\Models\TaskModel->countTaskOverdue_OnProgress_Cancel_At_Pekerjaan_Presales_OnProgress_Support()
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Dashboard->lihat_dashboard()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-01-13 22:06:05 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')
+AND `tgl_planing` < '2025-01-13'
+AND `id_status_task` IN (1,4)
+AND `task`.`...' at line 3 in /www/Destask/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /www/Destask/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query()
+#4 /www/Destask/vendor/codeigniter4/framework/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /www/Destask/vendor/codeigniter4/framework/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#6 /www/Destask/app/Models/TaskModel.php(557): CodeIgniter\BaseModel->findAll()
+#7 /www/Destask/app/Controllers/Dashboard.php(176): App\Models\TaskModel->countTaskOverdue_OnProgress_Cancel_At_Pekerjaan_Presales_OnProgress_Support()
+#8 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(941): App\Controllers\Dashboard->lihat_dashboard()
+#9 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#10 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#11 /www/Destask/public/index.php(80): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2025-01-13 22:06:05 --> Error: Call to a member function getResult() on bool
+in SYSTEMPATH/Model.php on line 243.
+ 1 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 2 APPPATH/Models/TaskModel.php(557): CodeIgniter\BaseModel->findAll()
+ 3 APPPATH/Controllers/Dashboard.php(176): App\Models\TaskModel->countTaskOverdue_OnProgress_Cancel_At_Pekerjaan_Presales_OnProgress_Support()
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Dashboard->lihat_dashboard()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-01-13 22:06:06 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')
+AND `tgl_planing` < '2025-01-13'
+AND `id_status_task` IN (1,4)
+AND `task`.`...' at line 3 in /www/Destask/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /www/Destask/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query()
+#4 /www/Destask/vendor/codeigniter4/framework/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /www/Destask/vendor/codeigniter4/framework/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#6 /www/Destask/app/Models/TaskModel.php(557): CodeIgniter\BaseModel->findAll()
+#7 /www/Destask/app/Controllers/Dashboard.php(176): App\Models\TaskModel->countTaskOverdue_OnProgress_Cancel_At_Pekerjaan_Presales_OnProgress_Support()
+#8 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(941): App\Controllers\Dashboard->lihat_dashboard()
+#9 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#10 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#11 /www/Destask/public/index.php(80): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2025-01-13 22:06:06 --> Error: Call to a member function getResult() on bool
+in SYSTEMPATH/Model.php on line 243.
+ 1 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 2 APPPATH/Models/TaskModel.php(557): CodeIgniter\BaseModel->findAll()
+ 3 APPPATH/Controllers/Dashboard.php(176): App\Models\TaskModel->countTaskOverdue_OnProgress_Cancel_At_Pekerjaan_Presales_OnProgress_Support()
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Dashboard->lihat_dashboard()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-01-13 22:06:06 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')
+AND `tgl_planing` < '2025-01-13'
+AND `id_status_task` IN (1,4)
+AND `task`.`...' at line 3 in /www/Destask/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /www/Destask/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query()
+#4 /www/Destask/vendor/codeigniter4/framework/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /www/Destask/vendor/codeigniter4/framework/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#6 /www/Destask/app/Models/TaskModel.php(557): CodeIgniter\BaseModel->findAll()
+#7 /www/Destask/app/Controllers/Dashboard.php(176): App\Models\TaskModel->countTaskOverdue_OnProgress_Cancel_At_Pekerjaan_Presales_OnProgress_Support()
+#8 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(941): App\Controllers\Dashboard->lihat_dashboard()
+#9 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#10 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#11 /www/Destask/public/index.php(80): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2025-01-13 22:06:06 --> Error: Call to a member function getResult() on bool
+in SYSTEMPATH/Model.php on line 243.
+ 1 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 2 APPPATH/Models/TaskModel.php(557): CodeIgniter\BaseModel->findAll()
+ 3 APPPATH/Controllers/Dashboard.php(176): App\Models\TaskModel->countTaskOverdue_OnProgress_Cancel_At_Pekerjaan_Presales_OnProgress_Support()
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Dashboard->lihat_dashboard()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-01-13 22:06:07 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')
+AND `tgl_planing` < '2025-01-13'
+AND `id_status_task` IN (1,4)
+AND `task`.`...' at line 3 in /www/Destask/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /www/Destask/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query()
+#4 /www/Destask/vendor/codeigniter4/framework/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /www/Destask/vendor/codeigniter4/framework/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#6 /www/Destask/app/Models/TaskModel.php(557): CodeIgniter\BaseModel->findAll()
+#7 /www/Destask/app/Controllers/Dashboard.php(176): App\Models\TaskModel->countTaskOverdue_OnProgress_Cancel_At_Pekerjaan_Presales_OnProgress_Support()
+#8 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(941): App\Controllers\Dashboard->lihat_dashboard()
+#9 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#10 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#11 /www/Destask/public/index.php(80): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2025-01-13 22:06:07 --> Error: Call to a member function getResult() on bool
+in SYSTEMPATH/Model.php on line 243.
+ 1 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 2 APPPATH/Models/TaskModel.php(557): CodeIgniter\BaseModel->findAll()
+ 3 APPPATH/Controllers/Dashboard.php(176): App\Models\TaskModel->countTaskOverdue_OnProgress_Cancel_At_Pekerjaan_Presales_OnProgress_Support()
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Dashboard->lihat_dashboard()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-01-13 22:06:07 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')
+AND `tgl_planing` < '2025-01-13'
+AND `id_status_task` IN (1,4)
+AND `task`.`...' at line 3 in /www/Destask/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /www/Destask/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query()
+#4 /www/Destask/vendor/codeigniter4/framework/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /www/Destask/vendor/codeigniter4/framework/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#6 /www/Destask/app/Models/TaskModel.php(557): CodeIgniter\BaseModel->findAll()
+#7 /www/Destask/app/Controllers/Dashboard.php(176): App\Models\TaskModel->countTaskOverdue_OnProgress_Cancel_At_Pekerjaan_Presales_OnProgress_Support()
+#8 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(941): App\Controllers\Dashboard->lihat_dashboard()
+#9 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#10 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#11 /www/Destask/public/index.php(80): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2025-01-13 22:06:07 --> Error: Call to a member function getResult() on bool
+in SYSTEMPATH/Model.php on line 243.
+ 1 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 2 APPPATH/Models/TaskModel.php(557): CodeIgniter\BaseModel->findAll()
+ 3 APPPATH/Controllers/Dashboard.php(176): App\Models\TaskModel->countTaskOverdue_OnProgress_Cancel_At_Pekerjaan_Presales_OnProgress_Support()
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Dashboard->lihat_dashboard()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-01-13 22:06:43 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')
+AND `tgl_planing` < '2025-01-13'
+AND `id_status_task` IN (1,4)
+AND `task`.`...' at line 3 in /www/Destask/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /www/Destask/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query()
+#4 /www/Destask/vendor/codeigniter4/framework/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /www/Destask/vendor/codeigniter4/framework/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#6 /www/Destask/app/Models/TaskModel.php(557): CodeIgniter\BaseModel->findAll()
+#7 /www/Destask/app/Controllers/Dashboard.php(176): App\Models\TaskModel->countTaskOverdue_OnProgress_Cancel_At_Pekerjaan_Presales_OnProgress_Support()
+#8 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(941): App\Controllers\Dashboard->lihat_dashboard()
+#9 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#10 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#11 /www/Destask/public/index.php(80): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2025-01-13 22:06:43 --> Error: Call to a member function getResult() on bool
+in SYSTEMPATH/Model.php on line 243.
+ 1 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 2 APPPATH/Models/TaskModel.php(557): CodeIgniter\BaseModel->findAll()
+ 3 APPPATH/Controllers/Dashboard.php(176): App\Models\TaskModel->countTaskOverdue_OnProgress_Cancel_At_Pekerjaan_Presales_OnProgress_Support()
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Dashboard->lihat_dashboard()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-01-13 22:06:44 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')
+AND `tgl_planing` < '2025-01-13'
+AND `id_status_task` IN (1,4)
+AND `task`.`...' at line 3 in /www/Destask/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /www/Destask/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query()
+#4 /www/Destask/vendor/codeigniter4/framework/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /www/Destask/vendor/codeigniter4/framework/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#6 /www/Destask/app/Models/TaskModel.php(557): CodeIgniter\BaseModel->findAll()
+#7 /www/Destask/app/Controllers/Dashboard.php(176): App\Models\TaskModel->countTaskOverdue_OnProgress_Cancel_At_Pekerjaan_Presales_OnProgress_Support()
+#8 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(941): App\Controllers\Dashboard->lihat_dashboard()
+#9 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#10 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#11 /www/Destask/public/index.php(80): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2025-01-13 22:06:44 --> Error: Call to a member function getResult() on bool
+in SYSTEMPATH/Model.php on line 243.
+ 1 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 2 APPPATH/Models/TaskModel.php(557): CodeIgniter\BaseModel->findAll()
+ 3 APPPATH/Controllers/Dashboard.php(176): App\Models\TaskModel->countTaskOverdue_OnProgress_Cancel_At_Pekerjaan_Presales_OnProgress_Support()
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Dashboard->lihat_dashboard()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-01-13 22:06:44 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')
+AND `tgl_planing` < '2025-01-13'
+AND `id_status_task` IN (1,4)
+AND `task`.`...' at line 3 in /www/Destask/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /www/Destask/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query()
+#4 /www/Destask/vendor/codeigniter4/framework/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /www/Destask/vendor/codeigniter4/framework/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#6 /www/Destask/app/Models/TaskModel.php(557): CodeIgniter\BaseModel->findAll()
+#7 /www/Destask/app/Controllers/Dashboard.php(176): App\Models\TaskModel->countTaskOverdue_OnProgress_Cancel_At_Pekerjaan_Presales_OnProgress_Support()
+#8 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(941): App\Controllers\Dashboard->lihat_dashboard()
+#9 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#10 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#11 /www/Destask/public/index.php(80): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2025-01-13 22:06:44 --> Error: Call to a member function getResult() on bool
+in SYSTEMPATH/Model.php on line 243.
+ 1 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 2 APPPATH/Models/TaskModel.php(557): CodeIgniter\BaseModel->findAll()
+ 3 APPPATH/Controllers/Dashboard.php(176): App\Models\TaskModel->countTaskOverdue_OnProgress_Cancel_At_Pekerjaan_Presales_OnProgress_Support()
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Dashboard->lihat_dashboard()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-01-13 22:06:44 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')
+AND `tgl_planing` < '2025-01-13'
+AND `id_status_task` IN (1,4)
+AND `task`.`...' at line 3 in /www/Destask/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /www/Destask/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query()
+#4 /www/Destask/vendor/codeigniter4/framework/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /www/Destask/vendor/codeigniter4/framework/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#6 /www/Destask/app/Models/TaskModel.php(557): CodeIgniter\BaseModel->findAll()
+#7 /www/Destask/app/Controllers/Dashboard.php(176): App\Models\TaskModel->countTaskOverdue_OnProgress_Cancel_At_Pekerjaan_Presales_OnProgress_Support()
+#8 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(941): App\Controllers\Dashboard->lihat_dashboard()
+#9 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#10 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#11 /www/Destask/public/index.php(80): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2025-01-13 22:06:44 --> Error: Call to a member function getResult() on bool
+in SYSTEMPATH/Model.php on line 243.
+ 1 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 2 APPPATH/Models/TaskModel.php(557): CodeIgniter\BaseModel->findAll()
+ 3 APPPATH/Controllers/Dashboard.php(176): App\Models\TaskModel->countTaskOverdue_OnProgress_Cancel_At_Pekerjaan_Presales_OnProgress_Support()
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Dashboard->lihat_dashboard()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-01-13 22:06:44 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')
+AND `tgl_planing` < '2025-01-13'
+AND `id_status_task` IN (1,4)
+AND `task`.`...' at line 3 in /www/Destask/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /www/Destask/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query()
+#4 /www/Destask/vendor/codeigniter4/framework/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /www/Destask/vendor/codeigniter4/framework/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#6 /www/Destask/app/Models/TaskModel.php(557): CodeIgniter\BaseModel->findAll()
+#7 /www/Destask/app/Controllers/Dashboard.php(176): App\Models\TaskModel->countTaskOverdue_OnProgress_Cancel_At_Pekerjaan_Presales_OnProgress_Support()
+#8 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(941): App\Controllers\Dashboard->lihat_dashboard()
+#9 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#10 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#11 /www/Destask/public/index.php(80): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2025-01-13 22:06:44 --> Error: Call to a member function getResult() on bool
+in SYSTEMPATH/Model.php on line 243.
+ 1 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 2 APPPATH/Models/TaskModel.php(557): CodeIgniter\BaseModel->findAll()
+ 3 APPPATH/Controllers/Dashboard.php(176): App\Models\TaskModel->countTaskOverdue_OnProgress_Cancel_At_Pekerjaan_Presales_OnProgress_Support()
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Dashboard->lihat_dashboard()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-01-13 22:06:45 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')
+AND `tgl_planing` < '2025-01-13'
+AND `id_status_task` IN (1,4)
+AND `task`.`...' at line 3 in /www/Destask/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /www/Destask/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query()
+#4 /www/Destask/vendor/codeigniter4/framework/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /www/Destask/vendor/codeigniter4/framework/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#6 /www/Destask/app/Models/TaskModel.php(557): CodeIgniter\BaseModel->findAll()
+#7 /www/Destask/app/Controllers/Dashboard.php(176): App\Models\TaskModel->countTaskOverdue_OnProgress_Cancel_At_Pekerjaan_Presales_OnProgress_Support()
+#8 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(941): App\Controllers\Dashboard->lihat_dashboard()
+#9 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#10 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#11 /www/Destask/public/index.php(80): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2025-01-13 22:06:45 --> Error: Call to a member function getResult() on bool
+in SYSTEMPATH/Model.php on line 243.
+ 1 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 2 APPPATH/Models/TaskModel.php(557): CodeIgniter\BaseModel->findAll()
+ 3 APPPATH/Controllers/Dashboard.php(176): App\Models\TaskModel->countTaskOverdue_OnProgress_Cancel_At_Pekerjaan_Presales_OnProgress_Support()
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Dashboard->lihat_dashboard()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-01-13 22:06:46 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')
+AND `tgl_planing` < '2025-01-13'
+AND `id_status_task` IN (1,4)
+AND `task`.`...' at line 3 in /www/Destask/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /www/Destask/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /www/Destask/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query()
+#4 /www/Destask/vendor/codeigniter4/framework/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /www/Destask/vendor/codeigniter4/framework/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#6 /www/Destask/app/Models/TaskModel.php(557): CodeIgniter\BaseModel->findAll()
+#7 /www/Destask/app/Controllers/Dashboard.php(176): App\Models\TaskModel->countTaskOverdue_OnProgress_Cancel_At_Pekerjaan_Presales_OnProgress_Support()
+#8 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(941): App\Controllers\Dashboard->lihat_dashboard()
+#9 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#10 /www/Destask/vendor/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#11 /www/Destask/public/index.php(80): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2025-01-13 22:06:46 --> Error: Call to a member function getResult() on bool
+in SYSTEMPATH/Model.php on line 243.
+ 1 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 2 APPPATH/Models/TaskModel.php(557): CodeIgniter\BaseModel->findAll()
+ 3 APPPATH/Controllers/Dashboard.php(176): App\Models\TaskModel->countTaskOverdue_OnProgress_Cancel_At_Pekerjaan_Presales_OnProgress_Support()
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Dashboard->lihat_dashboard()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-13 22:17:29 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/Pekerjaan.php on line 679.
+ 1 APPPATH/Controllers/Pekerjaan.php(679): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Pekerjaan->updatepekerjaan_status_pekerjaan()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()

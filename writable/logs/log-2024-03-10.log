@@ -1,0 +1,767 @@
+INFO - 2024-03-10 15:01:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 15:01:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 15:01:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 15:01:59 --> CSRF token verified.
+INFO - 2024-03-10 15:02:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 15:02:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 15:02:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 15:03:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 15:03:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 15:03:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 15:03:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 15:04:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-03-10 15:04:05 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\pekerjaan\detail_pekerjaan.php on line 69.
+ 1 APPPATH\Views\pekerjaan\detail_pekerjaan.php(69): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\app\\Views\\pekerjaan\\detail_pekerjaan.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('pekerjaan/detail_pekerjaan', [], true)
+ 5 APPPATH\Controllers\Pekerjaan.php(62): view('pekerjaan/detail_pekerjaan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pekerjaan->detail_pekerjaan('7')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pekerjaan))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\public\\index.php')
+INFO - 2024-03-10 15:04:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 15:04:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 15:04:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 15:04:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 15:04:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 15:05:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 15:08:13 --> CSRF token verified.
+INFO - 2024-03-10 15:08:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 15:08:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 15:08:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 15:08:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 15:10:26 --> CSRF token verified.
+INFO - 2024-03-10 15:10:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 15:10:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 15:10:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 15:11:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 15:11:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 15:13:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 15:27:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 15:28:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 15:28:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 15:28:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 15:28:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 15:28:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 15:28:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 15:33:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 15:44:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 15:44:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 15:44:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 15:44:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 15:44:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 15:45:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 15:45:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 15:45:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-10 15:46:34 --> Undefined variable $user_staff_supervisi
+in APPPATH\Views\pekerjaan\daftar_pekerjaan.php on line 22.
+ 1 APPPATH\Views\pekerjaan\daftar_pekerjaan.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user_staff_supervisi', 'C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\app\\Views\\pekerjaan\\daftar_pekerjaan.php', 22)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\app\\Views\\pekerjaan\\daftar_pekerjaan.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('pekerjaan/daftar_pekerjaan', [], true)
+ 5 APPPATH\Controllers\Pekerjaan.php(47): view('pekerjaan/daftar_pekerjaan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pekerjaan->daftar_pekerjaan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pekerjaan))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\public\\index.php')
+INFO - 2024-03-10 15:47:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 15:53:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 15:54:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 15:55:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 15:55:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 15:55:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 15:58:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 15:58:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 15:59:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 15:59:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 15:59:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 16:00:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 16:00:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 16:04:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 16:05:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 16:05:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 16:05:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 16:06:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 16:06:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 16:06:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 16:06:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 16:06:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 17:19:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 17:56:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 17:58:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 17:59:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 17:59:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 18:03:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 18:03:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 18:23:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 18:23:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 18:23:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 19:04:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-03-10 19:04:37 --> mysqli_sql_exception: Not unique table/alias: 'pekerjaan' in C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `pekerja...', 0)
+#1 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pekerja...')
+#2 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pekerja...')
+#3 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `pekerja...', Array, false)
+#4 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\app\Models\PekerjaanModel.php(47): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\app\Controllers\Pekerjaan.php(58): App\Models\PekerjaanModel->getFilteredPekerjaan('2', '2', 'produk', '2')
+#7 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\Pekerjaan->filter_pekerjaan()
+#8 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pekerjaan))
+#9 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\public\index.php(80): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\agung\\...')
+#12 {main}
+CRITICAL - 2024-03-10 19:04:37 --> Not unique table/alias: 'pekerjaan'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `pekerjaan`.*
+FROM (`pekerjaan`, `pekerjaan`)
+JOIN `personil` ON `personil`.`id_pekerjaan` = `pekerjaan`.`id_pekerjaan`
+WHERE `personil`.`role_personil` = :personil.role_personil:
+AND pekerjaan.deleted_at IS NULL
+AND `pekerjaan`.`id_kategori_pekerjaan` = :pekerjaan.id_kategori_pekerjaan:
+AND `pekerjaan`.`id_status_pekerjaan` = :pekerjaan.id_status_pekerjaan:
+AND `pekerjaan`.`jenis_layanan` = :pekerjaan.jenis_layanan:
+AND `personil`.`id_user` = :personil.id_user:', [...], false)
+ 2 SYSTEMPATH\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Models\PekerjaanModel.php(47): CodeIgniter\Model->__call('get', [])
+ 4 APPPATH\Controllers\Pekerjaan.php(58): App\Models\PekerjaanModel->getFilteredPekerjaan('2', '2', 'produk', '2')
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pekerjaan->filter_pekerjaan()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pekerjaan))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\public\\index.php')
+CRITICAL - 2024-03-10 19:10:06 --> Unmatched '}'
+in APPPATH\Models\PekerjaanModel.php on line 51.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\app\\Models\\PekerjaanModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\PekerjaanModel')
+ 3 APPPATH\Controllers\Pekerjaan.php(26): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\PekerjaanModel')
+ 4 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Pekerjaan->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\public\\index.php')
+ERROR - 2024-03-10 19:10:18 --> mysqli_sql_exception: Not unique table/alias: 'pekerjaan' in C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `pekerja...', 0)
+#1 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pekerja...')
+#2 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pekerja...')
+#3 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `pekerja...', Array, false)
+#4 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\app\Models\PekerjaanModel.php(47): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\app\Controllers\Pekerjaan.php(58): App\Models\PekerjaanModel->getFilteredPekerjaan('2', '2', 'produk', '2')
+#7 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\Pekerjaan->filter_pekerjaan()
+#8 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pekerjaan))
+#9 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\public\index.php(80): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\agung\\...')
+#12 {main}
+CRITICAL - 2024-03-10 19:10:18 --> Not unique table/alias: 'pekerjaan'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `pekerjaan`.*
+FROM `pekerjaan`, `pekerjaan`, `personil`
+WHERE `personil`.`id_pekerjaan` = `pekerjaan`.`id_pekerjaan`
+AND `personil`.`role_personil` = :personil.role_personil:
+AND pekerjaan.deleted_at IS NULL
+AND `pekerjaan`.`id_kategori_pekerjaan` = :pekerjaan.id_kategori_pekerjaan:
+AND `pekerjaan`.`id_status_pekerjaan` = :pekerjaan.id_status_pekerjaan:
+AND `pekerjaan`.`jenis_layanan` = :pekerjaan.jenis_layanan:
+AND `personil`.`id_user` = :personil.id_user:', [...], false)
+ 2 SYSTEMPATH\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Models\PekerjaanModel.php(47): CodeIgniter\Model->__call('get', [])
+ 4 APPPATH\Controllers\Pekerjaan.php(58): App\Models\PekerjaanModel->getFilteredPekerjaan('2', '2', 'produk', '2')
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pekerjaan->filter_pekerjaan()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pekerjaan))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\public\\index.php')
+ERROR - 2024-03-10 19:12:21 --> mysqli_sql_exception: Not unique table/alias: 'pekerjaan' in C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `pekerja...', 0)
+#1 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pekerja...')
+#2 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pekerja...')
+#3 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `pekerja...', Array, false)
+#4 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\app\Models\PekerjaanModel.php(47): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\app\Controllers\Pekerjaan.php(58): App\Models\PekerjaanModel->getFilteredPekerjaan('2', '2', 'produk', '2')
+#7 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\Pekerjaan->filter_pekerjaan()
+#8 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pekerjaan))
+#9 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\public\index.php(80): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\agung\\...')
+#12 {main}
+CRITICAL - 2024-03-10 19:12:21 --> Not unique table/alias: 'pekerjaan'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `pekerjaan`.*
+FROM (`pekerjaan`, `pekerjaan`)
+JOIN `personil` ON `personil`.`id_pekerjaan` = `pekerjaan`.`id_pekerjaan`
+WHERE `personil`.`role_personil` = :personil.role_personil:
+AND pekerjaan.deleted_at IS NULL
+AND `pekerjaan`.`id_kategori_pekerjaan` = :pekerjaan.id_kategori_pekerjaan:
+AND `pekerjaan`.`id_status_pekerjaan` = :pekerjaan.id_status_pekerjaan:
+AND `pekerjaan`.`jenis_layanan` = :pekerjaan.jenis_layanan:
+AND `personil`.`id_user` = :personil.id_user:', [...], false)
+ 2 SYSTEMPATH\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Models\PekerjaanModel.php(47): CodeIgniter\Model->__call('get', [])
+ 4 APPPATH\Controllers\Pekerjaan.php(58): App\Models\PekerjaanModel->getFilteredPekerjaan('2', '2', 'produk', '2')
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pekerjaan->filter_pekerjaan()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pekerjaan))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\public\\index.php')
+ERROR - 2024-03-10 19:12:23 --> mysqli_sql_exception: Not unique table/alias: 'pekerjaan' in C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `pekerja...', 0)
+#1 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pekerja...')
+#2 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pekerja...')
+#3 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `pekerja...', Array, false)
+#4 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\app\Models\PekerjaanModel.php(47): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\app\Controllers\Pekerjaan.php(58): App\Models\PekerjaanModel->getFilteredPekerjaan('2', '2', 'produk', '2')
+#7 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\Pekerjaan->filter_pekerjaan()
+#8 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pekerjaan))
+#9 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\public\index.php(80): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\agung\\...')
+#12 {main}
+CRITICAL - 2024-03-10 19:12:23 --> Not unique table/alias: 'pekerjaan'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `pekerjaan`.*
+FROM (`pekerjaan`, `pekerjaan`)
+JOIN `personil` ON `personil`.`id_pekerjaan` = `pekerjaan`.`id_pekerjaan`
+WHERE `personil`.`role_personil` = :personil.role_personil:
+AND pekerjaan.deleted_at IS NULL
+AND `pekerjaan`.`id_kategori_pekerjaan` = :pekerjaan.id_kategori_pekerjaan:
+AND `pekerjaan`.`id_status_pekerjaan` = :pekerjaan.id_status_pekerjaan:
+AND `pekerjaan`.`jenis_layanan` = :pekerjaan.jenis_layanan:
+AND `personil`.`id_user` = :personil.id_user:', [...], false)
+ 2 SYSTEMPATH\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Models\PekerjaanModel.php(47): CodeIgniter\Model->__call('get', [])
+ 4 APPPATH\Controllers\Pekerjaan.php(58): App\Models\PekerjaanModel->getFilteredPekerjaan('2', '2', 'produk', '2')
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pekerjaan->filter_pekerjaan()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pekerjaan))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\public\\index.php')
+ERROR - 2024-03-10 19:12:23 --> mysqli_sql_exception: Not unique table/alias: 'pekerjaan' in C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `pekerja...', 0)
+#1 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pekerja...')
+#2 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pekerja...')
+#3 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `pekerja...', Array, false)
+#4 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\app\Models\PekerjaanModel.php(47): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\app\Controllers\Pekerjaan.php(58): App\Models\PekerjaanModel->getFilteredPekerjaan('2', '2', 'produk', '2')
+#7 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\Pekerjaan->filter_pekerjaan()
+#8 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pekerjaan))
+#9 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\public\index.php(80): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\agung\\...')
+#12 {main}
+CRITICAL - 2024-03-10 19:12:23 --> Not unique table/alias: 'pekerjaan'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `pekerjaan`.*
+FROM (`pekerjaan`, `pekerjaan`)
+JOIN `personil` ON `personil`.`id_pekerjaan` = `pekerjaan`.`id_pekerjaan`
+WHERE `personil`.`role_personil` = :personil.role_personil:
+AND pekerjaan.deleted_at IS NULL
+AND `pekerjaan`.`id_kategori_pekerjaan` = :pekerjaan.id_kategori_pekerjaan:
+AND `pekerjaan`.`id_status_pekerjaan` = :pekerjaan.id_status_pekerjaan:
+AND `pekerjaan`.`jenis_layanan` = :pekerjaan.jenis_layanan:
+AND `personil`.`id_user` = :personil.id_user:', [...], false)
+ 2 SYSTEMPATH\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Models\PekerjaanModel.php(47): CodeIgniter\Model->__call('get', [])
+ 4 APPPATH\Controllers\Pekerjaan.php(58): App\Models\PekerjaanModel->getFilteredPekerjaan('2', '2', 'produk', '2')
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pekerjaan->filter_pekerjaan()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pekerjaan))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\public\\index.php')
+ERROR - 2024-03-10 19:12:24 --> mysqli_sql_exception: Not unique table/alias: 'pekerjaan' in C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `pekerja...', 0)
+#1 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pekerja...')
+#2 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pekerja...')
+#3 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `pekerja...', Array, false)
+#4 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\app\Models\PekerjaanModel.php(47): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\app\Controllers\Pekerjaan.php(58): App\Models\PekerjaanModel->getFilteredPekerjaan('2', '2', 'produk', '2')
+#7 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\Pekerjaan->filter_pekerjaan()
+#8 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pekerjaan))
+#9 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\public\index.php(80): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\agung\\...')
+#12 {main}
+CRITICAL - 2024-03-10 19:12:24 --> Not unique table/alias: 'pekerjaan'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `pekerjaan`.*
+FROM (`pekerjaan`, `pekerjaan`)
+JOIN `personil` ON `personil`.`id_pekerjaan` = `pekerjaan`.`id_pekerjaan`
+WHERE `personil`.`role_personil` = :personil.role_personil:
+AND pekerjaan.deleted_at IS NULL
+AND `pekerjaan`.`id_kategori_pekerjaan` = :pekerjaan.id_kategori_pekerjaan:
+AND `pekerjaan`.`id_status_pekerjaan` = :pekerjaan.id_status_pekerjaan:
+AND `pekerjaan`.`jenis_layanan` = :pekerjaan.jenis_layanan:
+AND `personil`.`id_user` = :personil.id_user:', [...], false)
+ 2 SYSTEMPATH\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Models\PekerjaanModel.php(47): CodeIgniter\Model->__call('get', [])
+ 4 APPPATH\Controllers\Pekerjaan.php(58): App\Models\PekerjaanModel->getFilteredPekerjaan('2', '2', 'produk', '2')
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pekerjaan->filter_pekerjaan()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pekerjaan))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\public\\index.php')
+ERROR - 2024-03-10 19:13:34 --> mysqli_sql_exception: Not unique table/alias: 'pekerjaan' in C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `pekerja...', 0)
+#1 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pekerja...')
+#2 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pekerja...')
+#3 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `pekerja...', Array, false)
+#4 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\app\Models\PekerjaanModel.php(47): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\app\Controllers\Pekerjaan.php(58): App\Models\PekerjaanModel->getFilteredPekerjaan('2', '2', 'produk', '2')
+#7 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\Pekerjaan->filter_pekerjaan()
+#8 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pekerjaan))
+#9 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\public\index.php(80): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\agung\\...')
+#12 {main}
+CRITICAL - 2024-03-10 19:13:34 --> Not unique table/alias: 'pekerjaan'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `pekerjaan`.*
+FROM (`pekerjaan`, `pekerjaan`)
+JOIN `personil` ON `personil`.`id_pekerjaan` = `pekerjaan`.`id_pekerjaan`
+WHERE `personil`.`role_personil` = :personil.role_personil:
+AND pekerjaan.deleted_at IS NULL
+AND `pekerjaan`.`id_kategori_pekerjaan` = :pekerjaan.id_kategori_pekerjaan:
+AND `pekerjaan`.`id_status_pekerjaan` = :pekerjaan.id_status_pekerjaan:
+AND `pekerjaan`.`jenis_layanan` = :pekerjaan.jenis_layanan:
+AND `personil`.`id_user` = :personil.id_user:', [...], false)
+ 2 SYSTEMPATH\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Models\PekerjaanModel.php(47): CodeIgniter\Model->__call('get', [])
+ 4 APPPATH\Controllers\Pekerjaan.php(58): App\Models\PekerjaanModel->getFilteredPekerjaan('2', '2', 'produk', '2')
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pekerjaan->filter_pekerjaan()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pekerjaan))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\public\\index.php')
+ERROR - 2024-03-10 19:13:35 --> mysqli_sql_exception: Not unique table/alias: 'pekerjaan' in C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `pekerja...', 0)
+#1 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pekerja...')
+#2 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pekerja...')
+#3 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `pekerja...', Array, false)
+#4 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\app\Models\PekerjaanModel.php(47): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\app\Controllers\Pekerjaan.php(58): App\Models\PekerjaanModel->getFilteredPekerjaan('2', '2', 'produk', '2')
+#7 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\Pekerjaan->filter_pekerjaan()
+#8 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pekerjaan))
+#9 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\public\index.php(80): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\agung\\...')
+#12 {main}
+CRITICAL - 2024-03-10 19:13:35 --> Not unique table/alias: 'pekerjaan'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `pekerjaan`.*
+FROM (`pekerjaan`, `pekerjaan`)
+JOIN `personil` ON `personil`.`id_pekerjaan` = `pekerjaan`.`id_pekerjaan`
+WHERE `personil`.`role_personil` = :personil.role_personil:
+AND pekerjaan.deleted_at IS NULL
+AND `pekerjaan`.`id_kategori_pekerjaan` = :pekerjaan.id_kategori_pekerjaan:
+AND `pekerjaan`.`id_status_pekerjaan` = :pekerjaan.id_status_pekerjaan:
+AND `pekerjaan`.`jenis_layanan` = :pekerjaan.jenis_layanan:
+AND `personil`.`id_user` = :personil.id_user:', [...], false)
+ 2 SYSTEMPATH\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Models\PekerjaanModel.php(47): CodeIgniter\Model->__call('get', [])
+ 4 APPPATH\Controllers\Pekerjaan.php(58): App\Models\PekerjaanModel->getFilteredPekerjaan('2', '2', 'produk', '2')
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pekerjaan->filter_pekerjaan()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pekerjaan))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\public\\index.php')
+ERROR - 2024-03-10 19:13:36 --> mysqli_sql_exception: Not unique table/alias: 'pekerjaan' in C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `pekerja...', 0)
+#1 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pekerja...')
+#2 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pekerja...')
+#3 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `pekerja...', Array, false)
+#4 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\app\Models\PekerjaanModel.php(47): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\app\Controllers\Pekerjaan.php(58): App\Models\PekerjaanModel->getFilteredPekerjaan('2', '2', 'produk', '2')
+#7 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\Pekerjaan->filter_pekerjaan()
+#8 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pekerjaan))
+#9 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\public\index.php(80): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\agung\\...')
+#12 {main}
+CRITICAL - 2024-03-10 19:13:36 --> Not unique table/alias: 'pekerjaan'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `pekerjaan`.*
+FROM (`pekerjaan`, `pekerjaan`)
+JOIN `personil` ON `personil`.`id_pekerjaan` = `pekerjaan`.`id_pekerjaan`
+WHERE `personil`.`role_personil` = :personil.role_personil:
+AND pekerjaan.deleted_at IS NULL
+AND `pekerjaan`.`id_kategori_pekerjaan` = :pekerjaan.id_kategori_pekerjaan:
+AND `pekerjaan`.`id_status_pekerjaan` = :pekerjaan.id_status_pekerjaan:
+AND `pekerjaan`.`jenis_layanan` = :pekerjaan.jenis_layanan:
+AND `personil`.`id_user` = :personil.id_user:', [...], false)
+ 2 SYSTEMPATH\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Models\PekerjaanModel.php(47): CodeIgniter\Model->__call('get', [])
+ 4 APPPATH\Controllers\Pekerjaan.php(58): App\Models\PekerjaanModel->getFilteredPekerjaan('2', '2', 'produk', '2')
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pekerjaan->filter_pekerjaan()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pekerjaan))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\public\\index.php')
+ERROR - 2024-03-10 19:13:37 --> mysqli_sql_exception: Not unique table/alias: 'pekerjaan' in C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `pekerja...', 0)
+#1 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pekerja...')
+#2 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pekerja...')
+#3 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `pekerja...', Array, false)
+#4 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\app\Models\PekerjaanModel.php(47): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\app\Controllers\Pekerjaan.php(58): App\Models\PekerjaanModel->getFilteredPekerjaan('2', '2', 'produk', '2')
+#7 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\Pekerjaan->filter_pekerjaan()
+#8 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pekerjaan))
+#9 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\public\index.php(80): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\agung\\...')
+#12 {main}
+CRITICAL - 2024-03-10 19:13:37 --> Not unique table/alias: 'pekerjaan'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `pekerjaan`.*
+FROM (`pekerjaan`, `pekerjaan`)
+JOIN `personil` ON `personil`.`id_pekerjaan` = `pekerjaan`.`id_pekerjaan`
+WHERE `personil`.`role_personil` = :personil.role_personil:
+AND pekerjaan.deleted_at IS NULL
+AND `pekerjaan`.`id_kategori_pekerjaan` = :pekerjaan.id_kategori_pekerjaan:
+AND `pekerjaan`.`id_status_pekerjaan` = :pekerjaan.id_status_pekerjaan:
+AND `pekerjaan`.`jenis_layanan` = :pekerjaan.jenis_layanan:
+AND `personil`.`id_user` = :personil.id_user:', [...], false)
+ 2 SYSTEMPATH\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Models\PekerjaanModel.php(47): CodeIgniter\Model->__call('get', [])
+ 4 APPPATH\Controllers\Pekerjaan.php(58): App\Models\PekerjaanModel->getFilteredPekerjaan('2', '2', 'produk', '2')
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pekerjaan->filter_pekerjaan()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pekerjaan))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\public\\index.php')
+INFO - 2024-03-10 19:16:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 19:16:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 19:42:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 19:43:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 19:43:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 19:43:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 19:43:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 19:44:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 19:44:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-10 19:44:27 --> Undefined variable $usergroup
+in APPPATH\Views\bobot_kategoritask\daftar_bobot_kategoritask.php on line 22.
+ 1 APPPATH\Views\bobot_kategoritask\daftar_bobot_kategoritask.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usergroup', 'C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\app\\Views\\bobot_kategoritask\\daftar_bobot_kategoritask.php', 22)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\app\\Views\\bobot_kategoritask\\daftar_bobot_kategoritask.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('bobot_kategoritask/daftar_bobot_kategoritask', [], true)
+ 5 APPPATH\Controllers\Pekerjaan.php(73): view('bobot_kategoritask/daftar_bobot_kategoritask', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pekerjaan->filter_pekerjaan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pekerjaan))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\public\\index.php')
+INFO - 2024-03-10 19:45:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 19:45:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 19:45:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-10 19:45:45 --> Undefined variable $usergroup
+in APPPATH\Views\bobot_kategoritask\daftar_bobot_kategoritask.php on line 22.
+ 1 APPPATH\Views\bobot_kategoritask\daftar_bobot_kategoritask.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usergroup', 'C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\app\\Views\\bobot_kategoritask\\daftar_bobot_kategoritask.php', 22)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\app\\Views\\bobot_kategoritask\\daftar_bobot_kategoritask.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('bobot_kategoritask/daftar_bobot_kategoritask', [], true)
+ 5 APPPATH\Controllers\Pekerjaan.php(73): view('bobot_kategoritask/daftar_bobot_kategoritask', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pekerjaan->filter_pekerjaan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pekerjaan))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\public\\index.php')
+CRITICAL - 2024-03-10 19:47:12 --> Undefined variable $usergroup
+in APPPATH\Views\bobot_kategoritask\daftar_bobot_kategoritask.php on line 22.
+ 1 APPPATH\Views\bobot_kategoritask\daftar_bobot_kategoritask.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usergroup', 'C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\app\\Views\\bobot_kategoritask\\daftar_bobot_kategoritask.php', 22)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\app\\Views\\bobot_kategoritask\\daftar_bobot_kategoritask.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('bobot_kategoritask/daftar_bobot_kategoritask', [], true)
+ 5 APPPATH\Controllers\Pekerjaan.php(73): view('bobot_kategoritask/daftar_bobot_kategoritask', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pekerjaan->filter_pekerjaan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pekerjaan))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\public\\index.php')
+CRITICAL - 2024-03-10 19:47:13 --> Undefined variable $usergroup
+in APPPATH\Views\bobot_kategoritask\daftar_bobot_kategoritask.php on line 22.
+ 1 APPPATH\Views\bobot_kategoritask\daftar_bobot_kategoritask.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usergroup', 'C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\app\\Views\\bobot_kategoritask\\daftar_bobot_kategoritask.php', 22)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\app\\Views\\bobot_kategoritask\\daftar_bobot_kategoritask.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('bobot_kategoritask/daftar_bobot_kategoritask', [], true)
+ 5 APPPATH\Controllers\Pekerjaan.php(73): view('bobot_kategoritask/daftar_bobot_kategoritask', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pekerjaan->filter_pekerjaan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pekerjaan))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\public\\index.php')
+INFO - 2024-03-10 19:47:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 19:47:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 19:48:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 19:48:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 19:48:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 19:48:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 19:48:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 19:48:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 19:48:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 19:48:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 19:48:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 19:48:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 19:48:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-10 19:48:46 --> Undefined variable $usergroup
+in APPPATH\Views\bobot_kategoritask\daftar_bobot_kategoritask.php on line 22.
+ 1 APPPATH\Views\bobot_kategoritask\daftar_bobot_kategoritask.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usergroup', 'C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\app\\Views\\bobot_kategoritask\\daftar_bobot_kategoritask.php', 22)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\app\\Views\\bobot_kategoritask\\daftar_bobot_kategoritask.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('bobot_kategoritask/daftar_bobot_kategoritask', [], true)
+ 5 APPPATH\Controllers\Pekerjaan.php(73): view('bobot_kategoritask/daftar_bobot_kategoritask', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pekerjaan->filter_pekerjaan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pekerjaan))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\public\\index.php')
+INFO - 2024-03-10 19:48:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 19:48:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-10 19:48:58 --> Undefined variable $usergroup
+in APPPATH\Views\bobot_kategoritask\daftar_bobot_kategoritask.php on line 22.
+ 1 APPPATH\Views\bobot_kategoritask\daftar_bobot_kategoritask.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usergroup', 'C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\app\\Views\\bobot_kategoritask\\daftar_bobot_kategoritask.php', 22)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\app\\Views\\bobot_kategoritask\\daftar_bobot_kategoritask.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('bobot_kategoritask/daftar_bobot_kategoritask', [], true)
+ 5 APPPATH\Controllers\Pekerjaan.php(73): view('bobot_kategoritask/daftar_bobot_kategoritask', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pekerjaan->filter_pekerjaan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pekerjaan))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\public\\index.php')
+INFO - 2024-03-10 19:49:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-10 19:49:03 --> Undefined variable $usergroup
+in APPPATH\Views\bobot_kategoritask\daftar_bobot_kategoritask.php on line 22.
+ 1 APPPATH\Views\bobot_kategoritask\daftar_bobot_kategoritask.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usergroup', 'C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\app\\Views\\bobot_kategoritask\\daftar_bobot_kategoritask.php', 22)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\app\\Views\\bobot_kategoritask\\daftar_bobot_kategoritask.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('bobot_kategoritask/daftar_bobot_kategoritask', [], true)
+ 5 APPPATH\Controllers\Pekerjaan.php(73): view('bobot_kategoritask/daftar_bobot_kategoritask', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pekerjaan->filter_pekerjaan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pekerjaan))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\public\\index.php')
+INFO - 2024-03-10 19:49:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-10 19:50:01 --> Undefined variable $usergroup
+in APPPATH\Views\bobot_kategoritask\daftar_bobot_kategoritask.php on line 22.
+ 1 APPPATH\Views\bobot_kategoritask\daftar_bobot_kategoritask.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usergroup', 'C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\app\\Views\\bobot_kategoritask\\daftar_bobot_kategoritask.php', 22)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\app\\Views\\bobot_kategoritask\\daftar_bobot_kategoritask.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('bobot_kategoritask/daftar_bobot_kategoritask', [], true)
+ 5 APPPATH\Controllers\Pekerjaan.php(73): view('bobot_kategoritask/daftar_bobot_kategoritask', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pekerjaan->filter_pekerjaan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pekerjaan))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\public\\index.php')
+CRITICAL - 2024-03-10 19:50:36 --> Undefined variable $usergroup
+in APPPATH\Views\bobot_kategoritask\daftar_bobot_kategoritask.php on line 22.
+ 1 APPPATH\Views\bobot_kategoritask\daftar_bobot_kategoritask.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usergroup', 'C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\app\\Views\\bobot_kategoritask\\daftar_bobot_kategoritask.php', 22)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\app\\Views\\bobot_kategoritask\\daftar_bobot_kategoritask.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('bobot_kategoritask/daftar_bobot_kategoritask', [], true)
+ 5 APPPATH\Controllers\Pekerjaan.php(73): view('bobot_kategoritask/daftar_bobot_kategoritask', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pekerjaan->filter_pekerjaan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pekerjaan))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\public\\index.php')
+INFO - 2024-03-10 19:50:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 19:50:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 19:50:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 19:50:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 19:50:47 --> CSRF token verified.
+INFO - 2024-03-10 19:50:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 19:50:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 19:50:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-10 19:50:51 --> Undefined variable $usergroup
+in APPPATH\Views\bobot_kategoritask\daftar_bobot_kategoritask.php on line 22.
+ 1 APPPATH\Views\bobot_kategoritask\daftar_bobot_kategoritask.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usergroup', 'C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\app\\Views\\bobot_kategoritask\\daftar_bobot_kategoritask.php', 22)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\app\\Views\\bobot_kategoritask\\daftar_bobot_kategoritask.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('bobot_kategoritask/daftar_bobot_kategoritask', [], true)
+ 5 APPPATH\Controllers\Pekerjaan.php(73): view('bobot_kategoritask/daftar_bobot_kategoritask', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pekerjaan->filter_pekerjaan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pekerjaan))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\public\\index.php')
+INFO - 2024-03-10 19:51:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 19:51:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-10 19:51:51 --> Undefined variable $usergroup
+in APPPATH\Views\bobot_kategoritask\daftar_bobot_kategoritask.php on line 22.
+ 1 APPPATH\Views\bobot_kategoritask\daftar_bobot_kategoritask.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usergroup', 'C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\app\\Views\\bobot_kategoritask\\daftar_bobot_kategoritask.php', 22)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\app\\Views\\bobot_kategoritask\\daftar_bobot_kategoritask.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('bobot_kategoritask/daftar_bobot_kategoritask', [], true)
+ 5 APPPATH\Controllers\BobotKategoriTask.php(52): view('bobot_kategoritask/daftar_bobot_kategoritask', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BobotKategoriTask->filter_bobot_kategori_task()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BobotKategoriTask))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\public\\index.php')
+INFO - 2024-03-10 19:52:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 19:52:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-10 19:52:19 --> Undefined variable $usergroup
+in APPPATH\Views\bobot_kategoritask\daftar_bobot_kategoritask.php on line 22.
+ 1 APPPATH\Views\bobot_kategoritask\daftar_bobot_kategoritask.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usergroup', 'C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\app\\Views\\bobot_kategoritask\\daftar_bobot_kategoritask.php', 22)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\app\\Views\\bobot_kategoritask\\daftar_bobot_kategoritask.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('bobot_kategoritask/daftar_bobot_kategoritask', [], true)
+ 5 APPPATH\Controllers\Pekerjaan.php(73): view('bobot_kategoritask/daftar_bobot_kategoritask', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pekerjaan->filter_pekerjaan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pekerjaan))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\public\\index.php')
+INFO - 2024-03-10 19:52:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-10 19:54:36 --> Undefined variable $usergroup
+in APPPATH\Views\bobot_kategoritask\daftar_bobot_kategoritask.php on line 22.
+ 1 APPPATH\Views\bobot_kategoritask\daftar_bobot_kategoritask.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usergroup', 'C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\app\\Views\\bobot_kategoritask\\daftar_bobot_kategoritask.php', 22)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\app\\Views\\bobot_kategoritask\\daftar_bobot_kategoritask.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('bobot_kategoritask/daftar_bobot_kategoritask', [], true)
+ 5 APPPATH\Controllers\Pekerjaan.php(73): view('bobot_kategoritask/daftar_bobot_kategoritask', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pekerjaan->filter_pekerjaan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pekerjaan))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\public\\index.php')
+INFO - 2024-03-10 19:54:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 19:55:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 19:55:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 19:56:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 19:56:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-10 19:56:37 --> Cannot use object of type stdClass as array
+in APPPATH\Views\pekerjaan\daftar_pekerjaan.php on line 115.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('pekerjaan/daftar_pekerjaan', [], true)
+ 4 APPPATH\Controllers\Pekerjaan.php(73): view('pekerjaan/daftar_pekerjaan', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pekerjaan->filter_pekerjaan()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pekerjaan))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\public\\index.php')
+INFO - 2024-03-10 19:57:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 19:58:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 19:58:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 19:58:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 19:58:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 19:58:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 19:58:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 19:58:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 19:58:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 19:58:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 19:59:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 19:59:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 19:59:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 19:59:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 19:59:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 19:59:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 19:59:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 19:59:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 19:59:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-10 20:02:29 --> Undefined variable $filter_pekerjaan_pm
+in APPPATH\Views\pekerjaan\daftar_pekerjaan.php on line 23.
+ 1 APPPATH\Views\pekerjaan\daftar_pekerjaan.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $filter_pekerjaan_pm', 'C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\app\\Views\\pekerjaan\\daftar_pekerjaan.php', 23)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\app\\Views\\pekerjaan\\daftar_pekerjaan.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('pekerjaan/daftar_pekerjaan', [], true)
+ 5 APPPATH\Controllers\Pekerjaan.php(48): view('pekerjaan/daftar_pekerjaan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pekerjaan->daftar_pekerjaan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pekerjaan))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\public\\index.php')
+INFO - 2024-03-10 20:03:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 20:03:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 20:04:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 20:04:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 20:04:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 20:04:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 20:04:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 20:04:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 20:04:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 20:05:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 20:05:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 20:05:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 20:05:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 20:05:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 20:05:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 20:05:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 20:05:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 20:05:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 20:05:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 20:05:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 20:05:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 20:05:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 20:05:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 20:05:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 20:05:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 20:05:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 20:06:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 20:06:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 20:06:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 20:06:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 20:06:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 20:06:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 20:06:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 20:07:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 20:07:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 20:07:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 20:07:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 20:11:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 20:11:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 20:11:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 20:11:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 20:11:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 20:11:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 20:11:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 20:11:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 20:11:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 20:12:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 20:12:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 20:12:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 20:12:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 20:12:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 20:14:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 20:14:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 20:14:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 20:14:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 20:14:44 --> CSRF token verified.
+INFO - 2024-03-10 20:14:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 20:14:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 20:14:52 --> CSRF token verified.
+INFO - 2024-03-10 20:14:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 20:14:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 20:15:02 --> CSRF token verified.
+INFO - 2024-03-10 20:15:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 20:15:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 20:15:08 --> CSRF token verified.
+INFO - 2024-03-10 20:15:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 20:15:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 20:15:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 20:15:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-10 20:15:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

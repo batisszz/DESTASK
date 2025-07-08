@@ -1,0 +1,283 @@
+INFO - 2024-01-31 09:22:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 09:22:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 09:22:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 09:23:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 09:23:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 09:23:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 09:24:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 09:24:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 09:24:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 09:25:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 09:25:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 09:30:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 09:30:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 09:33:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 09:33:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 09:33:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 09:33:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 09:33:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 09:34:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 09:34:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 09:34:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 09:35:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 09:35:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 09:35:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 09:35:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 09:35:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 09:43:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-31 09:49:31 --> Call to undefined method App\Models\StatusPekerjaanModel::getUserGroup
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\StatusPekerjaan.php(21): CodeIgniter\Model->__call('getUserGroup', [])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\StatusPekerjaan->daftar_status_pekerjaan()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StatusPekerjaan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\public\\index.php')
+CRITICAL - 2024-01-31 09:50:59 --> Call to undefined method App\Models\StatusPekerjaanModel::getUserGroup
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\StatusPekerjaan.php(21): CodeIgniter\Model->__call('getUserGroup', [])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\StatusPekerjaan->daftar_status_pekerjaan()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StatusPekerjaan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\public\\index.php')
+CRITICAL - 2024-01-31 09:51:01 --> Call to undefined method App\Models\StatusPekerjaanModel::getUserGroup
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\StatusPekerjaan.php(21): CodeIgniter\Model->__call('getUserGroup', [])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\StatusPekerjaan->daftar_status_pekerjaan()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StatusPekerjaan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\public\\index.php')
+CRITICAL - 2024-01-31 09:51:02 --> Call to undefined method App\Models\StatusPekerjaanModel::getUserGroup
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\StatusPekerjaan.php(21): CodeIgniter\Model->__call('getUserGroup', [])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\StatusPekerjaan->daftar_status_pekerjaan()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StatusPekerjaan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\public\\index.php')
+CRITICAL - 2024-01-31 09:51:17 --> Invalid file: "/modal_add_statuspekerjaan.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/modal_add_statuspekerjaan.php')
+ 2 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('/modal_add_statuspekerjaan', null, true)
+ 3 APPPATH\Views\status_pekerjaan\daftar_status_pekerjaan.php(93): CodeIgniter\View\View->include('/modal_add_statuspekerjaan')
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\app\\Views\\status_pekerjaan\\daftar_status_pekerjaan.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('status_pekerjaan/daftar_status_pekerjaan', [], true)
+ 7 APPPATH\Controllers\StatusPekerjaan.php(25): view('status_pekerjaan/daftar_status_pekerjaan', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\StatusPekerjaan->daftar_status_pekerjaan()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StatusPekerjaan))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\public\\index.php')
+INFO - 2024-01-31 09:51:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 09:52:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 09:52:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 09:52:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 09:52:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 09:52:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 09:52:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 09:52:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 09:53:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 09:53:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 09:54:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-31 10:52:37 --> mysqli_sql_exception: Unknown column 'deskripsi_status_pekerjaan' in 'field list' in C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1800): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', NULL, false)
+#4 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2191): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\app\Database\Seeds\StatusPekerjaanSeeder.php(51): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Database\Seeder.php(146): App\Database\Seeds\StatusPekerjaanSeeder->run()
+#7 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#8 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#9 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#10 C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+INFO - 2024-01-31 10:59:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 11:00:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 11:06:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 11:06:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 13:42:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 13:42:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 13:42:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-31 13:42:53 --> file_get_contents(https://www.google.com/recaptcha/api/siteverify?secret=6Lek8VwpAAAAAJ6hn3F0BYFMy4u4pAr2VPd2MPYS&amp;response=03AFcWeA5qRopRzITIQ6HssJQzfsID8h0gHJ-jAsTM5L0l648o8NmK1BCdSY1wqZnwg4Uu_EP2NVXbC8cVN-Ub9ZHmk6Uh0imJfpSV82birL0BJC3Pvce0tTKguif4WECjQMoSNtgSs8OdRLDFWjc6cSXhX4UojXSB6Kn0wWgLNapB4YZH0_SV3FyTvgqj1CwIPPBX3ZbMNegAX0CqshwPS5pz5RQBnhZp6QI9UGz-oSDVjqV-DYWHdotPm_vGFRJgs1pjbIAJrD6JxbFenQL5845hAZQi7ZUt_4TIBdq0qoh1fBpLlcR-TQ7td1fg_5h98xM0AQuBsCyjxoxmYwz1q5f2UweaiwHEP2v-tleDnQSCJMLXFOc3T57mY1dfFS7Y4uOCdF_hQ04f1pHVB-r52MB-o2Ft0hrpaoq--07XG44G399pqeDQJx44etYugEz7cTXXOVO_kiQKrizxZkXZaCG28NalzjgdhtKFrsiSTk33KTI2D3WgX44onHmcFSkoZO-ofUs2PKDKVWenEhcW6cMdpxEPn-1DQYBL2wwyj_mnbHi3HdwvAvzzazGfoBBAdm24OorpwR1-_7xaJmddN24iteo63P-JDVx3H8lWoqFQqSjKNcU_8prldr795aCKVx_Gz-DzryE7ALQ4-4epu-6noE5OZaIQT8Ex4kaoCynXsj6uVpnNnf75AjpjfrNPF1PxbzoE9rCLxyuXhOJS14YyrUMgNNj5jvEL_ZpFu3uFv-9ko760B5oQ3tK4N4igrsSbwmFTejb7KyEQ-NRpTm9Zd2lkr8HEYHtFYjv0oqO0E5nx_u9HVtOBt5zK5TyXj2VTOjSc58M2HEcqujRBWG02ohFqDLl_mDdKObjf39wGlJF0YzJSwPGpvbjMHV254V_m1MwKUo_Sl7Fqqt6fz-8q60dgjVCftOHdwX0AEoiGfRXNA25uXifM7QtM2_5vz9nsufR7BMXJp3ArN8eKgJ_3aGdpR0PT-BlWxb6KeIyj8IjEyoETlI7g5LGwln6FEBmBdLILw9zeWibgCJcHlRlMIAdcDLiPdy8FUFMGQWSYdiCndTlyAPJfSRq7fA_AQk_u_oKEEhLaV8o4mcVLCnlVHlWcx5de7CJtkJb1-BLwWnxHL58W8iB62y78JyFuZdpDKqtVtOHWQbWuLwftjFtAeisKRnOqFYV9W36GTt2e3lYW47n57_0NjzAl2k0J-zIEUKnO7xaqaRL8LZkLIYuh1R7r4ELUTaj_8bqADEYXI7ZFzhDeIVcPF92Y-tHpYiz7aDANN-o6q5Z8rsN4-PddWcqWgL1lEmg2jpmsjBNZxC3zR8WQgl44lf6nxqAxMGe9x2ZNUGkpGk76-XJPjyhdqIRHtq3ruNFD3RFGaw7HBjNzCgwjKj_zLqT518haryNZ0iIH9eJeXGagQaZECEu1E89Op9qLA1V8BpInpzoamdvh5J8440EVUuQyo-4JavozOvlETJoNa-i9mqdKs9sYf166RWvd-v8MdmBU9YmrX1w5rcbAAAYlRlGTCVwMICUVygWhv7BNhLQJvyP8uhkDwMb4FX6IBYcn1EdTyEG1eqrh1Hqiw8Ueb9E5wqQPxF2_9MUU56wn): Failed to open stream: HTTP request failed!
+in APPPATH\Controllers\Autentikasi.php on line 28.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(https://www.google.com/recaptcha/api/siteverify?secret=6Lek8VwpAAAAAJ6hn3F0BYFMy4u4pAr2VPd2MPYS&amp;response=03AFcWeA5qRopRzITIQ6HssJQzfsID8h0gHJ-jAsTM5L0l648o8NmK1BCdSY1wqZnwg4Uu_EP2NVXbC8cVN-Ub9ZHmk6Uh0imJfpSV82birL0BJC3Pvce0tTKguif4WECjQMoSNtgSs8OdRLDFWjc6cSXhX4UojXSB6Kn0wWgLNapB4YZH0_SV3FyTvgqj1CwIPPBX3ZbMNegAX0CqshwPS5pz5RQBnhZp6QI9UGz-oSDVjqV-DYWHdotPm_vGFRJgs1pjbIAJrD6JxbFenQL5845hAZQi7ZUt_4TIBdq0qoh1fBpLlcR-TQ7td1fg_5h98xM0AQuBsCyjxoxmYwz1q5f2UweaiwHEP2v-tleDnQSCJMLXFOc3T57mY1dfFS7Y4uOCdF_hQ04f1pHVB-r52MB-o2Ft0hrpaoq--07XG44G399pqeDQJx44etYugEz7cTXXOVO_kiQKrizxZkXZaCG28NalzjgdhtKFrsiSTk33KTI2D3WgX44onHmcFSkoZO-ofUs2PKDKVWenEhcW6cMdpxEPn-1DQYBL2wwyj_mnbHi3HdwvAvzzazGfoBBAdm24OorpwR1-_7xaJmddN24iteo63P-JDVx3H8lWoqFQqSjKNcU_8prldr795aCKVx_Gz-DzryE7ALQ4-4epu-6noE5OZaIQT8Ex4kaoCynXsj6uVpnNnf75AjpjfrNPF1PxbzoE9rCLxyuXhOJS14YyrUMgNNj5jvEL_ZpFu3uFv-9ko760B5oQ3tK4N4igrsSbwmFTejb7KyEQ-NRpTm9Zd2lkr8HEYHtFYjv0oqO0E5nx_u9HVtOBt5zK5TyXj2VTOjSc58M2HEcqujRBWG02ohFqDLl_mDdKObjf39wGlJF0YzJSwPGpvbjMHV254V_m1MwKUo_Sl7Fqqt6fz-8q60dgjVCftOHdwX0AEoiGfRXNA25uXifM7QtM2_5vz9nsufR7BMXJp3ArN8eKgJ_3aGdpR0PT-BlWxb6KeIyj8IjEyoETlI7g5LGwln6FEBmBdLILw9zeWibgCJcHlRlMIAdcDLiPdy8FUFMGQWSYdiCndTlyAPJfSRq7fA_AQk_u_oKEEhLaV8o4mcVLCnlVHlWcx5de7CJtkJb1-BLwWnxHL58W8iB62y78JyFuZdpDKqtVtOHWQbWuLwftjFtAeisKRnOqFYV9W36GTt2e3lYW47n57_0NjzAl2k0J-zIEUKnO7xaqaRL8LZkLIYuh1R7r4ELUTaj_8bqADEYXI7ZFzhDeIVcPF92Y-tHpYiz7aDANN-o6q5Z8rsN4-PddWcqWgL1lEmg2jpmsjBNZxC3zR8WQgl44lf6nxqAxMGe9x2ZNUGkpGk76-XJPjyhdqIRHtq3ruNFD3RFGaw7HBjNzCgwjKj_zLqT518haryNZ0iIH9eJeXGagQaZECEu1E89Op9qLA1V8BpInpzoamdvh5J8440EVUuQyo-4JavozOvlETJoNa-i9mqdKs9sYf166RWvd-v8MdmBU9YmrX1w5rcbAAAYlRlGTCVwMICUVygWhv7BNhLQJvyP8uhkDwMb4FX6IBYcn1EdTyEG1eqrh1Hqiw8Ueb9E5wqQPxF2_9MUU56wn): Failed to open stream: HTTP request failed!', 'C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\app\\Controllers\\Autentikasi.php', 28)
+ 2 APPPATH\Controllers\Autentikasi.php(28): file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret=6Lek8VwpAAAAAJ6hn3F0BYFMy4u4pAr2VPd2MPYS&response=03AFcWeA5qRopRzITIQ6HssJQzfsID8h0gHJ-jAsTM5L0l648o8NmK1BCdSY1wqZnwg4Uu_EP2NVXbC8cVN-Ub9ZHmk6Uh0imJfpSV82birL0BJC3Pvce0tTKguif4WECjQMoSNtgSs8OdRLDFWjc6cSXhX4UojXSB6Kn0wWgLNapB4YZH0_SV3FyTvgqj1CwIPPBX3ZbMNegAX0CqshwPS5pz5RQBnhZp6QI9UGz-oSDVjqV-DYWHdotPm_vGFRJgs1pjbIAJrD6JxbFenQL5845hAZQi7ZUt_4TIBdq0qoh1fBpLlcR-TQ7td1fg_5h98xM0AQuBsCyjxoxmYwz1q5f2UweaiwHEP2v-tleDnQSCJMLXFOc3T57mY1dfFS7Y4uOCdF_hQ04f1pHVB-r52MB-o2Ft0hrpaoq--07XG44G399pqeDQJx44etYugEz7cTXXOVO_kiQKrizxZkXZaCG28NalzjgdhtKFrsiSTk33KTI2D3WgX44onHmcFSkoZO-ofUs2PKDKVWenEhcW6cMdpxEPn-1DQYBL2wwyj_mnbHi3HdwvAvzzazGfoBBAdm24OorpwR1-_7xaJmddN24iteo63P-JDVx3H8lWoqFQqSjKNcU_8prldr795aCKVx_Gz-DzryE7ALQ4-4epu-6noE5OZaIQT8Ex4kaoCynXsj6uVpnNnf75AjpjfrNPF1PxbzoE9rCLxyuXhOJS14YyrUMgNNj5jvEL_ZpFu3uFv-9ko760B5oQ3tK4N4igrsSbwmFTejb7KyEQ-NRpTm9Zd2lkr8HEYHtFYjv0oqO0E5nx_u9HVtOBt5zK5TyXj2VTOjSc58M2HEcqujRBWG02ohFqDLl_mDdKObjf39wGlJF0YzJSwPGpvbjMHV254V_m1MwKUo_Sl7Fqqt6fz-8q60dgjVCftOHdwX0AEoiGfRXNA25uXifM7QtM2_5vz9nsufR7BMXJp3ArN8eKgJ_3aGdpR0PT-BlWxb6KeIyj8IjEyoETlI7g5LGwln6FEBmBdLILw9zeWibgCJcHlRlMIAdcDLiPdy8FUFMGQWSYdiCndTlyAPJfSRq7fA_AQk_u_oKEEhLaV8o4mcVLCnlVHlWcx5de7CJtkJb1-BLwWnxHL58W8iB62y78JyFuZdpDKqtVtOHWQbWuLwftjFtAeisKRnOqFYV9W36GTt2e3lYW47n57_0NjzAl2k0J-zIEUKnO7xaqaRL8LZkLIYuh1R7r4ELUTaj_8bqADEYXI7ZFzhDeIVcPF92Y-tHpYiz7aDANN-o6q5Z8rsN4-PddWcqWgL1lEmg2jpmsjBNZxC3zR8WQgl44lf6nxqAxMGe9x2ZNUGkpGk76-XJPjyhdqIRHtq3ruNFD3RFGaw7HBjNzCgwjKj_zLqT518haryNZ0iIH9eJeXGagQaZECEu1E89Op9qLA1V8BpInpzoamdvh5J8440EVUuQyo-4JavozOvlETJoNa-i9mqdKs9sYf166RWvd-v8MdmBU9YmrX1w5rcbAAAYlRlGTCVwMICUVygWhv7BNhLQJvyP8uhkDwMb4FX6IBYcn1EdTyEG1eqrh1Hqiw8Ueb9E5wqQPxF2_9MUU56wn')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Autentikasi->login()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Autentikasi))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\public\\index.php')
+INFO - 2024-01-31 13:43:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 13:43:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 13:43:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 13:43:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 13:43:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 13:43:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 13:43:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 13:43:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 13:43:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 13:43:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 14:37:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 14:39:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 14:39:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 14:40:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 14:40:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 14:40:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 14:40:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 14:40:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 14:40:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 14:40:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 14:40:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 14:40:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 14:40:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 14:50:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 14:50:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 14:50:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 14:51:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 14:51:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 14:51:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 14:51:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 14:51:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 14:51:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 14:53:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-31 14:53:10 --> Undefined array key "nama_usergroup"
+in APPPATH\Controllers\Usergroup.php on line 106.
+ 1 APPPATH\Controllers\Usergroup.php(106): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_usergroup"', 'C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\app\\Controllers\\Usergroup.php', 106)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Usergroup->update_usergroup()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usergroup))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\public\\index.php')
+CRITICAL - 2024-01-31 14:53:13 --> Undefined array key "nama_usergroup"
+in APPPATH\Controllers\Usergroup.php on line 106.
+ 1 APPPATH\Controllers\Usergroup.php(106): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_usergroup"', 'C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\app\\Controllers\\Usergroup.php', 106)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Usergroup->update_usergroup()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usergroup))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\public\\index.php')
+CRITICAL - 2024-01-31 14:53:14 --> Undefined array key "nama_usergroup"
+in APPPATH\Controllers\Usergroup.php on line 106.
+ 1 APPPATH\Controllers\Usergroup.php(106): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_usergroup"', 'C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\app\\Controllers\\Usergroup.php', 106)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Usergroup->update_usergroup()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usergroup))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\public\\index.php')
+INFO - 2024-01-31 14:54:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-31 14:54:07 --> Undefined array key "nama_usergroup"
+in APPPATH\Controllers\Usergroup.php on line 106.
+ 1 APPPATH\Controllers\Usergroup.php(106): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_usergroup"', 'C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\app\\Controllers\\Usergroup.php', 106)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Usergroup->update_usergroup()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usergroup))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\public\\index.php')
+INFO - 2024-01-31 14:59:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 14:59:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 14:59:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 14:59:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 14:59:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 14:59:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 14:59:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 15:00:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 15:02:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 15:02:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 15:02:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 15:02:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 15:02:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 15:04:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 15:04:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 15:04:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 15:05:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 15:05:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 15:05:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 15:05:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 15:07:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 15:07:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 15:07:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 15:07:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 15:07:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 15:09:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 15:09:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 15:10:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 15:10:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 15:10:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 15:11:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 15:11:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 15:11:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 15:13:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 15:13:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 15:17:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 15:17:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 15:17:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 15:17:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 15:17:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 15:17:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-31 15:17:28 --> Too few arguments to function App\Controllers\StatusPekerjaan::edit_status_pekerjaan(), 0 passed in C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\CodeIgniter.php on line 942 and exactly 1 expected
+in APPPATH\Controllers\StatusPekerjaan.php on line 74.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\StatusPekerjaan->edit_status_pekerjaan()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StatusPekerjaan))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\public\\index.php')
+INFO - 2024-01-31 15:17:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 15:17:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 15:17:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-31 15:17:42 --> Too few arguments to function App\Controllers\StatusPekerjaan::edit_status_pekerjaan(), 0 passed in C:\Users\agung\Documents\MATERI SEMESTER 7\TugasAkhir\KodeProgramDestask\Destask\vendor\codeigniter4\framework\system\CodeIgniter.php on line 942 and exactly 1 expected
+in APPPATH\Controllers\StatusPekerjaan.php on line 74.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\StatusPekerjaan->edit_status_pekerjaan()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StatusPekerjaan))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\public\\index.php')
+INFO - 2024-01-31 15:18:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 15:18:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 15:18:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 15:54:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 15:54:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 15:54:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 15:54:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 15:55:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 15:55:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 15:55:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 15:55:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 15:56:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 15:56:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 15:56:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 15:56:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 15:56:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 15:57:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 15:57:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 15:57:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 15:57:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 15:57:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 15:58:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 15:58:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 15:58:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 15:58:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 15:58:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 15:58:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 15:58:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 15:58:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 16:05:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 16:06:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 16:06:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 16:06:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 16:06:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 16:06:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 16:25:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 16:25:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 16:25:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 16:25:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 16:26:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 16:26:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 16:26:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 16:26:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 16:26:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 16:29:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

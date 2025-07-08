@@ -1,0 +1,192 @@
+.judul_card{
+   font-size: 15px;
+   font-weight: 500;
+   color: grey;
+   font-family: "Poppins", sans-serif;
+}
+
+.body_card{
+   padding: 15px 10px 15px 10px;
+}
+
+.level_user_card .card-icon {
+   color: #ff771d;
+   background: #ffecdf;
+ }
+
+ .pekerjaan_card .card-icon {
+   color: #4154f1;
+   background: #f6f6fe;
+ }
+
+ .target_tahun_card .card-icon{
+   color: #2eca6a;
+   background: #e0f8e9;
+ }
+
+ .task_selesai_card .card-icon{
+   color: #ca2eb8;
+   background: #fbddf0;
+ }
+
+ .card_title_firter_poin_harian{
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+ }
+
+ .table-bordered {
+  border: 1px solid #ddd;
+}
+
+.table-bordered th {
+  border: 1px solid #ddd;
+  background-color: #0d6efd;
+  color: white;
+}
+
+.table-bordered td{
+  border: 1px solid #ddd;
+}
+
+.gambar{
+  width: 50px;
+  height: 65px;
+}
+
+.centered_gambar {
+  text-align: center;
+}
+
+.centered_gambar img {
+  display: block;
+  margin: 0 auto;
+}
+
+.btn-group {
+  display: flex;
+  gap: 5px; /* Jarak antara tombol */
+}
+
+.card-personil {
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
+}
+
+/*Dashboard*/
+.kanban-column {
+  flex: 1;
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  border-radius: 0 0 5px 5px; /* Radius sudut hanya di bagian bawah */
+  padding-left: 15px;
+  padding-bottom: 15px;
+  padding-top:15px;
+  padding-right: 15px;
+  
+  overflow-y: auto;
+  max-height: 600px;
+}
+
+.kanban-column-header {
+  flex: 1;
+  background-color: #ffffff;
+  color: white;
+  border: 1px solid #dee2e6;
+  border-radius: 5px 5px 0 0; /* Radius sudut hanya di bagian atas */
+  padding-left: 15px;
+  padding-bottom: 15px;
+  padding-top:15px;
+  padding-right: 15px;
+  overflow-y: auto;
+  max-height: 600px;
+}
+
+.kanban-card {
+  background-color: #ffffff;
+  border: 1px solid #c6c6c6;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.kanban-card:hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.kanban-droppable {
+  min-height: 100px;
+}
+
+
+.legend {
+  display: flex;
+  flex-wrap: wrap; /* Menambahkan flex-wrap untuk menjaga item tetap sebaris */
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin-right: 20px; /* Mengatur jarak antar item */
+  margin-bottom: 10px; /* Mengatur jarak antar baris */
+}
+
+.bullet {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.green {
+  background-color: green;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.greenyellow{
+  background-color: greenyellow;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.red {
+  background-color: rgb(212, 2, 2);
+}
+
+/* untuk file preview ubmit task */
+.preview-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto; /* Setel ketinggian ke otomatis */
+}
+
+.preview-container iframe,
+.preview-container img,
+.preview-container p {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* Atur tinggi menjadi 0 jika tidak ada konten */
+.preview-container:empty {
+  height: 0;
+}
+
+
+
+
+
+
+
+
+
+ 

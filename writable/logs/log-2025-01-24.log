@@ -1,0 +1,15 @@
+CRITICAL - 2025-01-24 14:46:30 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/Personil.php on line 92.
+ 1 APPPATH/Controllers/Personil.php(92): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Personil->update_personil()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-24 15:53:48 --> ErrorException: unlink(assets/file_pengguna/foto_user/): Is a directory
+in APPPATH/Controllers/Profile.php on line 167.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Profile.php(167): unlink()
+ 3 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Profile->update_profile()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()

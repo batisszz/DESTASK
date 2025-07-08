@@ -1,0 +1,10 @@
+CRITICAL - 2024-01-14 12:06:54 --> Invalid file: "daftar_bobot_kategoritask.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('daftar_bobot_kategoritask.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('daftar_bobot_kategoritask', [], true)
+ 3 APPPATH\Controllers\Home.php(9): view('daftar_bobot_kategoritask')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\agung\\Documents\\MATERI SEMESTER 7\\TugasAkhir\\KodeProgramDestask\\Destask\\public\\index.php')

@@ -1,0 +1,48 @@
+CRITICAL - 2025-01-17 16:21:25 --> ErrorException: unlink(assets/file_pengguna/foto_user/): Is a directory
+in APPPATH/Controllers/Profile.php on line 167.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Profile.php(167): unlink()
+ 3 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Profile->update_profile()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-17 16:37:07 --> ErrorException: unlink(assets/file_pengguna/foto_user/): Is a directory
+in APPPATH/Controllers/Profile.php on line 167.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Profile.php(167): unlink()
+ 3 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Profile->update_profile()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-17 16:37:21 --> ErrorException: unlink(assets/file_pengguna/foto_user/): Is a directory
+in APPPATH/Controllers/Profile.php on line 167.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Profile.php(167): unlink()
+ 3 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Profile->update_profile()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-17 17:09:48 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 300.
+ 1 SYSTEMPATH/Security/Security.php(300): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(56): CodeIgniter\Security\Security->verify()
+ 3 SYSTEMPATH/Filters/Filters.php(184): CodeIgniter\Filters\CSRF->before()
+ 4 SYSTEMPATH/CodeIgniter.php(474): CodeIgniter\Filters\Filters->run()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-17 17:09:52 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 300.
+ 1 SYSTEMPATH/Security/Security.php(300): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(56): CodeIgniter\Security\Security->verify()
+ 3 SYSTEMPATH/Filters/Filters.php(184): CodeIgniter\Filters\CSRF->before()
+ 4 SYSTEMPATH/CodeIgniter.php(474): CodeIgniter\Filters\Filters->run()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-17 17:09:55 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 300.
+ 1 SYSTEMPATH/Security/Security.php(300): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(56): CodeIgniter\Security\Security->verify()
+ 3 SYSTEMPATH/Filters/Filters.php(184): CodeIgniter\Filters\CSRF->before()
+ 4 SYSTEMPATH/CodeIgniter.php(474): CodeIgniter\Filters\Filters->run()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
