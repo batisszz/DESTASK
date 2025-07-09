@@ -147,7 +147,9 @@ $routes->get('/kinerja/detail_kinerja_karyawan/(:num)', 'Kinerja::detail_kinerja
 $routes->delete('/kinerja/delete_kinerja_karyawan/(:num)/(:num)', 'Kinerja::delete_kinerja_karyawan/$1/$2'); //Akses beres udah dibikin filter/middleware KhususHOD
 
 //Routes Monitoring Task
-$routes->get('/monitoring_task/daftar_monitoring_karyawan_onprogress', 'MonitoringTask::daftar_monitoring_karyawan_onprogress'); //Akses beres udah dibikin filter/middleware KhususHOD
+$routes->get('/api/monitoring_task', 'Api\MonitoringTask::index');
+$routes->get('/monitoring_task/daftar_task_karyawan', 'MonitoringTask::daftar_task_karyawan'); //Akses beres tidak perlu diberi filter/middleware, hal ini karena semua orang bisa lihat daftar task karyawan tergantung session yang login
+$routes->get('/monitoring_task/detail_task_karyawan/(:num)', 'MonitoringTask::detail_task_karyawan/$1'); //Akses beres tidak perlu diberi filter/middleware, hal ini karena semua orang bisa lihat detail task karyawan tergantung session
 
 //Routes Realisasi VS Target
 //Untuk menampilkan halaman realisasi vs target

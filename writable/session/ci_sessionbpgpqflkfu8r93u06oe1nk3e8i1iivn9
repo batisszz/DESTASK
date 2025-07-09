@@ -1,9 +1,0 @@
-__ci_last_regenerate|i:1738020114;_ci_previous_url|s:71:"http://157.119.220.52/Destask/public/index.php/task/verifikasi_task/321";id_user|s:1:"1";id_usergroup|s:1:"5";username|s:23:"ade.kurniawan@ptdes.net";email|s:23:"ade.kurniawan@ptdes.net";user_level|s:3:"hod";nama|s:13:"Ade Kurniawan";foto_profil|s:35:"1736749526_82bb616eefa51a2e905a.jpg";error|s:234:"<!-- DEBUG-VIEW START 1 SYSTEMPATH/Validation/Views/list.php -->
-	<div class="errors" role="alert">
-		<ul>
-					<li>Alasan penolakan harus diisi</li>
-				</ul>
-	</div>
-
-<!-- DEBUG-VIEW ENDED 1 SYSTEMPATH/Validation/Views/list.php -->
-";__ci_vars|a:4:{s:5:"error";s:3:"old";s:13:"_ci_old_input";s:3:"old";s:21:"_ci_validation_errors";s:3:"old";s:5:"modal";s:3:"old";}_ci_old_input|a:2:{s:3:"get";a:0:{}s:4:"post";a:2:{s:13:"id_task_tolak";s:3:"321";s:17:"alasan_verifikasi";s:0:"";}}_ci_validation_errors|a:1:{s:17:"alasan_verifikasi";s:28:"Alasan penolakan harus diisi";}modal|s:30:"modalalasan_verifikasi_ditolak";

@@ -29,7 +29,7 @@
          </a>
       </li>
       <li class="nav-item">
-         <a class="nav-link <?= $url1 == '/monitoring_task/daftar_monitoring_karyawan_onprogress' ? '' : 'collapsed' ?>" href="<?=site_url()?>/monitoring_task/daftar_monitoring_karyawan_onprogress">
+         <a class="nav-link <?= $url1 == '/monitoring_task/daftar_task_karyawan' ? '' : 'collapsed' ?>" href="<?=site_url()?>/monitoring_task/daftar_task_karyawan">
             <i class="bi bi-eye"></i>
             <span>Monitoring Task on Progress</span>
          </a>
