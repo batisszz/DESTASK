@@ -5,17 +5,51 @@
     <h1>Menu Monitoring Task Karyawan</h1>
 </div>
 
-<div class="row">
+<div class="row"> 
    <div class="col-md-12">
       <div class="card">
          <div class="card_title_firter_poin_harian bg-primary">
-            <h4 class="card-title" style="color: white;">Fiter Monitoring Task</h4>
+            <h4 class="card-title" style="color: white;">Fiter Monitor Task Karyawan</h4>
          </div>
          <div class="card-body">
-            <form action="<?= site_url('/') ?>" method="get">
-               <div class="row">
-                  <div class="col-md-3">
+<form action="<?= site_url('/monitoring_task/filter') ?>" method="GET" id="filter_monitoring">
+   <div class="row">
+      <div class="col-md-6 mb-4">
+         <div class="input-group">
+            <label class="input-group-text" for="">Usergroup</label>
+            <select class="form-select" id="filter_monitoring_usergroup_select" name="filter_monitoring_usergroup">
+               <option value="">Semua Usergroup</option>
+               <?php foreach ($usergroup as $urg) : ?>
+                  <option value="<?= $urg['id_usergroup'] ?>" <?= ($urg['id_usergroup'] == $filter_monitoring_usergroup) ? 'selected' : '' ?>>
+                     <?= esc($urg['nama_usergroup']) ?>
+                  </option>
+               <?php endforeach; ?>
+            </select>
          </div>
+      </div>
+      <div class="col-md-6 mb-4">
+         <div class="input-group">
+            <label class="input-group-text">Periode</label>
+            <input type="date" name="filter_tanggal_mulai" class="form-control" value="<?= esc($filter_tanggal_mulai) ?>">
+            <span class="input-group-text">s/d</span>
+            <input type="date" name="filter_tanggal_selesai" class="form-control" value="<?= esc($filter_tanggal_selesai) ?>">
+         </div>
+      </div>
+      <div class="col-md-12 mb-4 d-flex justify-content-center align-items-center">
+         <button type="submit" class="btn btn-primary">
+            <i class="bi bi-filter"></i> Filter
+         </button>
+         <a href="<?= site_url('/monitoring_task/daftar_task_karyawan') ?>" class="btn btn-secondary ms-2">
+            <i class="bx bx-reset"></i> Reset
+         </a>
+      </div>
+   </div>
+</form>
+            </div>
+        </div>
+    </div>
+</div>
+
 <section class="section">
     <div class="row">
         <div class="col-lg-12">
@@ -31,7 +65,7 @@
                                     <th>Task On Progress</th>
                                     <th>Task Overdue</th>
                                     <th>Task Selesai</th>
-                                    <th>Aksi</th>
+                                    <th>Aksi</th>   
                                 </tr>
                             </thead>
                             <tbody>
@@ -53,7 +87,11 @@
                                             <td>
                                  <div class="btn-group" role="group">
                                     <div>
-                                    <a href="<?= site_url('/monitoring_task/detail_task_karyawan/' . $row['id_user']) ?>" class="btn btn-info" title="Klik untuk melihat detail">
+                                   <a href="<?= site_url('/monitoring_task/detail_task_karyawan/' . $row['id_user']) 
+                                        . '?filter_monitoring_usergroup=' . $filter_monitoring_usergroup 
+                                        . '&filter_tanggal_mulai=' . $filter_tanggal_mulai 
+                                        . '&filter_tanggal_selesai=' . $filter_tanggal_selesai ?>" 
+                                        class="btn btn-info" title="Klik untuk melihat detail">
                                         <i class="ri-information-line"></i>
                                     </a>
                                     </div>

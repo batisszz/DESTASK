@@ -78,11 +78,19 @@
                                 <?php endif ?>
                             </tbody>
                         </table>
+                       <hr style="border-top: 3px solid black;">
+                    <div class="text-center">
+                        <a href="<?= site_url('/monitoring_task/filter') ?>?filter_monitoring_usergroup=<?= esc($filter_monitoring_usergroup) ?>&filter_tanggal_mulai=<?= esc($filter_tanggal_mulai) ?>&filter_tanggal_selesai=<?= esc($filter_tanggal_selesai) ?>" 
+                        class="btn btn-secondary">
+                            <i class="bi bi-x-square"></i> Tutup
+                        </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    
 </section>
 
 <?= $this->endSection(); ?>

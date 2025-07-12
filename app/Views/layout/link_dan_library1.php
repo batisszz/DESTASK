@@ -171,6 +171,10 @@
    $(document).ready(function() {
       $('#myTableMenungguVerifikasi').DataTable();
    });
+   $(document).ready(function() {
+      $('#myTableDetailTask').DataTable();
+   });
+
 </script>
 
 <!--FlatPickr-->
