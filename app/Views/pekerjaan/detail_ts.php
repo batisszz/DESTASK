@@ -12,15 +12,13 @@
                 <div class="card-body">
                     <h5 class="card-title">Detail Task Selesai</h5>
                     <div class="table-responsive">
-                        <table class="table table-striped table-bordered" id="">
+                        <table class="table table-striped table-bordered" id="myTableDetailTask">
                             <thead>
                                 <tr>
                                     <th>No</th>
                                     <th>Nama Karyawan</th>
                                     <th>Kategori Task</th>
                                     <th>Deskripsi Task</th>
-                                    <th>Tanggal Planing</th>
-                                    <th>Tanggal Selesai</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -36,8 +34,6 @@
                                                 </span>
                                             </td>
                                             <td><?= esc($task['deskripsi_task']) ?></td>
-                                            <td><?= date('d-m-Y', strtotime($task['tgl_planing'])) ?></td>
-                                            <td><?= date('d-m-Y', strtotime($task['tgl_selesai'])) ?></td>
                                         </tr>
                                     <?php endforeach ?>
                                 <?php else : ?>
