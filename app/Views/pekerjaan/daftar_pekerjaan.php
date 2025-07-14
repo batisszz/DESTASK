@@ -12,7 +12,7 @@
             <h4 class="card-title" style="color: white;">Fiter Pekerjaan</h4>
          </div>
          <div class="card-body">
-            <form action="<?=site_url()?>/pekerjaan/filter_pekerjaan" method="GET" id=filter_daftar_pekerjaan>
+            <form action="<?= site_url() ?>/pekerjaan/filter_pekerjaan" method="GET" id=filter_daftar_pekerjaan>
                <div class="row">
                   <div class="col-md-6 mb-4">
                      <div class="input-group">
@@ -100,7 +100,10 @@
                            <th>Kategori Pekerjaan</th>
                            <th>Status Pekerjaan</th>
                            <th>Target Waktu Selesai</th>
-						    <th>Catatan</th>
+                           <th>Catatan</th>
+                           <th>Task On Progress</th>
+                           <th>Task Overdue</th>
+                           <th>Task Selesai</th>
                         </tr>
                      </thead>
                      <tbody>
@@ -111,7 +114,7 @@
                               <td>
                                  <div class="btn-group" role="group">
                                     <div>
-                                       <a href="<?=site_url()?>/pekerjaan/detail_pekerjaan/<?= $p['id_pekerjaan'] ?>" class="btn btn-info" title="Klik untuk melihat detail"><i class="ri-information-line"></i></a>
+                                       <a href="<?= site_url() ?>/pekerjaan/detail_pekerjaan/<?= $p['id_pekerjaan'] ?>" class="btn btn-info" title="Klik untuk melihat detail"><i class="ri-information-line"></i></a>
                                     </div>
                                  </div>
                               </td>
@@ -154,7 +157,59 @@
                                  <?php $target_waktu_selesai1 = date('d-m-Y', strtotime($p['target_waktu_selesai'])) ?>
                                  <?= $target_waktu_selesai1 ?>
                               </td>
-							  <td><?= isset($p['catatan'])?$p['catatan']:'' ?></td>
+                              <td><?= isset($p['catatan']) ? $p['catatan'] : '' ?></td>
+                              <td>
+                                 <div class="d-flex align-items-center gap-2">
+                                    <?php
+                                    $jumlah = 0;
+                                    foreach ($task_on_progress as $top) {
+                                       if ($top['id_pekerjaan'] == $p['id_pekerjaan']) {
+                                          $jumlah = $top['jumlah_task_on_progress'];
+                                          break;
+                                       }
+                                    }
+                                    echo '<span class="badge bg-warning text-dark">' . $jumlah . '</span>';
+                                    ?>
+
+                                    <a href="<?= site_url() ?>/pekerjaan/detail_top/<?= $p['id_pekerjaan'] ?>" class="btn btn-info btn-sm" title="Klik untuk melihat detail">
+                                       <i class="ri-information-line"></i>
+                                    </a>
+                                 </div>
+                              </td>
+                              <td>
+                                 <div>
+                                    <?php
+                                    $jumlah = 0;
+                                    foreach ($task_overdue as $to) {
+                                       if ($to['id_pekerjaan'] == $p['id_pekerjaan']) {
+                                          $jumlah = $to['jumlah_task_overdue'];
+                                          break;
+                                       }
+                                    }
+                                    echo '<span class="badge bg-danger">' . $jumlah . '</span>';
+                                    ?>
+                                    <a href="<?= site_url() ?>/pekerjaan/detail_to/<?= $p['id_pekerjaan'] ?>" class="btn btn-info btn-sm" title="Klik untuk melihat detail">
+                                       <i class="ri-information-line"></i>
+                                    </a>
+                                 </div>
+                              </td>
+                              <td>
+                                 <div>
+                                    <?php
+                                    $jumlah = 0;
+                                    foreach ($task_selesai as $ts) {
+                                       if ($ts['id_pekerjaan'] == $p['id_pekerjaan']) {
+                                          $jumlah = $ts['jumlah_task_selesai'];
+                                          break;
+                                       }
+                                    }
+                                    echo '<span class="badge bg-success">' . $jumlah . '</span>';
+                                    ?>
+                                    <a href="<?= site_url() ?>/pekerjaan/detail_ts/<?= $p['id_pekerjaan'] ?>" class="btn btn-info btn-sm" title="Klik untuk melihat detail">
+                                       <i class="ri-information-line"></i>
+                                    </a>
+                                 </div>
+                              </td>
                            </tr>
                         <?php endforeach; ?>
                      </tbody>
