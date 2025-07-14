@@ -53,6 +53,12 @@ $routes->get('/pekerjaan/editpekerjaan_status_pekerjaan/(:num)', 'Pekerjaan::edi
 $routes->post('/pekerjaan/updatepekerjaan_status_pekerjaan', 'Pekerjaan::updatepekerjaan_status_pekerjaan'); //Akses beres udah dibikin filter/middleware KhususHODandAdmin
 //Untuk menghapus pekerjaan
 $routes->delete('/pekerjaan/delete_pekerjaan/(:num)', 'Pekerjaan::delete_pekerjaan/$1'); //Akses beres udah dibikin filter/middleware KhususHODandAdmin
+//untuk menampilkan task on progress, overdue, selesai di halaman daftar pekerjaan
+$routes->get('/pekerjaan/get_task_onprogress_overdue_selesai/(:num)', 'Pekerjaan::getTaskOnProgress_Overdue_SelesaiByIdPekerjaan/$1');
+$routes->get('pekerjaan/detail_task_on_progress/(:num)', 'Pekerjaan::detail_task_on_progress/$1');
+$routes->get('pekerjaan/detail_top/(:num)', 'Pekerjaan::detail_task_on_progress/$1');
+$routes->get('pekerjaan/detail_to/(:num)', 'Pekerjaan::detail_task_overdue/$1');
+$routes->get('pekerjaan/detail_ts/(:num)', 'Pekerjaan::detail_task_selesai/$1');
 
 //Untuk download pekerjaan
 //Untuk menampilkan halaman download pekerjaan
