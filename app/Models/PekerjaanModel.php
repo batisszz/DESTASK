@@ -320,7 +320,7 @@ class PekerjaanModel extends Model
         $taskModel = new \App\Models\TaskModel();
         return $taskModel->join('user', 'user.id_user = task.id_user')
             ->join('kategori_task', 'kategori_task.id_kategori_task = task.id_kategori_task')
-            ->select('task.deskripsi_task, user.nama, kategori_task.nama_kategori_task, kategori_task.color')
+            ->select('task.deskripsi_task, user.nama, kategori_task.nama_kategori_task, task.tgl_selesai, task.tgl_planing, kategori_task.color')
             ->where('task.id_pekerjaan', $id_pekerjaan)
             ->where('task.id_status_task', 3)
             ->findAll();
