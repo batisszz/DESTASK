@@ -8,7 +8,7 @@ use App\Models\KategoriPekerjaanModel;
 use App\Models\PekerjaanModel;
 use App\Models\PersonilModel;
 use App\Models\StatusPekerjaanModel;
-
+use App\Models\KategoriTaskModel;
 use App\Models\UserGroupModel;
 use App\Models\TaskModel;
 use App\Models\UserModel;
@@ -26,16 +26,18 @@ class Pekerjaan extends BaseController
     protected $statusPekerjaanModel;
     protected $hariliburModel;
     protected $taskModel;
+    protected $kategoriTaskModel;
     public function __construct()
     {
         $this->pekerjaanModel = new PekerjaanModel();
         $this->personilModel = new PersonilModel();
-		$this->usergroupModel = new UserGroupModel();
+        $this->usergroupModel = new UserGroupModel();
         $this->userModel = new UserModel();
         $this->kategoriPekerjaanModel = new KategoriPekerjaanModel();
         $this->statusPekerjaanModel = new StatusPekerjaanModel();
         $this->hariliburModel = new HariLiburModel();
         $this->taskModel = new TaskModel();
+        $this->kategoriTaskModel = new KategoriTaskModel();
         helper(['swal_helper', 'option_helper', 'export_data_pekerjaan_helper']);
     }
 
@@ -44,8 +46,33 @@ class Pekerjaan extends BaseController
     {
         if ((session()->get('user_level') == 'staff') || (session()->get('user_level') == 'supervisi')) {
             $pekerjaan = $this->pekerjaanModel->getPekerjaanByUserId(session()->get('id_user'));
+            $task_on_progress = [];
+            $task_overdue = [];
+            $task_selesai = [];
         } else {
             $pekerjaan = $this->pekerjaanModel->getPekerjaan();
+            $task_on_progress = [];
+            $task_overdue = [];
+            $task_selesai = [];
+
+            foreach ($pekerjaan as $p) {
+                $id = $p['id_pekerjaan'];
+
+                $task_on_progress[] = [
+                    'id_pekerjaan' => $id,
+                    'jumlah_task_on_progress' => $this->pekerjaanModel->countTaskOnProgressByIdPekerjaan($id)
+                ];
+
+                $task_overdue[] = [
+                    'id_pekerjaan' => $id,
+                    'jumlah_task_overdue' => $this->pekerjaanModel->countTaskOverdueByIdPekerjaan($id)
+                ];
+
+                $task_selesai[] = [
+                    'id_pekerjaan' => $id,
+                    'jumlah_task_selesai' => $this->pekerjaanModel->countTaskSelesaiByIdPekerjaan($id)
+                ];
+            }
         }
         $data = [
             'pekerjaan' => $pekerjaan,
@@ -54,6 +81,9 @@ class Pekerjaan extends BaseController
             'user_staff_supervisi' => $this->userModel->getUserExceptHodAdminDireksi(),
             'kategori_pekerjaan' => $this->kategoriPekerjaanModel->getKategoriPekerjaan(),
             'status_pekerjaan' => $this->statusPekerjaanModel->getStatusPekerjaan(),
+            'task_on_progress' => $task_on_progress,
+            'task_overdue' => $task_overdue,
+            'task_selesai' => $task_selesai,
             'url1' => '/pekerjaan/daftar_pekerjaan',
             'url' => '/pekerjaan/daftar_pekerjaan',
             'filter_pekerjaan_pm' => '',
@@ -64,18 +94,63 @@ class Pekerjaan extends BaseController
         return view('pekerjaan/daftar_pekerjaan', $data);
     }
 
+    //luthfi, fungsi untuk mendapatkan detail task on progress dr model pekerjaan
+    public function detail_task_on_progress($id_pekerjaan)
+    {
+        $task_on_progress = $this->pekerjaanModel->getTaskOnProgressByPekerjaan($id_pekerjaan);
+        $kategori_task = $this->kategoriTaskModel->findAll();
+        $data = [
+            'id_pekerjaan' => $id_pekerjaan,
+            'task_on_progress' => $task_on_progress,
+            'kategori_task' => $kategori_task
+        ];
+
+        return view('pekerjaan/detail_top', $data);
+    }
+
+    public function detail_task_overdue($id_pekerjaan)
+    {
+        $task_overdue = $this->pekerjaanModel->getTaskOverdueByPekerjaan($id_pekerjaan);
+        $kategori_task = $this->kategoriTaskModel->findAll();
+        $data = [
+            'id_pekerjaan' => $id_pekerjaan,
+            'task_overdue' => $task_overdue,
+            'kategori_task' => $kategori_task
+        ];
+
+        return view('pekerjaan/detail_to', $data);
+    }
+
+    public function detail_task_selesai($id_pekerjaan)
+    {
+        $task_selesai = $this->pekerjaanModel->getTaskSelesaiByPekerjaan($id_pekerjaan);
+        $kategori_task = $this->kategoriTaskModel->findAll();
+        $data = [
+            'id_pekerjaan' => $id_pekerjaan,
+            'task_selesai' => $task_selesai,
+            'kategori_task' => $kategori_task
+        ];
+
+        return view('pekerjaan/detail_ts', $data);
+    }
+
+
+
+
+
     //Fungsi daftar_pekerjaan
     public function daftar_task()
     {
         $data = [
             'user' => $this->userModel->getUser(),
             'usergroup' => $this->usergroupModel->getUserGroup(),
-		];
+        ];
         $data['row'] = '';
-		$data['url'] = '/pekerjaan/daftar_pekerjaan';
-		$data['url1'] = '/pekerjaan/daftar_pekerjaan';
-		return view('pekerjaan/daftar_task', $data);
+        $data['url'] = '/pekerjaan/daftar_pekerjaan';
+        $data['url1'] = '/pekerjaan/daftar_pekerjaan';
+        return view('pekerjaan/daftar_task', $data);
     }
+
 
 
     //Fungsi filter_pekerjaan
@@ -585,7 +660,7 @@ class Pekerjaan extends BaseController
             $kategori_pekerjaan = $this->request->getPost('kategori_pekerjaan_e');
             $target_waktu_selesai = $this->request->getPost('target_waktu_selesai_e');
             $deskripsi_pekerjaan = preg_replace('/\s+/', ' ', trim(strval($this->request->getPost('deskripsi_pekerjaan_e'))));
-			$catatan = preg_replace('/\s+/', ' ', trim(strval($this->request->getPost('catatan_e'))));
+            $catatan = preg_replace('/\s+/', ' ', trim(strval($this->request->getPost('catatan_e'))));
             // Memeriksa apakah data baru sama dengan data yang sudah ada
             if (
                 $pekerjaan_lama['nama_pekerjaan'] === $nama_pekerjaan && $pekerjaan_lama['pelanggan'] === $pelanggan && $pekerjaan_lama['jenis_pelanggan'] ===
@@ -619,7 +694,7 @@ class Pekerjaan extends BaseController
                             'nominal_harga' => $nominal_harga,
                             'deskripsi_pekerjaan' => $deskripsi_pekerjaan,
                             'target_waktu_selesai' => $target_waktu_selesai,
-							'catatan' => $catatan,
+                            'catatan' => $catatan,
                             'waktu_selesai' => null
                         ];
                         $this->pekerjaanModel->save($data_pekerjaan);
@@ -646,7 +721,7 @@ class Pekerjaan extends BaseController
                         'nominal_harga' => $nominal_harga,
                         'deskripsi_pekerjaan' => $deskripsi_pekerjaan,
                         'target_waktu_selesai' => $target_waktu_selesai,
-						'catatan' => $catatan,
+                        'catatan' => $catatan,
                         'waktu_selesai' => $waktu_selesai
                     ];
                     $this->pekerjaanModel->save($data_pekerjaan);
@@ -667,7 +742,7 @@ class Pekerjaan extends BaseController
             session()->setFlashdata('err_kategori_pekerjaan_e', $validasi->getError('kategori_pekerjaan_e'));
             session()->setFlashdata('err_target_waktu_selesai_e', $validasi->getError('target_waktu_selesai_e'));
             session()->setFlashdata('err_deskripsi_pekerjaan_e', $validasi->getError('deskripsi_pekerjaan_e'));
-			 session()->setFlashdata('err_catatan_e', $validasi->getError('catatan_e'));
+            session()->setFlashdata('err_catatan_e', $validasi->getError('catatan_e'));
             Set_notifikasi_swal_berhasil('error', 'Gagal :(', 'Terdapat inputan yang kurang sesuai, periksa form edit data pekerjaan');
             return redirect()->withInput()->back();
         }
