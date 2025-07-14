@@ -24,23 +24,21 @@ class MonitoringTaskModel extends Model
             ->select([
                 'u.id_user',
                 'u.nama AS nama_karyawan',
-                // on progress: belum selesai
                 "COUNT(CASE WHEN t.tgl_selesai IS NULL THEN 1 END) AS task_on_progress",
-                // selesai tepat waktu
                 "COUNT(CASE WHEN t.tgl_selesai IS NOT NULL AND t.tgl_selesai <= t.tgl_planing THEN 1 END) AS task_selesai",
-                // overdue: selesai tapi telat
                 "COUNT(CASE WHEN t.tgl_selesai IS NOT NULL AND t.tgl_selesai > t.tgl_planing THEN 1 END) AS task_overdue"
             ])
             ->join('task t', 't.id_user = u.id_user AND t.deleted_at IS NULL', 'left')
-            ->where('t.deleted_at IS NULL')
             ->where('u.deleted_at IS NULL')
+            ->where('u.id_usergroup IS NOT NULL')
+            ->whereIn('u.user_level', ['staff', 'supervisi'])
             ->groupBy('u.id_user')
             ->orderBy('u.nama', 'ASC')
             ->get()
             ->getResultArray();
     }
-    
-        /**
+
+    /**
      * Dapatkan rekap monitoring task per karyawan filtered by usergroup
      */
     public function getMonitoringTaskPerKaryawanByUsergroup($id_usergroup)
@@ -55,12 +53,15 @@ class MonitoringTaskModel extends Model
             ])
             ->join('task t', 't.id_user = u.id_user AND t.deleted_at IS NULL', 'left')
             ->where('u.deleted_at IS NULL')
+            ->where('u.id_usergroup IS NOT NULL')
+            ->whereIn('u.user_level', ['staff', 'supervisi'])
             ->where('u.id_usergroup', $id_usergroup)
             ->groupBy('u.id_user')
             ->orderBy('u.nama', 'ASC')
             ->get()
             ->getResultArray();
     }
+
     /**
      * Dapatkan rekap monitoring task per karyawan filtered by usergroup + periode tanggal planning
      */
@@ -75,7 +76,9 @@ class MonitoringTaskModel extends Model
                 "COUNT(CASE WHEN t.tgl_selesai IS NOT NULL AND t.tgl_selesai > t.tgl_planing THEN 1 END) AS task_overdue"
             ])
             ->join('task t', 't.id_user = u.id_user AND t.deleted_at IS NULL', 'left')
-            ->where('u.deleted_at IS NULL');
+            ->where('u.deleted_at IS NULL')
+            ->where('u.id_usergroup IS NOT NULL')
+            ->whereIn('u.user_level', ['staff', 'supervisi']);
 
         if ($id_usergroup) {
             $builder->where('u.id_usergroup', $id_usergroup);
@@ -91,37 +94,40 @@ class MonitoringTaskModel extends Model
             ->get()
             ->getResultArray();
     }
+
     /**
      * Dapatkan detail task karyawan
-     * */
+     */
     public function getAllTaskByUser($id_user)
     {
         return $this->where(['id_user' => $id_user, 'deleted_at' => null])
             ->orderBy('tgl_planing', 'ASC')
             ->findAll();
-    } 
+    }
+
     /**
-     * Dapatkan detail task milik karyawan sesuai dengan filter tertentu (untuk detail monitoring karyawan)
+     * Dapatkan detail task milik karyawan sesuai filter tertentu
      */
     public function getAllTaskByUserFiltered($id_user, $tanggal_mulai, $tanggal_selesai)
     {
         $builder = $this->where(['id_user' => $id_user, 'deleted_at' => null]);
+
         if ($tanggal_mulai && $tanggal_selesai) {
             $builder->where('tgl_planing >=', $tanggal_mulai);
             $builder->where('tgl_planing <=', $tanggal_selesai);
-        }   
+        }
+
         return $builder->orderBy('tgl_planing', 'ASC')
             ->findAll();
     }
+
     /**
-     * Dapatkan task selesai tepat waktu (tidak telat)
+     * Dapatkan task selesai tepat waktu
      */
     public function getTaskSelesaiTidakTerlambat($id_user)
     {
-        return $this->where([
-                'id_user' => $id_user,
-                'tgl_selesai IS NOT NULL' => null // tgl_selesai is not null
-            ])
+        return $this->where(['id_user' => $id_user])
+            ->where('tgl_selesai IS NOT NULL', null, false)
             ->where('tgl_selesai <= tgl_planing')
             ->orderBy('tgl_selesai', 'ASC')
             ->findAll();
@@ -132,10 +138,8 @@ class MonitoringTaskModel extends Model
      */
     public function getTaskOverdue($id_user)
     {
-        return $this->where([
-                'id_user' => $id_user,
-                'tgl_selesai IS NOT NULL' => null
-            ])
+        return $this->where(['id_user' => $id_user])
+            ->where('tgl_selesai IS NOT NULL', null, false)
             ->where('tgl_selesai > tgl_planing')
             ->orderBy('tgl_selesai', 'ASC')
             ->findAll();

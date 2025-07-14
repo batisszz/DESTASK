@@ -68,26 +68,32 @@ class MonitoringTask extends BaseController
 
     public function detail_task_karyawan($id_user)
     {
-        $tasks = $this->monitoringModel->getAllTaskByUserFiltered(
-            $id_user,
-            $this->request->getGet('filter_tanggal_mulai') ?? '',
-            $this->request->getGet('filter_tanggal_selesai') ?? ''
-        );
-
-        // Load model lain
-        $kategoriTaskModel = new \App\Models\KategoriTaskModel();
-        $statusTaskModel = new \App\Models\StatusTaskModel();
+        // Load user model
         $userModel = new \App\Models\UserModel();
 
-        // Ambil data
-        $kategori_task = $kategoriTaskModel->findAll();
-        $status_task = $statusTaskModel->findAll();
-        $users = $userModel->findAll();
+        // Cari user yang mau ditampilkan detail task-nya
+        $user = $userModel->find($id_user);
 
+        // Cek: pastikan user ada, dan user_level-nya staff/supervisi/admin
+        if (!$user || !in_array($user['user_level'], ['staff', 'supervisi', 'admin'])) {
+        throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound('Data user tidak ditemukan atau akses tidak diizinkan.');
+        }
+
+        // Ambil filter dari GET
         $tanggal_mulai = $this->request->getGet('filter_tanggal_mulai') ?? '';
         $tanggal_selesai = $this->request->getGet('filter_tanggal_selesai') ?? '';
         $id_usergroup = $this->request->getGet('filter_monitoring_usergroup') ?? '';
-            
+
+        // Ambil data task user tersebut
+        $tasks = $this->monitoringModel->getAllTaskByUserFiltered($id_user, $tanggal_mulai, $tanggal_selesai);
+
+        // Load data tambahan
+        $kategoriTaskModel = new \App\Models\KategoriTaskModel();
+        $statusTaskModel = new \App\Models\StatusTaskModel();
+
+        $kategori_task = $kategoriTaskModel->findAll();
+        $status_task = $statusTaskModel->findAll();
+        $users = $userModel->findAll();
 
         $data = [
             'tasks' => $tasks,
@@ -98,15 +104,13 @@ class MonitoringTask extends BaseController
             . '?filter_tanggal_mulai=' . $tanggal_mulai
             . '&filter_tanggal_selesai=' . $tanggal_selesai
             . '&filter_monitoring_usergroup=' . $id_usergroup,
-
             'kategori_task' => $kategori_task,
             'status_task' => $status_task,
             'user' => $users,
             'filter_tanggal_mulai' => $tanggal_mulai,
-            'filter_tanggal_selesai' => $tanggal_selesai,  
+            'filter_tanggal_selesai' => $tanggal_selesai,
             'filter_monitoring_usergroup' => $id_usergroup,
         ];
-
-        return view('monitoring_task/detail_monitoring_karyawan', $data);
+    return view('monitoring_task/detail_monitoring_karyawan', $data);
     }
 }

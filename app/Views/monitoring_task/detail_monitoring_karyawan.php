@@ -22,7 +22,7 @@
                                     <th>Nama Pembuat</th>
                                     <th>Tanggal Target</th>
                                     <th>Tanggal Selesai</th>
-                                    <th> Status Task</th>
+                                    <th>Status Task</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -34,11 +34,16 @@
                                             <td><?= esc($task['deskripsi_task']) ?></td>
                                             <td>
                                                 <?php
+                                                $found = false;
                                                 foreach ($kategori_task as $kt) {
                                                     if ($task['id_kategori_task'] == $kt['id_kategori_task']) {
                                                         echo '<span style="background-color: ' . $kt['color'] . ';" class="badge rounded-pill">' . esc($kt['nama_kategori_task']) . '</span>';
+                                                        $found = true;
                                                         break;
                                                     }
+                                                }
+                                                if (!$found) {
+                                                    echo '<span class="badge bg-secondary">Tidak diketahui</span>'; // fallback
                                                 }
                                                 ?>
                                             </td>
@@ -49,11 +54,16 @@
                                             </td>
                                             <td>
                                                 <?php
+                                                $found = false;
                                                 foreach ($user as $creator) {
                                                     if ($task['creator'] == $creator['id_user']) {
                                                         echo esc($creator['nama']);
+                                                        $found = true;
                                                         break;
                                                     }
+                                                }
+                                                if (!$found) {
+                                                    echo '-'; // fallback
                                                 }
                                                 ?>
                                             </td>
@@ -61,11 +71,16 @@
                                             <td><?= $task['tgl_selesai'] ? date('d-m-Y', strtotime($task['tgl_selesai'])) : '-' ?></td>
                                             <td>
                                                 <?php
+                                                $found = false;
                                                 foreach ($status_task as $st) {
                                                     if ($task['id_status_task'] == $st['id_status_task']) {
                                                         echo '<span style="background-color: ' . $st['color'] . ';" class="badge rounded-pill">' . esc($st['nama_status_task']) . '</span>';
+                                                        $found = true;
                                                         break;
                                                     }
+                                                }
+                                                if (!$found) {
+                                                    echo '<span class="badge bg-secondary">Tidak diketahui</span>'; // fallback
                                                 }
                                                 ?>
                                             </td>
@@ -78,19 +93,18 @@
                                 <?php endif ?>
                             </tbody>
                         </table>
-                       <hr style="border-top: 3px solid black;">
-                    <div class="text-center">
-                        <a href="<?= site_url('/monitoring_task/filter') ?>?filter_monitoring_usergroup=<?= esc($filter_monitoring_usergroup) ?>&filter_tanggal_mulai=<?= esc($filter_tanggal_mulai) ?>&filter_tanggal_selesai=<?= esc($filter_tanggal_selesai) ?>" 
-                        class="btn btn-secondary">
-                            <i class="bi bi-x-square"></i> Tutup
-                        </a>
+                        <hr style="border-top: 3px solid black;">
+                        <div class="text-center">
+                            <a href="<?= site_url('/monitoring_task/filter') ?>?filter_monitoring_usergroup=<?= esc($filter_monitoring_usergroup) ?>&filter_tanggal_mulai=<?= esc($filter_tanggal_mulai) ?>&filter_tanggal_selesai=<?= esc($filter_tanggal_selesai) ?>" 
+                            class="btn btn-secondary">
+                                <i class="bi bi-x-square"></i> Tutup
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
 </section>
 
 <?= $this->endSection(); ?>

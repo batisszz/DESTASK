@@ -1,6 +1,7 @@
 <?= $this->extend('layout/templete'); ?>
 <?= $this->section('content'); ?>
 
+
 <div class="pagetitle">
     <h1>Menu Monitoring Task Karyawan</h1>
 </div>
@@ -30,9 +31,9 @@
       <div class="col-md-6 mb-4">
          <div class="input-group">
             <label class="input-group-text">Periode</label>
-            <input type="date" name="filter_tanggal_mulai" class="form-control" value="<?= esc($filter_tanggal_mulai) ?>">
+            <input type="date" name="filter_tanggal_mulai" class="form-control" placeholder="dd-mm-yy" value="<?= esc($filter_tanggal_mulai) ?>">
             <span class="input-group-text">s/d</span>
-            <input type="date" name="filter_tanggal_selesai" class="form-control" value="<?= esc($filter_tanggal_selesai) ?>">
+            <input type="date" name="filter_tanggal_selesai" class="form-control" placeholder="dd-mm-yy" value="<?= esc($filter_tanggal_selesai) ?>">
          </div>
       </div>
       <div class="col-md-12 mb-4 d-flex justify-content-center align-items-center">
