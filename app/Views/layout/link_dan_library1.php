@@ -174,6 +174,9 @@
    $(document).ready(function() {
       $('#myTableDetailTask').DataTable();
    });
+   $(document).ready(function() {
+      $('#myTableDetailTaskPekerjaan').DataTable();
+   });
 
 </script>
 

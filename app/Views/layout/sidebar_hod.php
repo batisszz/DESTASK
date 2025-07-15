@@ -1,4 +1,3 @@
-<?php $url1 = current_url(true)->getPath(); ?>
 <!-- ======= Sidebar ======= -->
 <aside id="sidebar" class="sidebar">
    <ul class="sidebar-nav" id="sidebar-nav">

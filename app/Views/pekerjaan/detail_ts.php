@@ -12,7 +12,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Detail Task Selesai</h5>
                     <div class="table-responsive">
-                        <table class="table table-striped table-bordered" id="myTableDetailTask">
+                        <table class="table table-striped table-bordered" id="myTableDetailTaskPekerjaan">
                             <thead>
                                 <tr>
                                     <th>No</th>
@@ -41,12 +41,9 @@
                                         </tr>
                                     <?php endforeach ?>
                                 <?php else : ?>
-                                    <tr>
-                                        <td colspan="8" style="text-align:center;">Tidak ada task selesai.</td>
-                                    </tr>
                                 <?php endif ?>
                             </tbody>
-
+                        </table>
 </section>
 
 <?= $this->endSection(); ?>

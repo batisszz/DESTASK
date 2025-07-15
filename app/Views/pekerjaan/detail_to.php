@@ -4,7 +4,6 @@
 <div class="pagetitle">
     <h1>Detail Task Overdue</h1>
 </div>
-
 <section class="section">
     <div class="row">
         <div class="col-lg-12">
@@ -12,7 +11,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Detail Task Overdue</h5>
                     <div class="table-responsive">
-                        <table class="table table-striped table-bordered" id="">
+                        <table class="table table-striped table-bordered" id="myTableDetailTaskPekerjaan">
                             <thead>
                                 <tr>
                                     <th>No</th>
@@ -40,13 +39,9 @@
                                             <td><?= date('d-m-Y', strtotime($task['tgl_selesai'])) ?></td>
                                         </tr>
                                     <?php endforeach ?>
-                                <?php else : ?>
-                                    <tr>
-                                        <td colspan="8" style="text-align:center;">Tidak ada task overdue.</td>
-                                    </tr>
                                 <?php endif ?>
                             </tbody>
-
+                        </table>
 </section>
 
 <?= $this->endSection(); ?>

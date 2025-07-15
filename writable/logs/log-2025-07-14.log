@@ -399,3 +399,20 @@ WARNING - 2025-07-14 15:55:22 --> [DEPRECATED] strtotime(): Passing null to para
  9 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
 10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Destask\\public\\index.php')
 INFO - 2025-07-14 15:56:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-14 16:13:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-14 16:13:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-07-14 16:13:27 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\pekerjaan\detail_pekerjaan.php on line 94.
+ 1 APPPATH\Views\pekerjaan\detail_pekerjaan.php(94): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Destask\\app\\Views\\pekerjaan\\detail_pekerjaan.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pekerjaan/detail_pekerjaan', [], true)
+ 5 APPPATH\Controllers\Pekerjaan.php(142): view('pekerjaan/detail_pekerjaan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Pekerjaan->detail_pekerjaan('23')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pekerjaan))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Destask\\public\\index.php')
+INFO - 2025-07-14 16:13:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-14 16:13:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-14 16:13:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-14 16:13:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
