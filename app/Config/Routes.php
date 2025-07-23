@@ -163,6 +163,12 @@ $routes->get('/realisasi_vs_target/daftar_realisasi_vs_target', 'RealisasiVsTarg
 //Untuk memfilter data yang ditampilkan
 $routes->get('/realisasi_vs_target/filter_realisasi_vs_target', 'RealisasiVsTarget::filter_realisasi_vs_target'); //Akses sudah beres udah dibikin filter/middleware ExceptAdminandStaff
 
+
+//Routes Laporan Monitoring
+$routes->get('/laporan_monitoring/daftar_monitoring_performa', 'LaporanMonitoring::daftar_monitoring_performa'); //Akses beres tidak perlu diberi filter/middleware, hal ini karena semua orang bisa lihat daftar monitoring performa tergantung session yang login
+
+
+
 //Routes Personil
 //Untuk edit personil pm
 $routes->get('/personil/edit_personil/(:num)', 'Personil::edit_personil/$1'); //Akses beres udah dibikin filter/middleware KhususHODandAdmin
