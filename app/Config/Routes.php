@@ -165,7 +165,8 @@ $routes->get('/realisasi_vs_target/filter_realisasi_vs_target', 'RealisasiVsTarg
 
 
 //Routes Laporan Monitoring
-$routes->get('/laporan_monitoring/daftar_monitoring_performa', 'LaporanMonitoring::daftar_monitoring_performa'); //Akses beres tidak perlu diberi filter/middleware, hal ini karena semua orang bisa lihat daftar monitoring performa tergantung session yang login
+$routes->get('/monitoring_performa/daftar_monitoring_performa', 'MonitoringPerforma::daftar_monitoring_performa_produk'); //Akses beres tidak perlu diberi filter/middleware, hal ini karena semua orang bisa lihat daftar monitoring performa tergantung session yang login
+$routes->get('/monitoring_performa/detail_monitoring_performa_produk/(:any)', 'MonitoringPerforma::detail_monitoring_performa_produk/$1'); //Akses beres tidak perlu diberi filter/middleware, hal ini karena semua orang bisa lihat detail monitoring performa produk tergantung session yang login
 
 
 

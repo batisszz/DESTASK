@@ -49,7 +49,7 @@
       </li>
 
       <li class="nav-item">
-         <a class="nav-link <?= $url1 == '/laporan_monitoring/daftar_monitoring_performa' ? '' : 'collapsed' ?>" href="<?=site_url()?>/laporan_monitoring/daftar_monitoring_performa">
+         <a class="nav-link <?= $url1 == '/monitoring_performa/daftar_monitoring_performa' ? '' : 'collapsed' ?>" href="<?=site_url()?>/monitoring_performa/daftar_monitoring_performa">
             <i class="bi bi-display-fill"></i>
             <span>Laporan Monitoring Performa</span>
          </a>
