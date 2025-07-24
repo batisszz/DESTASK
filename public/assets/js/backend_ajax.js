@@ -422,7 +422,13 @@ function edit_usergroup($id){
    });
 }
 
-
+//                            //
+// Monitoring Performa Produk //
+//                            //
+//Proses reset filter
+function resetFilterMonitoringPerformaProduk() {
+   window.location.href = "/monitoring_performa/daftar_monitoring_performa";
+}
 
 //                          //
 // PENGELOLAAN DATA KINERJA //

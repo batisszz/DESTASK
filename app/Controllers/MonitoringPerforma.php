@@ -11,46 +11,48 @@ class MonitoringPerforma extends BaseController
     {
         $this->monitoringPerformaModel = new MonitoringPerformaModel();
     }
-/**
- * Tabel daftar monitoring performa produk
- */
+
+    /**
+     * Halaman daftar monitoring performa produk (filter bulan & tahun)
+     */
     public function daftar_monitoring_performa_produk()
     {
-        $bulan = $this->request->getGet('bulan') ?? '';
-        $tahun = $this->request->getGet('tahun') ?? '';
+        $filter_bulan = $this->request->getGet('filter_bulan') ?? '';
+        $filter_tahun = $this->request->getGet('filter_tahun') ?? '';
 
-        $monitoring = $this->monitoringPerformaModel->getProductMonitoringByBulanTahun($bulan, $tahun);
+        $monitoring = $this->monitoringPerformaModel->getProductMonitoringByBulanTahun($filter_bulan, $filter_tahun);
 
         $data = [
             'monitoring' => $monitoring,
-            'filter_bulan' => $bulan,
-            'filter_tahun' => $tahun,
+            'filter_bulan' => $filter_bulan,
+            'filter_tahun' => $filter_tahun,
             'title' => 'Monitoring Performa Per Produk',
             'url' => '/monitoring_performa/daftar_monitoring_performa_produk',
-            'url1' => '/monitoring_performa/daftar_monitoring_performa'
+            'url1' => '/monitoring_performa/daftar_monitoring_performa',
         ];
 
         return view('monitoring_performa/daftar_monitoring_performa', $data);
     }
-/**
- * Tabel detail monitoring performa project per produk
- */
-    public function detail_monitoring_performa_produk($jenis_layanan)
-    {   
-        $bulan = $this->request->getGet('bulan') ?? '';
-        $tahun = $this->request->getGet('tahun') ?? '';
 
-         $details = $this->monitoringPerformaModel->getProjectDetailByJenisLayanan($jenis_layanan, $bulan, $tahun);
+    /**
+     * Detail monitoring performa project per produk
+     */
+    public function detail_monitoring_performa_produk($jenis_layanan)
+    {
+        $filter_bulan = $this->request->getGet('filter_bulan') ?? '';
+        $filter_tahun = $this->request->getGet('filter_tahun') ?? '';
+
+        $details = $this->monitoringPerformaModel->getProjectDetailByJenisLayanan($jenis_layanan, $filter_bulan, $filter_tahun);
 
         $data = [
             'details' => $details,
             'jenis_layanan' => $jenis_layanan,
-            'filter_bulan' => $bulan,
-            'filter_tahun' => $tahun,
+            'filter_bulan' => $filter_bulan,
+            'filter_tahun' => $filter_tahun,
             'title' => 'Detail Project Per Produk',
-            'url1' => '/monitoring_performa/detail_monitoring_performa',
+            'url1' => '/monitoring_performa/daftar_monitoring_performa_produk',
             'url' => '/monitoring_performa/detail_monitoring_performa_produk/' . $jenis_layanan
-                . '?bulan=' . $bulan . '&tahun=' . $tahun,
+                . '?filter_bulan=' . $filter_bulan . '&filter_tahun=' . $filter_tahun,
         ];
 
         return view('monitoring_performa/detail_monitoring_performa_produk', $data);
