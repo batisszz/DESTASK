@@ -133,7 +133,7 @@ class Filters extends BaseConfig
                 '/bobot_kategori_task/detail_bobot_kategori_task/*', '/kinerja/cek_periode_kinerja_karyawan/*', '/kinerja/pengecekan_periode_kinerja_karyawan',
                 '/kinerja/add_kinerja_karyawan/*/*/*', '/kinerja/tambah_kinerja_karyawan', '/kinerja/edit_kinerja_karyawan/*', '/kinerja/update_kinerja_karyawan',
                 '/kinerja/delete_kinerja_karyawan/*/*', '/monitoring_task/daftar_task_karyawan', '/monitoring_task/detail_task_karyawan/*', '/monitoring_task/filter', 'pekerjaan/detail_task_on_progress/*', 'pekerjaan/detail_task_overdue/*', 'pekerjaan/detail_task_selesai/*', 
-                'laporan_monitoring/daftar_monitoring_performa',
+                'monitoring_performa/daftar_monitoring_performa', 'monitoring_performa/detail_monitoring_performa_produk/*',
             ],
         ],
         'khususHODandDireksi' => [
