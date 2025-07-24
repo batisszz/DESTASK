@@ -47,10 +47,10 @@ class MonitoringPerformaModel extends Model
     {
         $builder = $this->db->table('pekerjaan')
             ->select([
-                'pekerjaan.nama_pekerjaan',
+                'pekerjaan.nama_pekerjaan AS nama_project',
                 'user.nama AS pm',
-                'pekerjaan.target_waktu_selesai AS RFS',  // Ready For Service
-                'pekerjaan.waktu_selesai AS BAST'         // Berita Acara Serah Terima
+                'pekerjaan.target_waktu_selesai AS rfs',  // Ready For Service
+                'pekerjaan.waktu_selesai AS bast'         // Berita Acara Serah Terima
             ])
             ->join('personil', 'personil.id_pekerjaan = pekerjaan.id_pekerjaan AND personil.role_personil = "project_manager" AND personil.deleted_at IS NULL', 'left')
             ->join('user', 'user.id_user = personil.id_user AND user.deleted_at IS NULL', 'left')

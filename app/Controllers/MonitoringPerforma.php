@@ -50,7 +50,7 @@ class MonitoringPerforma extends BaseController
             'filter_bulan' => $filter_bulan,
             'filter_tahun' => $filter_tahun,
             'title' => 'Detail Project Per Produk',
-            'url1' => '/monitoring_performa/daftar_monitoring_performa_produk',
+            'url1' => '/monitoring_performa/daftar_monitoring_performa',
             'url' => '/monitoring_performa/detail_monitoring_performa_produk/' . $jenis_layanan
                 . '?filter_bulan=' . $filter_bulan . '&filter_tahun=' . $filter_tahun,
         ];

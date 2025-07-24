@@ -90,10 +90,10 @@
                                         <tr>
                                             <td><?= $no++ ?></td>
                                             <td><?= ucwords(strtolower(esc($row['produk']))) ?></td>
-                                            <td><span class="badge bg-warning text-dark"><?= esc($row['jumlah_project']) ?></span></td>
-                                            <td><span class="badge bg-success"><?= esc($row['on_target']) ?></span></td>
-                                            <td><span class="badge bg-danger"><?= esc($row['overdue']) ?></span></td>
-                                            <td><span class="badge bg-primary"><?= esc($row['percepatan']) ?></span></td>
+                                            <td><?= esc($row['jumlah_project']) . ' project' ?></td>
+                                            <td><?= esc($row['on_target'])?></td>
+                                            <td><?= esc($row['overdue'])?></td>
+                                            <td><?= esc($row['percepatan']) ?></td>
                                             <td>
                                                 <a href="<?= site_url('/monitoring_performa/detail_monitoring_performa_produk/' . urlencode($row['produk']))
                                                         . '?filter_bulan=' . $filter_bulan . '&filter_tahun=' . $filter_tahun ?>" 
