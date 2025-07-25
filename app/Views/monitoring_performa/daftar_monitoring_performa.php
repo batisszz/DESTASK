@@ -9,12 +9,12 @@
     <div class="col-lg-12">
       <div class="card">
          <div class="card_title_firter_poin_harian bg-primary">
-            <h4 class="card-title" style="color: white;">Fiter Periode Tahun dan Bulan</h4>
+            <h2 class="card-title" style="color: white;">Monitoring Performa Produk</h4>
          </div>
          <div class="card-body">
             <form action="<?=site_url('/monitoring_performa/daftar_monitoring_performa')?>" method="GET" id="filter_monitoring_performa">
                <div class="row">
-                  <div class="col-md-6 mb-4">
+                  <div class="col-md-4 mb-4">
                      <div class="input-group">
                         <label class="input-group-text" for="">Bulan</label>
                         <select class="form-select" id="filter_bulan" name="filter_bulan">
@@ -34,7 +34,7 @@
                         </select>
                     </div>
                 </div>
-            <div class="col-md-6 mb-4">
+            <div class="col-md-4 mb-4">
                 <div class="input-group">
                         <label class="input-group-text" for="">Tahun</label>
                         <select class="form-select" id="filter_tahun" name="filter_tahun">
@@ -47,29 +47,22 @@
                         </select>
                     </div>
                 </div>
-            <div class="row">
-                <div class="col-md-6 mb-1 d-flex justify-content-center align-items-center">
+            <div class="col-md-4 mb-4 d-flex justify-content-center align-items-center">
                     <button type="submit" class="btn btn-primary">
                         <i class="bi bi-filter"></i> Filter
-                    </button>
-                </div>
-            <div class="col-md-6 mb-1 d-flex justify-content-center align-items-center">
+                    </button> 
+            <div class="btn-group ms-4">
                     <button type="button" class="btn btn-secondary" onclick="resetFilterMonitoringPerformaProduk()">
                         <i class="bx bx-reset"></i> Reset
                     </button>
                 </div>
             </div>
         </form>
-                </div>
             </div>
         </div>
-    </div>  
-         <section class="section">
-    <div class="row">
+    <section class="section">
         <div class="col-lg-12">
-            <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">Monitoring Performa Produk</h5>
                     <div class="table-responsive">
                         <table class="table table-striped table-bordered" id="myTable">
                             <thead>
@@ -102,6 +95,7 @@
                                                 </a>
                                             </td>
                                         </tr>
+                                        
                                     <?php endforeach ?>
                                 <?php else : ?>
                                 <?php endif ?>
