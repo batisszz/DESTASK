@@ -12,6 +12,8 @@ class MonitoringPerforma extends BaseController
         $this->monitoringPerformaModel = new MonitoringPerformaModel();
     }
 
+/** Controller Monitoring Performa Produk **/    
+
     /**
      * Halaman daftar monitoring performa produk (filter bulan & tahun)
      */
@@ -57,4 +59,7 @@ class MonitoringPerforma extends BaseController
 
         return view('monitoring_performa/detail_monitoring_performa_produk', $data);
     }
+
+/** End of Controller Monitoring Performa Produk **/
+
 }

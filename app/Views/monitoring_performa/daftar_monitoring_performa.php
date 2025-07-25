@@ -5,6 +5,7 @@
     <h1>Menu Monitoring Performa</h1>
 </div>
 
+<!-- Tabel Monitoring Performa Produk -->
 <div class="row">
     <div class="col-lg-12">
       <div class="card">
@@ -90,7 +91,7 @@
                                             <td>
                                                 <a href="<?= site_url('/monitoring_performa/detail_monitoring_performa_produk/' . urlencode($row['produk']))
                                                         . '?filter_bulan=' . $filter_bulan . '&filter_tahun=' . $filter_tahun ?>" 
-                                                   class="btn btn-info" title="Detail">
+                                                   class="btn btn-info" title="Klik untuk melihat detail produk">
                                                     <i class="ri-information-line"></i>
                                                 </a>
                                             </td>
@@ -107,6 +108,6 @@
         </div>
     </div>
 </section>
-
+<!-- Tabel Menu Monitoring Performa Produk -->
 
 <?= $this-> endSection(); ?>

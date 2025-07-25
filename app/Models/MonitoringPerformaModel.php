@@ -13,8 +13,13 @@ class MonitoringPerformaModel extends Model
         'jenis_layanan', 'nama_pekerjaan', 'target_waktu_selesai', 'waktu_selesai', 'deleted_at'
     ];
 
+
+
+
+/** Get Data for Monitoring Performa Produk. **/
+
     /**
-     * Ambil data monitoring performa per produk, filter optional bulan & tahun
+     * Ambil data monitoring performa per produk, beserta filter bulan & tahun
      */
     public function getProductMonitoringByBulanTahun($bulan = '', $tahun = '')
     {
@@ -68,4 +73,7 @@ class MonitoringPerformaModel extends Model
 
         return $builder->get()->getResultArray();
     }
+
+/* End of Get Data Monitoring Performa Produk */
+
 }
