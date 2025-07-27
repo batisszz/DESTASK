@@ -1,0 +1,48 @@
+INFO - 2025-07-26 15:03:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-26 15:03:48 --> CSRF token verified.
+INFO - 2025-07-26 15:03:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-26 15:03:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-26 15:03:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-26 15:03:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-26 15:03:54 --> ErrorException: Undefined variable $task_on_progress
+in APPPATH\Views\pekerjaan\daftar_pekerjaan.php on line 176.
+ 1 APPPATH\Views\pekerjaan\daftar_pekerjaan.php(176): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $task_on_progress', 'C:\\xampp\\htdocs\\Destask\\app\\Views\\pekerjaan\\daftar_pekerjaan.php', 176)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Destask\\app\\Views\\pekerjaan\\daftar_pekerjaan.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pekerjaan/daftar_pekerjaan', [], true)
+ 5 APPPATH\Controllers\Pekerjaan.php(198): view('pekerjaan/daftar_pekerjaan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Pekerjaan->filter_pekerjaan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pekerjaan))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Destask\\public\\index.php')
+INFO - 2025-07-26 15:03:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-26 15:03:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-26 15:03:58 --> ErrorException: Undefined variable $task_on_progress
+in APPPATH\Views\pekerjaan\daftar_pekerjaan.php on line 176.
+ 1 APPPATH\Views\pekerjaan\daftar_pekerjaan.php(176): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $task_on_progress', 'C:\\xampp\\htdocs\\Destask\\app\\Views\\pekerjaan\\daftar_pekerjaan.php', 176)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Destask\\app\\Views\\pekerjaan\\daftar_pekerjaan.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pekerjaan/daftar_pekerjaan', [], true)
+ 5 APPPATH\Controllers\Pekerjaan.php(198): view('pekerjaan/daftar_pekerjaan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Pekerjaan->filter_pekerjaan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pekerjaan))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Destask\\public\\index.php')
+INFO - 2025-07-26 15:04:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-26 15:04:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-26 15:04:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-26 15:04:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-26 15:04:57 --> ErrorException: Undefined variable $task_on_progress
+in APPPATH\Views\pekerjaan\daftar_pekerjaan.php on line 176.
+ 1 APPPATH\Views\pekerjaan\daftar_pekerjaan.php(176): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $task_on_progress', 'C:\\xampp\\htdocs\\Destask\\app\\Views\\pekerjaan\\daftar_pekerjaan.php', 176)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Destask\\app\\Views\\pekerjaan\\daftar_pekerjaan.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pekerjaan/daftar_pekerjaan', [], true)
+ 5 APPPATH\Controllers\Pekerjaan.php(198): view('pekerjaan/daftar_pekerjaan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Pekerjaan->filter_pekerjaan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pekerjaan))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Destask\\public\\index.php')

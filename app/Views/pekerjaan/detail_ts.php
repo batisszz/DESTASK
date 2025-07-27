@@ -36,8 +36,13 @@
                                                 </span>
                                             </td>
                                             <td><?= esc($task['deskripsi_task']) ?></td>
-                                            <td><?= date('d-m-Y', strtotime($task['tgl_planing'])) ?></td>
-                                            <td><?= date('d-m-Y', strtotime($task['tgl_selesai'])) ?></td>
+                                          <td>
+                                            <?= !empty($task['tgl_planing']) ? date('d-m-Y', strtotime($task['tgl_planing'])) : '-' ?>
+                                            </td>
+                                            <td>
+                                            <?= !empty($task['tgl_selesai']) ? date('d-m-Y', strtotime($task['tgl_selesai'])) : '-' ?>
+                                            </td>
+
                                         </tr>
                                     <?php endforeach ?>
                                 <?php else : ?>

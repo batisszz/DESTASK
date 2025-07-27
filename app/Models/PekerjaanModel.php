@@ -261,11 +261,14 @@ class PekerjaanModel extends Model
     public function countTaskOnProgressByIdPekerjaan($id_pekerjaan)
     {
         $taskModel = new \App\Models\TaskModel();
-        return $taskModel->where([
-            'id_pekerjaan' => $id_pekerjaan,
-            'id_status_task' => 1, // Status task on progress
-            'deleted_at' => null
-        ])->countAllResults();
+        return $taskModel
+            ->where('id_pekerjaan', $id_pekerjaan)
+            ->where('deleted_at', null)
+            ->groupStart()
+                ->where('tgl_selesai', null)
+                ->where('NOW() <= tgl_planing')
+            ->groupEnd()
+            ->countAllResults();
     }
     //fungsi untuk menghitung task overdue berdasarkan id pekerjaan
     public function countTaskOverdueByIdPekerjaan($id_pekerjaan)
@@ -274,20 +277,30 @@ class PekerjaanModel extends Model
         return $taskModel
             ->where('id_pekerjaan', $id_pekerjaan)
             ->where('deleted_at', null)
-            ->where('tgl_selesai IS NOT NULL')
-            ->where('tgl_selesai > tgl_planing')
+            ->groupStart()
+                ->groupStart()
+                    ->where('tgl_selesai', null)
+                    ->where('NOW() > tgl_planing')
+                ->groupEnd()
+                ->orgroupStart()
+                    ->where('tgl_selesai IS NOT NULL', null, false)
+                    ->Where('tgl_selesai > tgl_planing')
+                ->groupEnd()
+            ->groupEnd()
             ->countAllResults();
     }
+
 
     //fungsi untuk menghitung task selesai tepat waktu berdasarkan id pekerjaan
     public function countTaskSelesaiByIdPekerjaan($id_pekerjaan)
     {
         $taskModel = new \App\Models\TaskModel();
-        return $taskModel->where([
-            'id_pekerjaan' => $id_pekerjaan,
-            'id_status_task' => 3, // Status task selesai
-            'deleted_at' => null
-        ])->countAllResults();
+        return $taskModel
+        ->where('id_pekerjaan', $id_pekerjaan)
+        ->where('deleted_at', null)
+        ->where('tgl_selesai IS NOT NULL', null, false)
+        ->where('tgl_selesai <= tgl_planing')
+        ->countAllResults();
     }
 
     //fungsi untuk mendapatkan detail di task on progress
@@ -295,34 +308,52 @@ class PekerjaanModel extends Model
     {
         $taskModel = new \App\Models\TaskModel();
         return $taskModel->join('user', 'user.id_user = task.id_user')
-            ->join('kategori_task', 'kategori_task.id_kategori_task = task.id_kategori_task')
-            ->select('task.deskripsi_task, user.nama, kategori_task.nama_kategori_task, kategori_task.color')
+            ->join('kategori_task', 'kategori_task.id_kategori_task = task.id_kategori_task ', 'left')
+            ->select('task.deskripsi_task, user.nama, kategori_task.nama_kategori_task, task.tgl_selesai, task.tgl_planing,kategori_task.color')            
             ->where('task.id_pekerjaan', $id_pekerjaan)
-            ->where('task.id_status_task', 1)
+            ->where('task.deleted_at', null)
+            ->groupStart()
+                ->where('task.tgl_selesai', null)
+                ->where('NOW() <= task.tgl_planing')
+            ->groupEnd()
             ->findAll();
     }
 
     //fungsi untuk mendapatkan detail di task overdue
-    public function getTaskOverdueByPekerjaan($id_pekerjaan)
-    {
-        $taskModel = new \App\Models\TaskModel();
-        return $taskModel->join('user', 'user.id_user = task.id_user')
-            ->join('kategori_task', 'kategori_task.id_kategori_task = task.id_kategori_task')
-            ->select('task.deskripsi_task, user.nama, kategori_task.nama_kategori_task, task.tgl_selesai, task.tgl_planing,kategori_task.color')
-            ->where('task.id_pekerjaan', $id_pekerjaan)
-            ->where('task.tgl_selesai > task.tgl_planing')
-            ->findAll();
-    }
+public function getTaskOverdueByPekerjaan($id_pekerjaan)
+{
+    $taskModel = new \App\Models\TaskModel();
+
+    return $taskModel->join('user', 'user.id_user = task.id_user')
+        ->join('kategori_task', 'kategori_task.id_kategori_task = task.id_kategori_task ', 'left')
+        ->select('task.deskripsi_task, user.nama, kategori_task.nama_kategori_task, task.tgl_selesai, task.tgl_planing, kategori_task.color')
+        ->where('task.id_pekerjaan', $id_pekerjaan)
+        ->where('task.deleted_at', null)
+        ->groupStart()
+            ->groupStart()
+                ->where('task.tgl_selesai', null)
+                ->where('NOW() > task.tgl_planing')
+            ->groupEnd()
+            ->orgroupStart()
+                ->where('task.tgl_selesai IS NOT NULL', null, false)
+                ->Where('task.tgl_selesai > task.tgl_planing')
+                ->groupEnd()
+        ->groupEnd()
+        ->findAll();
+}
+
 
     //fungsi untuk mendapatkan task selesai
     public function getTaskSelesaiByPekerjaan($id_pekerjaan)
     {
         $taskModel = new \App\Models\TaskModel();
         return $taskModel->join('user', 'user.id_user = task.id_user')
-            ->join('kategori_task', 'kategori_task.id_kategori_task = task.id_kategori_task')
+            ->join('kategori_task', 'kategori_task.id_kategori_task = task.id_kategori_task ', 'left')
             ->select('task.deskripsi_task, user.nama, kategori_task.nama_kategori_task, task.tgl_selesai, task.tgl_planing, kategori_task.color')
             ->where('task.id_pekerjaan', $id_pekerjaan)
-            ->where('task.id_status_task', 3)
+            ->where('task.deleted_at', null)
+            ->where('task.tgl_selesai IS NOT NULL', null, false)
+            ->where('task.tgl_selesai <= task.tgl_planing')
             ->findAll();
     }
 

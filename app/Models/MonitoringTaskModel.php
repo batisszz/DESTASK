@@ -18,15 +18,34 @@ class MonitoringTaskModel extends Model
     /**
      * Dapatkan rekap monitoring task per karyawan
      */
+/**
+ * Dapatkan rekap monitoring task per karyawan (semua usergroup)
+ */
     public function getMonitoringTaskPerKaryawan()
     {
         return $this->db->table('user u')
             ->select([
                 'u.id_user',
                 'u.nama AS nama_karyawan',
-                "COUNT(CASE WHEN t.tgl_selesai IS NULL THEN 1 END) AS task_on_progress",
-                "COUNT(CASE WHEN t.tgl_selesai IS NOT NULL AND t.tgl_selesai <= t.tgl_planing THEN 1 END) AS task_selesai",
-                "COUNT(CASE WHEN t.tgl_selesai IS NOT NULL AND t.tgl_selesai > t.tgl_planing THEN 1 END) AS task_overdue"
+                "COUNT(
+                    CASE 
+                        WHEN t.tgl_selesai IS NULL AND NOW() <= t.tgl_planing 
+                        THEN 1 
+                    END
+                ) AS task_on_progress",
+                "COUNT(
+                    CASE 
+                        WHEN t.tgl_selesai IS NOT NULL AND t.tgl_selesai <= t.tgl_planing 
+                        THEN 1 
+                    END
+                ) AS task_selesai",
+                "COUNT(
+                    CASE 
+                        WHEN (t.tgl_selesai IS NOT NULL AND t.tgl_selesai > t.tgl_planing)
+                        OR (t.tgl_selesai IS NULL AND NOW() > t.tgl_planing)
+                        THEN 1 
+                    END
+                ) AS task_overdue"
             ])
             ->join('task t', 't.id_user = u.id_user AND t.deleted_at IS NULL', 'left')
             ->where('u.deleted_at IS NULL')
@@ -47,9 +66,25 @@ class MonitoringTaskModel extends Model
             ->select([
                 'u.id_user',
                 'u.nama AS nama_karyawan',
-                "COUNT(CASE WHEN t.tgl_selesai IS NULL THEN 1 END) AS task_on_progress",
-                "COUNT(CASE WHEN t.tgl_selesai IS NOT NULL AND t.tgl_selesai <= t.tgl_planing THEN 1 END) AS task_selesai",
-                "COUNT(CASE WHEN t.tgl_selesai IS NOT NULL AND t.tgl_selesai > t.tgl_planing THEN 1 END) AS task_overdue"
+                "COUNT(
+                    CASE 
+                        WHEN t.tgl_selesai IS NULL AND NOW() <= t.tgl_planing 
+                        THEN 1 
+                    END
+                ) AS task_on_progress",
+                "COUNT(
+                    CASE 
+                        WHEN t.tgl_selesai IS NOT NULL AND t.tgl_selesai <= t.tgl_planing 
+                        THEN 1 
+                    END
+                ) AS task_selesai",
+                "COUNT(
+                    CASE 
+                        WHEN (t.tgl_selesai IS NOT NULL AND t.tgl_selesai > t.tgl_planing)
+                        OR (t.tgl_selesai IS NULL AND NOW() > t.tgl_planing)
+                        THEN 1 
+                    END
+                ) AS task_overdue"
             ])
             ->join('task t', 't.id_user = u.id_user AND t.deleted_at IS NULL', 'left')
             ->where('u.deleted_at IS NULL')
@@ -71,9 +106,25 @@ class MonitoringTaskModel extends Model
             ->select([
                 'u.id_user',
                 'u.nama AS nama_karyawan',
-                "COUNT(CASE WHEN t.tgl_selesai IS NULL THEN 1 END) AS task_on_progress",
-                "COUNT(CASE WHEN t.tgl_selesai IS NOT NULL AND t.tgl_selesai <= t.tgl_planing THEN 1 END) AS task_selesai",
-                "COUNT(CASE WHEN t.tgl_selesai IS NOT NULL AND t.tgl_selesai > t.tgl_planing THEN 1 END) AS task_overdue"
+                "COUNT(
+                    CASE 
+                        WHEN t.tgl_selesai IS NULL AND NOW() <= t.tgl_planing 
+                        THEN 1 
+                    END
+                ) AS task_on_progress",
+                "COUNT(
+                    CASE 
+                        WHEN t.tgl_selesai IS NOT NULL AND t.tgl_selesai <= t.tgl_planing 
+                        THEN 1 
+                    END
+                ) AS task_selesai",
+                "COUNT(
+                    CASE 
+                        WHEN (t.tgl_selesai IS NOT NULL AND t.tgl_selesai > t.tgl_planing)
+                        OR (t.tgl_selesai IS NULL AND NOW() > t.tgl_planing)
+                        THEN 1 
+                    END
+                ) AS task_overdue"
             ])
             ->join('task t', 't.id_user = u.id_user AND t.deleted_at IS NULL', 'left')
             ->where('u.deleted_at IS NULL')
@@ -94,6 +145,7 @@ class MonitoringTaskModel extends Model
             ->get()
             ->getResultArray();
     }
+
 
     /**
      * Dapatkan detail task karyawan
@@ -124,34 +176,50 @@ class MonitoringTaskModel extends Model
     /**
      * Dapatkan task selesai tepat waktu
      */
-    public function getTaskSelesaiTidakTerlambat($id_user)
-    {
-        return $this->where(['id_user' => $id_user])
-            ->where('tgl_selesai IS NOT NULL', null, false)
-            ->where('tgl_selesai <= tgl_planing')
-            ->orderBy('tgl_selesai', 'ASC')
-            ->findAll();
-    }
+/**
+ * Dapatkan task selesai tepat waktu (sudah selesai & tgl_selesai <= tgl_planing)
+ */
+public function getTaskSelesaiTidakTerlambat($id_user)
+{
+    return $this->where(['id_user' => $id_user, 'deleted_at' => null])
+        ->where('tgl_selesai IS NOT NULL', null, false)
+        ->where('tgl_selesai <= tgl_planing')
+        ->orderBy('tgl_selesai', 'ASC')
+        ->findAll();
+}
 
-    /**
-     * Dapatkan task overdue (selesai tapi telat)
-     */
-    public function getTaskOverdue($id_user)
-    {
-        return $this->where(['id_user' => $id_user])
-            ->where('tgl_selesai IS NOT NULL', null, false)
-            ->where('tgl_selesai > tgl_planing')
-            ->orderBy('tgl_selesai', 'ASC')
-            ->findAll();
-    }
+/**
+ * Dapatkan task overdue
+ * - sudah selesai tapi tgl_selesai > tgl_planing
+ * - atau belum selesai & sudah lewat tgl_planing
+ */
+public function getTaskOverdue($id_user)
+{
+    return $this->where(['id_user' => $id_user, 'deleted_at' => null])
+        ->groupStart()
+            ->groupStart()
+                ->where('tgl_selesai IS NULL', null, false)
+                ->where('NOW() > tgl_planing', null, false)
+            ->groupEnd()
+            ->orGroupStart()
+                ->where('tgl_selesai IS NOT NULL', null, false)
+                ->where('tgl_selesai > tgl_planing')
+            ->groupEnd()
+        ->groupEnd()
+        ->orderBy('tgl_planing', 'ASC')
+        ->findAll();
+}
 
-    /**
-     * Dapatkan task on progress (belum selesai)
-     */
-    public function getTaskOnProgress($id_user)
-    {
-        return $this->where(['id_user' => $id_user, 'tgl_selesai' => null, 'deleted_at' => null])
-            ->orderBy('tgl_planing', 'ASC')
-            ->findAll();
-    }
+/**
+ * Dapatkan task on progress (belum selesai & belum lewat tgl_planing)
+ */
+public function getTaskOnProgress($id_user)
+{
+    return $this->where(['id_user' => $id_user, 'deleted_at' => null])
+        ->where('tgl_selesai IS NULL', null, false)
+        ->where('NOW() <= tgl_planing', null, false)
+        ->orderBy('tgl_planing', 'ASC')
+        ->findAll();
+}
+
 }

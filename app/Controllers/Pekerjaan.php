@@ -180,6 +180,29 @@ class Pekerjaan extends BaseController
             $pekerjaan_filtered = $this->pekerjaanModel->getFilteredPekerjaanforStaffSupervisi($filter_pekerjaan_kategori_pekerjaan, $filter_pekerjaan_status_pekerjaan, $filter_pekerjaan_jenislayanan, $filter_pekerjaan_pm, session()->get('id_user'));
         } else {
             $pekerjaan_filtered = $this->pekerjaanModel->getFilteredPekerjaan($filter_pekerjaan_kategori_pekerjaan, $filter_pekerjaan_status_pekerjaan, $filter_pekerjaan_jenislayanan, $filter_pekerjaan_pm);
+            $pekerjaan = $this->pekerjaanModel->getPekerjaan();
+            $task_on_progress = [];
+            $task_overdue = [];
+            $task_selesai = [];
+
+            foreach ($pekerjaan as $p) {
+                $id = $p['id_pekerjaan'];
+
+                $task_on_progress[] = [
+                    'id_pekerjaan' => $id,
+                    'jumlah_task_on_progress' => $this->pekerjaanModel->countTaskOnProgressByIdPekerjaan($id)
+                ];
+
+                $task_overdue[] = [
+                    'id_pekerjaan' => $id,
+                    'jumlah_task_overdue' => $this->pekerjaanModel->countTaskOverdueByIdPekerjaan($id)
+                ];
+
+                $task_selesai[] = [
+                    'id_pekerjaan' => $id,
+                    'jumlah_task_selesai' => $this->pekerjaanModel->countTaskSelesaiByIdPekerjaan($id)
+                ];
+            }
         }
         $data = [
             'pekerjaan' => $pekerjaan_filtered,
@@ -190,6 +213,9 @@ class Pekerjaan extends BaseController
             'status_pekerjaan' => $this->statusPekerjaanModel->getStatusPekerjaan(),
             'url1' => '/pekerjaan/daftar_pekerjaan',
             'url' => '/pekerjaan/daftar_pekerjaan',
+            'task_on_progress' => $task_on_progress,
+            'task_overdue' => $task_overdue,
+            'task_selesai' => $task_selesai,
             'filter_pekerjaan_pm' => $filter_pekerjaan_pm,
             'filter_pekerjaan_jenislayanan' => $filter_pekerjaan_jenislayanan,
             'filter_pekerjaan_kategori_pekerjaan' => $filter_pekerjaan_kategori_pekerjaan,
