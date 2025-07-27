@@ -1,14 +1,14 @@
 <!-- Vendor JS Files -->
-<script src="<?=base_url()?>/assets/library_fe/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="<?=base_url()?>/assets/library_fe/quill/quill.min.js"></script>
-<script src="<?=base_url()?>/assets/library_fe/simple-datatables/simple-datatables.js"></script>
-<script src="<?=base_url()?>/assets/library_fe/tinymce/tinymce.min.js"></script>
+<script src="<?= base_url() ?>/assets/library_fe/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="<?= base_url() ?>/assets/library_fe/quill/quill.min.js"></script>
+<script src="<?= base_url() ?>/assets/library_fe/simple-datatables/simple-datatables.js"></script>
+<script src="<?= base_url() ?>/assets/library_fe/tinymce/tinymce.min.js"></script>
 <!-- Sweet Alert -->
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <!-- Template Main JS File -->
-<script src="<?=base_url()?>/assets/js/main.js"></script>
+<script src="<?= base_url() ?>/assets/js/main.js"></script>
 <!--Backend-Ajax js File -->
-<script src="<?=base_url()?>/assets/js/backend_ajax.js"></script>
+<script src="<?= base_url() ?>/assets/js/backend_ajax.js"></script>
 <!-- Load library Inputmask -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/jquery.inputmask.min.js"></script>
 
@@ -177,7 +177,9 @@
    $(document).ready(function() {
       $('#myTableDetailTaskPekerjaan').DataTable();
    });
-
+   $(document).ready(function() {
+      $('#myTableUg').DataTable();
+   });
 </script>
 
 <!--FlatPickr-->

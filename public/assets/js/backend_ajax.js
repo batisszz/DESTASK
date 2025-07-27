@@ -429,6 +429,10 @@ function edit_usergroup($id){
 function resetFilterMonitoringPerformaProduk() {
    window.location.href = "/monitoring_performa/daftar_monitoring_performa";
 }
+function resetFilterMonitoringPerformaUsergroup() {
+    window.location.href = "/monitoring_performa/daftar_monitoring_performa";
+}
+
 
 //                          //
 // PENGELOLAAN DATA KINERJA //

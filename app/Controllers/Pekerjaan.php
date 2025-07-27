@@ -96,13 +96,13 @@ class Pekerjaan extends BaseController
         return view('pekerjaan/daftar_pekerjaan', $data);
     }
 
-    //luthfi, fungsi untuk mendapatkan detail task on progress dr model pekerjaan
+    //fungsi untuk mendapatkan detail task on progress dr model pekerjaan
     public function detail_task_on_progress($id_pekerjaan)
     {
-         if (session()->get('user_level') != 'hod') {
-        // Misalnya redirect ke halaman daftar_pekerjaan dengan pesan error
-        return redirect()->to('/pekerjaan/daftar_pekerjaan')->with('error', 'Akses ditolak.');
-    }
+        if (session()->get('user_level') != 'hod') {
+            // Misalnya redirect ke halaman daftar_pekerjaan dengan pesan error
+            return redirect()->to('/pekerjaan/daftar_pekerjaan')->with('error', 'Akses ditolak.');
+        }
         $task_on_progress = $this->pekerjaanModel->getTaskOnProgressByPekerjaan($id_pekerjaan);
         $kategori_task = $this->kategoriTaskModel->findAll();
         $data = [
@@ -118,10 +118,10 @@ class Pekerjaan extends BaseController
 
     public function detail_task_overdue($id_pekerjaan)
     {
-         if (session()->get('user_level') != 'hod') {
-        // Misalnya redirect ke halaman daftar_pekerjaan dengan pesan error
-        return redirect()->to('/pekerjaan/daftar_pekerjaan')->with('error', 'Akses ditolak.');
-    }
+        if (session()->get('user_level') != 'hod') {
+            // Misalnya redirect ke halaman daftar_pekerjaan dengan pesan error
+            return redirect()->to('/pekerjaan/daftar_pekerjaan')->with('error', 'Akses ditolak.');
+        }
         $task_overdue = $this->pekerjaanModel->getTaskOverdueByPekerjaan($id_pekerjaan);
         $kategori_task = $this->kategoriTaskModel->findAll();
         $data = [
@@ -137,10 +137,10 @@ class Pekerjaan extends BaseController
 
     public function detail_task_selesai($id_pekerjaan)
     {
-         if (session()->get('user_level') != 'hod') {
-        // Misalnya redirect ke halaman daftar_pekerjaan dengan pesan error
-        return redirect()->to('/pekerjaan/daftar_pekerjaan')->with('error', 'Akses ditolak.');
-    }
+        if (session()->get('user_level') != 'hod') {
+            // Misalnya redirect ke halaman daftar_pekerjaan dengan pesan error
+            return redirect()->to('/pekerjaan/daftar_pekerjaan')->with('error', 'Akses ditolak.');
+        }
         $task_selesai = $this->pekerjaanModel->getTaskSelesaiByPekerjaan($id_pekerjaan);
         $kategori_task = $this->kategoriTaskModel->findAll();
         $data = [
@@ -148,7 +148,7 @@ class Pekerjaan extends BaseController
             'task_selesai' => $task_selesai,
             'kategori_task' => $kategori_task,
             'url1' => '/pekerjaan/daftar_pekerjaan',
-            'url' => '/pekerjaan/detail_task_selesai/' . $id_pekerjaan  
+            'url' => '/pekerjaan/detail_task_selesai/' . $id_pekerjaan
         ];
 
         return view('pekerjaan/detail_ts', $data);

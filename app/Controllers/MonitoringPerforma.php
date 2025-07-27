@@ -1,5 +1,7 @@
 <?php
+
 namespace App\Controllers;
+
 use App\Controllers\BaseController;
 use App\Models\MonitoringPerformaModel;
 
@@ -12,30 +14,34 @@ class MonitoringPerforma extends BaseController
         $this->monitoringPerformaModel = new MonitoringPerformaModel();
     }
 
-/** Controller Monitoring Performa Produk **/    
-
+    /** Controller Monitoring Performa Usergroup */
     /**
-     * Halaman daftar monitoring performa produk (filter bulan & tahun)
+     * Halaman daftar monitoring performa usergroup (filter bulan & tahun)
      */
-    public function daftar_monitoring_performa_produk()
+    public function daftar_monitoring_performa()
     {
         $filter_bulan = $this->request->getGet('filter_bulan') ?? '';
         $filter_tahun = $this->request->getGet('filter_tahun') ?? '';
+        $filter_bulan_ug = $this->request->getGet('filter_bulan_ug') ?? '';
+        $filter_tahun_ug = $this->request->getGet('filter_tahun_ug') ?? '';
 
         $monitoring = $this->monitoringPerformaModel->getProductMonitoringByBulanTahun($filter_bulan, $filter_tahun);
+        $monitoring_ug = $this->monitoringPerformaModel->getUsergroupMonitoringByBulanTahun($filter_bulan_ug, $filter_tahun_ug);
 
         $data = [
             'monitoring' => $monitoring,
+            'monitoring_ug' => $monitoring_ug,
             'filter_bulan' => $filter_bulan,
             'filter_tahun' => $filter_tahun,
-            'title' => 'Monitoring Performa Per Produk',
-            'url' => '/monitoring_performa/daftar_monitoring_performa_produk',
+            'filter_bulan_ug' => $filter_bulan_ug,
+            'filter_tahun_ug' => $filter_tahun_ug,
+            'title' => 'Monitoring Performa',
+            'url' => '/monitoring_performa/daftar_monitoring_performa',
             'url1' => '/monitoring_performa/daftar_monitoring_performa',
         ];
 
         return view('monitoring_performa/daftar_monitoring_performa', $data);
     }
-
     /**
      * Detail monitoring performa project per produk
      */
@@ -60,6 +66,5 @@ class MonitoringPerforma extends BaseController
         return view('monitoring_performa/detail_monitoring_performa_produk', $data);
     }
 
-/** End of Controller Monitoring Performa Produk **/
-
+    /** End of Controller Monitoring Performa Produk **/
 }
