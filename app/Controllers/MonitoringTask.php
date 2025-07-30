@@ -89,10 +89,8 @@ class MonitoringTask extends BaseController
 
         // Load data tambahan
         $kategoriTaskModel = new \App\Models\KategoriTaskModel();
-        $statusTaskModel = new \App\Models\StatusTaskModel();
 
         $kategori_task = $kategoriTaskModel->findAll();
-        $status_task = $statusTaskModel->findAll();
         $users = $userModel->findAll();
 
         $data = [
@@ -105,7 +103,6 @@ class MonitoringTask extends BaseController
             . '&filter_tanggal_selesai=' . $tanggal_selesai
             . '&filter_monitoring_usergroup=' . $id_usergroup,
             'kategori_task' => $kategori_task,
-            'status_task' => $status_task,
             'user' => $users,
             'filter_tanggal_mulai' => $tanggal_mulai,
             'filter_tanggal_selesai' => $tanggal_selesai,

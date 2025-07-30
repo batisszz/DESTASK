@@ -69,21 +69,7 @@
                                             </td>
                                             <td><?= date('d-m-Y', strtotime($task['tgl_planing'])) ?></td>
                                             <td><?= $task['tgl_selesai'] ? date('d-m-Y', strtotime($task['tgl_selesai'])) : '-' ?></td>
-                                            <td>
-                                                <?php
-                                                $found = false;
-                                                foreach ($status_task as $st) {
-                                                    if ($task['id_status_task'] == $st['id_status_task']) {
-                                                        echo '<span style="background-color: ' . $st['color'] . ';" class="badge rounded-pill">' . esc($st['nama_status_task']) . '</span>';
-                                                        $found = true;
-                                                        break;
-                                                    }
-                                                }
-                                                if (!$found) {
-                                                    echo '<span class="badge bg-secondary">Tidak diketahui</span>'; // fallback
-                                                }
-                                                ?>
-                                            </td>
+                                            <td><?= getTaskStatusBadge($task['tgl_selesai'], $task['tgl_planing']) ?></td>
                                         </tr>
                                     <?php endforeach ?>
                                 <?php else : ?>
@@ -93,6 +79,8 @@
                                 <?php endif ?>
                             </tbody>
                         </table>
+                    </div>
+                </div>
                         <hr style="border-top: 3px solid black;">
                         <div class="text-center">
                             <a href="<?= site_url('/monitoring_task/filter') ?>?filter_monitoring_usergroup=<?= esc($filter_monitoring_usergroup) ?>&filter_tanggal_mulai=<?= esc($filter_tanggal_mulai) ?>&filter_tanggal_selesai=<?= esc($filter_tanggal_selesai) ?>" 
