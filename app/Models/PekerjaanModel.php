@@ -292,15 +292,26 @@ class PekerjaanModel extends Model
 
 
     //fungsi untuk menghitung task selesai tepat waktu berdasarkan id pekerjaan
-    public function countTaskSelesaiByIdPekerjaan($id_pekerjaan)
+    public function countTaskOnTargetByIdPekerjaan($id_pekerjaan)
     {
         $taskModel = new \App\Models\TaskModel();
         return $taskModel
         ->where('id_pekerjaan', $id_pekerjaan)
         ->where('deleted_at', null)
         ->where('tgl_selesai IS NOT NULL', null, false)
-        ->where('tgl_selesai <= tgl_planing')
+        ->where('tgl_selesai = tgl_planing')
         ->countAllResults();
+    }
+    //fungsi untuk menghitung task percepatan berdasarkan id pekerjaan
+    public function countTaskPercepatanByIdPekerjaan($id_pekerjaan)
+    {
+        $taskModel = new \App\Models\TaskModel();
+        return $taskModel
+            ->where('id_pekerjaan', $id_pekerjaan)
+            ->where('deleted_at', null)
+            ->where('tgl_selesai IS NOT NULL', null, false)
+            ->where('tgl_selesai < tgl_planing')
+            ->countAllResults();
     }
 
     //fungsi untuk mendapatkan detail di task on progress
@@ -344,7 +355,7 @@ public function getTaskOverdueByPekerjaan($id_pekerjaan)
 
 
     //fungsi untuk mendapatkan task selesai
-    public function getTaskSelesaiByPekerjaan($id_pekerjaan)
+    public function getTaskOnTargetByPekerjaan($id_pekerjaan)
     {
         $taskModel = new \App\Models\TaskModel();
         return $taskModel->join('user', 'user.id_user = task.id_user')
@@ -353,11 +364,22 @@ public function getTaskOverdueByPekerjaan($id_pekerjaan)
             ->where('task.id_pekerjaan', $id_pekerjaan)
             ->where('task.deleted_at', null)
             ->where('task.tgl_selesai IS NOT NULL', null, false)
-            ->where('task.tgl_selesai <= task.tgl_planing')
+            ->where('task.tgl_selesai = task.tgl_planing')
             ->findAll();
     }
-
-
+    //fungsi untuk mendapatkan task percepatan
+    public function getTaskPercepatanByPekerjaan($id_pekerjaan)     
+    {
+        $taskModel = new \App\Models\TaskModel();
+        return $taskModel->join('user', 'user.id_user = task.id_user')
+            ->join('kategori_task', 'kategori_task.id_kategori_task = task.id_kategori_task ', 'left')
+            ->select('task.deskripsi_task, user.nama, kategori_task.nama_kategori_task, task.tgl_selesai, task.tgl_planing, kategori_task.color')
+            ->where('task.id_pekerjaan', $id_pekerjaan)
+            ->where('task.deleted_at', null)
+            ->where('task.tgl_selesai IS NOT NULL', null, false)
+            ->where('task.tgl_selesai < task.tgl_planing')
+            ->findAll();
+    }
 
 
 

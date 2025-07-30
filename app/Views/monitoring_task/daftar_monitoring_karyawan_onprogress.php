@@ -63,9 +63,11 @@
                                 <tr>
                                     <th>No</th>
                                     <th>Nama Karyawan</th>
+                                    <th>Usergroup</th>
                                     <th>Task On Progress</th>
                                     <th>Task Overdue</th>
-                                    <th>Task Selesai</th>
+                                    <th>Task On Target</th>
+                                    <th>Task Percepatan</th>
                                     <th>Aksi</th>   
                                 </tr>
                             </thead>
@@ -76,6 +78,7 @@
                                         <tr>
                                             <td><?= $no++ ?></td>
                                             <td><?= esc($row['nama_karyawan']) ?></td>
+                                            <td><?= esc($row['usergroup']) ?></td>
                                             <td>
                                                 <span class="badge bg-warning text-dark"><?= esc($row['task_on_progress']) ?></span>
                                             </td>
@@ -83,8 +86,10 @@
                                                 <span class="badge bg-danger"><?= esc($row['task_overdue']) ?></span>
                                             </td>
                                             <td>
-                                                <span class="badge bg-success"><?= esc($row['task_selesai']) ?></span>
+                                                <span class="badge bg-success"><?= esc($row['task_ontarget']) ?></span>
                                             </td>
+                                            <td>
+                                                <span class="badge bg-primary"><?= esc($row['task_percepatan']) ?></span>
                                             <td>
                                  <div class="btn-group" role="group">
                                     <div>

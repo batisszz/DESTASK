@@ -27,6 +27,7 @@ class MonitoringTaskModel extends Model
             ->select([
                 'u.id_user',
                 'u.nama AS nama_karyawan',
+                'ug.nama_usergroup AS usergroup',
                 "COUNT(
                     CASE 
                         WHEN t.tgl_selesai IS NULL AND NOW() <= t.tgl_planing 
@@ -35,10 +36,16 @@ class MonitoringTaskModel extends Model
                 ) AS task_on_progress",
                 "COUNT(
                     CASE 
-                        WHEN t.tgl_selesai IS NOT NULL AND t.tgl_selesai <= t.tgl_planing 
+                        WHEN t.tgl_selesai IS NOT NULL AND t.tgl_selesai = t.tgl_planing 
                         THEN 1 
                     END
-                ) AS task_selesai",
+                ) AS task_ontarget",
+                 "COUNT(
+                    CASE 
+                        WHEN t.tgl_selesai IS NOT NULL AND t.tgl_selesai < t.tgl_planing 
+                        THEN 1 
+                    END
+                ) AS task_percepatan",
                 "COUNT(
                     CASE 
                         WHEN (t.tgl_selesai IS NOT NULL AND t.tgl_selesai > t.tgl_planing)
@@ -47,6 +54,7 @@ class MonitoringTaskModel extends Model
                     END
                 ) AS task_overdue"
             ])
+            ->join('usergroup ug', 'ug.id_usergroup = u.id_usergroup', 'left')
             ->join('task t', 't.id_user = u.id_user AND t.deleted_at IS NULL', 'left')
             ->where('u.deleted_at IS NULL')
             ->where('u.id_usergroup IS NOT NULL')
@@ -66,6 +74,7 @@ class MonitoringTaskModel extends Model
             ->select([
                 'u.id_user',
                 'u.nama AS nama_karyawan',
+                'ug.nama_usergroup AS usergroup',
                 "COUNT(
                     CASE 
                         WHEN t.tgl_selesai IS NULL AND NOW() <= t.tgl_planing 
@@ -74,10 +83,16 @@ class MonitoringTaskModel extends Model
                 ) AS task_on_progress",
                 "COUNT(
                     CASE 
-                        WHEN t.tgl_selesai IS NOT NULL AND t.tgl_selesai <= t.tgl_planing 
+                        WHEN t.tgl_selesai IS NOT NULL AND t.tgl_selesai = t.tgl_planing 
                         THEN 1 
                     END
-                ) AS task_selesai",
+                ) AS task_ontarget",
+                 "COUNT(
+                    CASE 
+                        WHEN t.tgl_selesai IS NOT NULL AND t.tgl_selesai < t.tgl_planing 
+                        THEN 1 
+                    END
+                ) AS task_percepatan",
                 "COUNT(
                     CASE 
                         WHEN (t.tgl_selesai IS NOT NULL AND t.tgl_selesai > t.tgl_planing)
@@ -86,6 +101,7 @@ class MonitoringTaskModel extends Model
                     END
                 ) AS task_overdue"
             ])
+            ->join('usergroup ug', 'ug.id_usergroup = u.id_usergroup', 'left')
             ->join('task t', 't.id_user = u.id_user AND t.deleted_at IS NULL', 'left')
             ->where('u.deleted_at IS NULL')
             ->where('u.id_usergroup IS NOT NULL')
@@ -106,6 +122,7 @@ class MonitoringTaskModel extends Model
             ->select([
                 'u.id_user',
                 'u.nama AS nama_karyawan',
+                'ug.nama_usergroup AS usergroup',
                 "COUNT(
                     CASE 
                         WHEN t.tgl_selesai IS NULL AND NOW() <= t.tgl_planing 
@@ -114,10 +131,16 @@ class MonitoringTaskModel extends Model
                 ) AS task_on_progress",
                 "COUNT(
                     CASE 
-                        WHEN t.tgl_selesai IS NOT NULL AND t.tgl_selesai <= t.tgl_planing 
+                        WHEN t.tgl_selesai IS NOT NULL AND t.tgl_selesai = t.tgl_planing 
                         THEN 1 
                     END
-                ) AS task_selesai",
+                ) AS task_ontarget",
+                 "COUNT(
+                    CASE 
+                        WHEN t.tgl_selesai IS NOT NULL AND t.tgl_selesai < t.tgl_planing 
+                        THEN 1 
+                    END
+                ) AS task_percepatan",
                 "COUNT(
                     CASE 
                         WHEN (t.tgl_selesai IS NOT NULL AND t.tgl_selesai > t.tgl_planing)
@@ -126,6 +149,7 @@ class MonitoringTaskModel extends Model
                     END
                 ) AS task_overdue"
             ])
+            ->join('usergroup ug', 'ug.id_usergroup = u.id_usergroup', 'left')
             ->join('task t', 't.id_user = u.id_user AND t.deleted_at IS NULL', 'left')
             ->where('u.deleted_at IS NULL')
             ->where('u.id_usergroup IS NOT NULL')

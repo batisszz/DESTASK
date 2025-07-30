@@ -70,9 +70,13 @@ class Pekerjaan extends BaseController
                     'jumlah_task_overdue' => $this->pekerjaanModel->countTaskOverdueByIdPekerjaan($id)
                 ];
 
-                $task_selesai[] = [
+                $task_ontarget[] = [
                     'id_pekerjaan' => $id,
-                    'jumlah_task_selesai' => $this->pekerjaanModel->countTaskSelesaiByIdPekerjaan($id)
+                    'jumlah_task_ontarget' => $this->pekerjaanModel->countTaskOnTargetByIdPekerjaan($id)
+                ];
+                $task_percepatan[] = [
+                    'id_pekerjaan' => $id,
+                    'jumlah_task_percepatan' => $this->pekerjaanModel->countTaskPercepatanByIdPekerjaan($id)
                 ];
             }
         }
@@ -85,7 +89,8 @@ class Pekerjaan extends BaseController
             'status_pekerjaan' => $this->statusPekerjaanModel->getStatusPekerjaan(),
             'task_on_progress' => $task_on_progress,
             'task_overdue' => $task_overdue,
-            'task_selesai' => $task_selesai,
+            'task_ontarget' => $task_ontarget,
+            'task_percepatan' => $task_percepatan,
             'url1' => '/pekerjaan/daftar_pekerjaan',
             'url' => '/pekerjaan/daftar_pekerjaan',
             'filter_pekerjaan_pm' => '',
@@ -198,9 +203,13 @@ class Pekerjaan extends BaseController
                     'jumlah_task_overdue' => $this->pekerjaanModel->countTaskOverdueByIdPekerjaan($id)
                 ];
 
-                $task_selesai[] = [
+                $task_ontarget[] = [
                     'id_pekerjaan' => $id,
-                    'jumlah_task_selesai' => $this->pekerjaanModel->countTaskSelesaiByIdPekerjaan($id)
+                    'jumlah_task_ontarget' => $this->pekerjaanModel->countTaskOnTargetByIdPekerjaan($id)
+                ];  
+                $task_percepatan[] = [
+                    'id_pekerjaan' => $id,
+                    'jumlah_task_percepatan' => $this->pekerjaanModel->countTaskPercepatanByIdPekerjaan($id)
                 ];
             }
         }
@@ -215,7 +224,8 @@ class Pekerjaan extends BaseController
             'url' => '/pekerjaan/daftar_pekerjaan',
             'task_on_progress' => $task_on_progress,
             'task_overdue' => $task_overdue,
-            'task_selesai' => $task_selesai,
+            'task_ontarget' => $task_ontarget,
+            'task_percepatan' => $task_percepatan,
             'filter_pekerjaan_pm' => $filter_pekerjaan_pm,
             'filter_pekerjaan_jenislayanan' => $filter_pekerjaan_jenislayanan,
             'filter_pekerjaan_kategori_pekerjaan' => $filter_pekerjaan_kategori_pekerjaan,
@@ -238,7 +248,7 @@ class Pekerjaan extends BaseController
             }
         }
         $jumlah_semua_task_di_pekerjaan_ini = $this->taskModel->countTaskAll_ByIdPekerjaan($id_pekerjaan);
-        $jumlah_task_selesai_di_pekerjaan_ini = $this->taskModel->countTaskSelesai_ByIdPekerjaan($id_pekerjaan);
+        $jumlah_task_selesai_di_pekerjaan_ini = $this->taskModel->countTaskOnTarget_ByIdPekerjaan($id_pekerjaan);
         // Menghitung persentase task selesai
         if ($jumlah_semua_task_di_pekerjaan_ini > 0) {
             $persentase_selesai = ($jumlah_task_selesai_di_pekerjaan_ini / $jumlah_semua_task_di_pekerjaan_ini) * 100;
