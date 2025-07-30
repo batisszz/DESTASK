@@ -363,7 +363,6 @@ public function getTaskOverdueByPekerjaan($id_pekerjaan)
             ->select('task.deskripsi_task, user.nama, kategori_task.nama_kategori_task, task.tgl_selesai, task.tgl_planing, kategori_task.color')
             ->where('task.id_pekerjaan', $id_pekerjaan)
             ->where('task.deleted_at', null)
-            ->where('task.tgl_selesai IS NOT NULL', null, false)
             ->where('task.tgl_selesai = task.tgl_planing')
             ->findAll();
     }

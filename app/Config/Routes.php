@@ -57,7 +57,8 @@ $routes->delete('/pekerjaan/delete_pekerjaan/(:num)', 'Pekerjaan::delete_pekerja
 $routes->get('/pekerjaan/get_task_onprogress_overdue_selesai/(:num)', 'Pekerjaan::getTaskOnProgress_Overdue_SelesaiByIdPekerjaan/$1');
 $routes->get('pekerjaan/detail_top/(:num)', 'Pekerjaan::detail_task_on_progress/$1');
 $routes->get('pekerjaan/detail_to/(:num)', 'Pekerjaan::detail_task_overdue/$1');
-$routes->get('pekerjaan/detail_ts/(:num)', 'Pekerjaan::detail_task_selesai/$1');
+$routes->get('pekerjaan/detail_tot/(:num)', 'Pekerjaan::detail_task_ontarget/$1');
+$routes->get('pekerjaan/detail_tp/(:num)', 'Pekerjaan::detail_task_percepatan/$1');
 
 //Untuk download pekerjaan
 //Untuk menampilkan halaman download pekerjaan

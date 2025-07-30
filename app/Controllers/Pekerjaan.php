@@ -140,25 +140,43 @@ class Pekerjaan extends BaseController
         return view('pekerjaan/detail_to', $data);
     }
 
-    public function detail_task_selesai($id_pekerjaan)
+    public function detail_task_ontarget($id_pekerjaan)
     {
         if (session()->get('user_level') != 'hod') {
             // Misalnya redirect ke halaman daftar_pekerjaan dengan pesan error
             return redirect()->to('/pekerjaan/daftar_pekerjaan')->with('error', 'Akses ditolak.');
         }
-        $task_selesai = $this->pekerjaanModel->getTaskSelesaiByPekerjaan($id_pekerjaan);
+        $task_ontarget = $this->pekerjaanModel->getTaskOnTargetByPekerjaan($id_pekerjaan);
         $kategori_task = $this->kategoriTaskModel->findAll();
         $data = [
             'id_pekerjaan' => $id_pekerjaan,
-            'task_selesai' => $task_selesai,
+            'task_ontarget' => $task_ontarget,
             'kategori_task' => $kategori_task,
             'url1' => '/pekerjaan/daftar_pekerjaan',
-            'url' => '/pekerjaan/detail_task_selesai/' . $id_pekerjaan
+            'url' => '/pekerjaan/detail_task_ontarget/' . $id_pekerjaan
         ];
 
-        return view('pekerjaan/detail_ts', $data);
+        return view('pekerjaan/detail_tot', $data);
     }
 
+    public function detail_task_percepatan($id_pekerjaan)
+    {
+        if (session()->get('user_level') != 'hod') {
+            // Misalnya redirect ke halaman daftar_pekerjaan dengan pesan error
+            return redirect()->to('/pekerjaan/daftar_pekerjaan')->with('error', 'Akses ditolak.');
+        }
+        $task_percepatan = $this->pekerjaanModel->getTaskPercepatanByPekerjaan($id_pekerjaan);
+        $kategori_task = $this->kategoriTaskModel->findAll();
+        $data = [
+            'id_pekerjaan' => $id_pekerjaan,
+            'task_percepatan' => $task_percepatan,
+            'kategori_task' => $kategori_task,
+            'url1' => '/pekerjaan/daftar_pekerjaan',
+            'url' => '/pekerjaan/detail_task_percepatan/' . $id_pekerjaan
+        ];
+
+        return view('pekerjaan/detail_tp', $data);
+    }
     //Fungsi daftar_pekerjaan
     public function daftar_task()
     {
