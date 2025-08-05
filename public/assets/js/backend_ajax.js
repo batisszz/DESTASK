@@ -427,10 +427,16 @@ function edit_usergroup($id){
 //                            //
 //Proses reset filter
 function resetFilterMonitoringPerformaProduk() {
-   window.location.href = "/monitoring_performa/daftar_monitoring_performa";
+    const url = new URL(window.location.href);
+    url.searchParams.delete('filter_bulan');
+    url.searchParams.delete('filter_tahun');
+    window.location.href = url.toString();
 }
 function resetFilterMonitoringPerformaUsergroup() {
-    window.location.href = "/monitoring_performa/daftar_monitoring_performa";
+const url = new URL(window.location.href);
+    url.searchParams.delete('filter_bulan_ug');
+    url.searchParams.delete('filter_tahun_ug');
+    window.location.href = url.toString();
 }
 
 

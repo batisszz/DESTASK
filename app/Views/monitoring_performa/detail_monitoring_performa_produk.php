@@ -42,13 +42,13 @@
                             </table>
                                 <hr style="border-top: 3px solid black;">
                                     <div class="text-center">
-                                        <a href="<?= site_url('/monitoring_performa/daftar_monitoring_performa') ?>?filter_bulan=<?= esc($filter_bulan) ?>&filter_tahun=<?= esc($filter_tahun) ?>" 
+                                      <a href="<?= $url1 ?>?filter_bulan=<?= $filter_bulan ?>&filter_tahun=<?= $filter_tahun ?>&filter_bulan_ug=<?= $filter_bulan_ug ?>&filter_tahun_ug=<?= $filter_tahun_ug ?>"
                                             class="btn btn-secondary">
                                             <i class="bi bi-x-square"></i> Tutup
                                         </a>
-            </section>
-            </div>
-        </div>
+                                    </section>
+                                </div>
+                            </div>
 <!-- End Tabel Detail Monitoring Performa Produk -->
 
 <?= $this-> endSection(); ?>

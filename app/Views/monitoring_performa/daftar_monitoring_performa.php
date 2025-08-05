@@ -14,7 +14,9 @@
             </div>
             <div class="card-body">
                 <form action="<?= site_url('/monitoring_performa/daftar_monitoring_performa') ?>" method="GET" id="filter_monitoring_performa_usergroup">
-                    <div class="row">
+                    <input type="hidden" name="filter_bulan" value="<?= esc($filter_bulan) ?>">
+                    <input type="hidden" name="filter_tahun" value="<?= esc($filter_tahun) ?>">    
+                <div class="row">
                         <div class="col-md-4 mb-4">
                             <div class="input-group">
                                 <label class="input-group-text" for="">Bulan</label>
@@ -99,7 +101,6 @@
         </section>
     </div>
 </div>
-<!-- Tabel Menu Monitoring Performa Usergroup-->
 
 <!-- Tabel Monitoring Performa Produk -->
 <div class="row">
@@ -110,7 +111,9 @@
             </div>
             <div class="card-body">
                 <form action="<?= site_url('/monitoring_performa/daftar_monitoring_performa') ?>" method="GET" id="filter_monitoring_performa">
-                    <div class="row">
+                    <input type="hidden" name="filter_bulan_ug" value="<?= esc($filter_bulan_ug) ?>">
+                    <input type="hidden" name="filter_tahun_ug" value="<?= esc($filter_tahun_ug) ?>">    
+                <div class="row">
                         <div class="col-md-4 mb-4">
                             <div class="input-group">
                                 <label class="input-group-text" for="">Bulan</label>
@@ -186,7 +189,7 @@
                                             <td><?= esc($row['percepatan']) ?></td>
                                             <td>
                                                 <a href="<?= site_url('/monitoring_performa/detail_monitoring_performa_produk/' . urlencode($row['produk']))
-                                                                . '?filter_bulan=' . $filter_bulan . '&filter_tahun=' . $filter_tahun ?>"
+                                                                . '?filter_bulan=' . $filter_bulan . '&filter_tahun=' . $filter_tahun . '&filter_bulan_ug=' . $filter_bulan_ug . '&filter_tahun_ug=' . $filter_tahun_ug ?>"
                                                     class="btn btn-info" title="Klik untuk melihat detail produk">
                                                     <i class="ri-information-line"></i>
                                                 </a>
