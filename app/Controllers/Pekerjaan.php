@@ -86,7 +86,7 @@ class Pekerjaan extends BaseController
                 $status = $this->pekerjaanModel->getStatusPengerjaanPekerjaanByPekerjaan($id);
                 $status_pengerjaan[] = [
                     'id_pekerjaan' => $id,
-                    'status_pengerjaan_pekerjaan' => $status[0]['status_pengerjaan_pekerjaan'] ?? null
+                    'status_pengerjaan_pekerjaan' => $status
                 ];
             }
         }
@@ -246,7 +246,7 @@ class Pekerjaan extends BaseController
                 $status = $this->pekerjaanModel->getStatusPengerjaanPekerjaanByPekerjaan($id);
                 $status_pengerjaan[] = [
                     'id_pekerjaan' => $id,
-                    'status_pengerjaan_pekerjaan' => $status[0]['status_pengerjaan_pekerjaan'] ?? null
+                    'status_pengerjaan_pekerjaan' => $status
                 ];
             }
         }
@@ -959,6 +959,17 @@ class Pekerjaan extends BaseController
             $data_pekerjaan_presales = $this->pekerjaanModel->getPekerjaanByUserIdIdStatusPekerjaan(session()->get('id_user'), 1);
             $file_name = 'Data_Pekerjaan_Presales_' . session()->get('nama') . '.xlsx';
         }
+
+        foreach ($data_pekerjaan_presales as &$pekerjaan) {
+            $id_pekerjaan = $pekerjaan['id_pekerjaan'];
+
+            $pekerjaan['status_pengerjaan'] = $this->pekerjaanModel->getStatusPengerjaanPekerjaanByPekerjaan($id_pekerjaan);
+            $pekerjaan['task_on_progress'] = $this->pekerjaanModel->countTaskOnProgressByIdPekerjaan($id_pekerjaan);
+            $pekerjaan['task_overdue'] = $this->pekerjaanModel->countTaskOverdueByIdPekerjaan($id_pekerjaan);
+            $pekerjaan['task_on_target'] = $this->pekerjaanModel->countTaskOnTargetByIdPekerjaan($id_pekerjaan);
+            $pekerjaan['task_percepatan'] = $this->pekerjaanModel->countTaskPercepatanByIdPekerjaan($id_pekerjaan);
+        }
+
         $data_status_pekerjaan = $this->statusPekerjaanModel->getStatusPekerjaan(); //Untuk menampilkan nama status pekerjaan di excel
         $data_kategori_pekerjaan = $this->kategoriPekerjaanModel->getKategoriPekerjaan(); //Untuk menampilkan nama kategori pekerjaan di excel
         export_pekerjaan_excel($data_pekerjaan_presales, $file_name, $data_status_pekerjaan, $data_kategori_pekerjaan);
@@ -973,6 +984,17 @@ class Pekerjaan extends BaseController
             $data_pekerjaan_presales = $this->pekerjaanModel->getPekerjaanByUserIdIdStatusPekerjaan(session()->get('id_user'), 1);
             $file_name = 'Data_Pekerjaan_Presales_' . session()->get('nama') . '.pdf';
         }
+
+        foreach ($data_pekerjaan_presales as &$pekerjaan) {
+            $id_pekerjaan = $pekerjaan['id_pekerjaan'];
+
+            $pekerjaan['status_pengerjaan'] = $this->pekerjaanModel->getStatusPengerjaanPekerjaanByPekerjaan($id_pekerjaan);
+            $pekerjaan['task_on_progress'] = $this->pekerjaanModel->countTaskOnProgressByIdPekerjaan($id_pekerjaan);
+            $pekerjaan['task_overdue'] = $this->pekerjaanModel->countTaskOverdueByIdPekerjaan($id_pekerjaan);
+            $pekerjaan['task_on_target'] = $this->pekerjaanModel->countTaskOnTargetByIdPekerjaan($id_pekerjaan);
+            $pekerjaan['task_percepatan'] = $this->pekerjaanModel->countTaskPercepatanByIdPekerjaan($id_pekerjaan);
+        }
+
         $data = [
             'data_pekerjaan' => $data_pekerjaan_presales,
             'file_name' => $file_name,
@@ -993,6 +1015,17 @@ class Pekerjaan extends BaseController
             $data_pekerjaan_presales = $this->pekerjaanModel->getPekerjaanByUserIdIdStatusPekerjaan_tahun(session()->get('id_user'), 1, $tahun);
             $file_name = 'Data_Pekerjaan_Presales_' . session()->get('nama') . '_' . $tahun . '.xlsx';
         }
+
+        foreach ($data_pekerjaan_presales as &$pekerjaan) {
+            $id_pekerjaan = $pekerjaan['id_pekerjaan'];
+
+            $pekerjaan['status_pengerjaan'] = $this->pekerjaanModel->getStatusPengerjaanPekerjaanByPekerjaan($id_pekerjaan);
+            $pekerjaan['task_on_progress'] = $this->pekerjaanModel->countTaskOnProgressByIdPekerjaan($id_pekerjaan);
+            $pekerjaan['task_overdue'] = $this->pekerjaanModel->countTaskOverdueByIdPekerjaan($id_pekerjaan);
+            $pekerjaan['task_on_target'] = $this->pekerjaanModel->countTaskOnTargetByIdPekerjaan($id_pekerjaan);
+            $pekerjaan['task_percepatan'] = $this->pekerjaanModel->countTaskPercepatanByIdPekerjaan($id_pekerjaan);
+        }
+
         $data_status_pekerjaan = $this->statusPekerjaanModel->getStatusPekerjaan(); //Untuk menampilkan nama status pekerjaan di excel
         $data_kategori_pekerjaan = $this->kategoriPekerjaanModel->getKategoriPekerjaan(); //Untuk menampilkan nama kategori pekerjaan di excel
         export_pekerjaan_excel($data_pekerjaan_presales, $file_name, $data_status_pekerjaan, $data_kategori_pekerjaan);
@@ -1007,6 +1040,17 @@ class Pekerjaan extends BaseController
             $data_pekerjaan_presales = $this->pekerjaanModel->getPekerjaanByUserIdIdStatusPekerjaan_tahun(session()->get('id_user'), 1, $tahun);
             $file_name = 'Data_Pekerjaan_Presales_' . session()->get('nama') . '_' . $tahun . '.pdf';
         }
+
+        foreach ($data_pekerjaan_presales as &$pekerjaan) {
+            $id_pekerjaan = $pekerjaan['id_pekerjaan'];
+
+            $pekerjaan['status_pengerjaan'] = $this->pekerjaanModel->getStatusPengerjaanPekerjaanByPekerjaan($id_pekerjaan);
+            $pekerjaan['task_on_progress'] = $this->pekerjaanModel->countTaskOnProgressByIdPekerjaan($id_pekerjaan);
+            $pekerjaan['task_overdue'] = $this->pekerjaanModel->countTaskOverdueByIdPekerjaan($id_pekerjaan);
+            $pekerjaan['task_on_target'] = $this->pekerjaanModel->countTaskOnTargetByIdPekerjaan($id_pekerjaan);
+            $pekerjaan['task_percepatan'] = $this->pekerjaanModel->countTaskPercepatanByIdPekerjaan($id_pekerjaan);
+        }
+
         $data = [
             'data_pekerjaan' => $data_pekerjaan_presales,
             'file_name' => $file_name,
@@ -1030,6 +1074,17 @@ class Pekerjaan extends BaseController
             $data_pekerjaan_onprogres = $this->pekerjaanModel->getPekerjaanByUserIdIdStatusPekerjaan(session()->get('id_user'), 2);
             $file_name = 'Data_Pekerjaan_Onprogres_' . session()->get('nama') . '.xlsx';
         }
+
+        foreach ($data_pekerjaan_onprogres as &$pekerjaan) {
+            $id_pekerjaan = $pekerjaan['id_pekerjaan'];
+
+            $pekerjaan['status_pengerjaan'] = $this->pekerjaanModel->getStatusPengerjaanPekerjaanByPekerjaan($id_pekerjaan);
+            $pekerjaan['task_on_progress'] = $this->pekerjaanModel->countTaskOnProgressByIdPekerjaan($id_pekerjaan);
+            $pekerjaan['task_overdue'] = $this->pekerjaanModel->countTaskOverdueByIdPekerjaan($id_pekerjaan);
+            $pekerjaan['task_on_target'] = $this->pekerjaanModel->countTaskOnTargetByIdPekerjaan($id_pekerjaan);
+            $pekerjaan['task_percepatan'] = $this->pekerjaanModel->countTaskPercepatanByIdPekerjaan($id_pekerjaan);
+        }
+
         $data_status_pekerjaan = $this->statusPekerjaanModel->getStatusPekerjaan(); //Untuk menampilkan nama status pekerjaan di excel
         $data_kategori_pekerjaan = $this->kategoriPekerjaanModel->getKategoriPekerjaan(); //Untuk menampilkan nama kategori pekerjaan di excel
         export_pekerjaan_excel($data_pekerjaan_onprogres, $file_name, $data_status_pekerjaan, $data_kategori_pekerjaan);
@@ -1044,6 +1099,17 @@ class Pekerjaan extends BaseController
             $data_pekerjaan_onprogres = $this->pekerjaanModel->getPekerjaanByUserIdIdStatusPekerjaan(session()->get('id_user'), 2);
             $file_name = 'Data_Pekerjaan_Onprogres_' . session()->get('nama') . '.pdf';
         }
+
+        foreach ($data_pekerjaan_onprogres as &$pekerjaan) {
+            $id_pekerjaan = $pekerjaan['id_pekerjaan'];
+
+            $pekerjaan['status_pengerjaan'] = $this->pekerjaanModel->getStatusPengerjaanPekerjaanByPekerjaan($id_pekerjaan);
+            $pekerjaan['task_on_progress'] = $this->pekerjaanModel->countTaskOnProgressByIdPekerjaan($id_pekerjaan);
+            $pekerjaan['task_overdue'] = $this->pekerjaanModel->countTaskOverdueByIdPekerjaan($id_pekerjaan);
+            $pekerjaan['task_on_target'] = $this->pekerjaanModel->countTaskOnTargetByIdPekerjaan($id_pekerjaan);
+            $pekerjaan['task_percepatan'] = $this->pekerjaanModel->countTaskPercepatanByIdPekerjaan($id_pekerjaan);
+        }
+
         $data = [
             'data_pekerjaan' => $data_pekerjaan_onprogres,
             'file_name' => $file_name,
@@ -1064,6 +1130,17 @@ class Pekerjaan extends BaseController
             $data_pekerjaan_onprogres = $this->pekerjaanModel->getPekerjaanByUserIdIdStatusPekerjaan_tahun(session()->get('id_user'), 2, $tahun);
             $file_name = 'Data_Pekerjaan_Onprogres_' . session()->get('nama') . '_' . $tahun . '.xlsx';
         }
+
+        foreach ($data_pekerjaan_onprogres as &$pekerjaan) {
+            $id_pekerjaan = $pekerjaan['id_pekerjaan'];
+
+            $pekerjaan['status_pengerjaan'] = $this->pekerjaanModel->getStatusPengerjaanPekerjaanByPekerjaan($id_pekerjaan);
+            $pekerjaan['task_on_progress'] = $this->pekerjaanModel->countTaskOnProgressByIdPekerjaan($id_pekerjaan);
+            $pekerjaan['task_overdue'] = $this->pekerjaanModel->countTaskOverdueByIdPekerjaan($id_pekerjaan);
+            $pekerjaan['task_on_target'] = $this->pekerjaanModel->countTaskOnTargetByIdPekerjaan($id_pekerjaan);
+            $pekerjaan['task_percepatan'] = $this->pekerjaanModel->countTaskPercepatanByIdPekerjaan($id_pekerjaan);
+        }
+
         $data_status_pekerjaan = $this->statusPekerjaanModel->getStatusPekerjaan(); //Untuk menampilkan nama status pekerjaan di excel
         $data_kategori_pekerjaan = $this->kategoriPekerjaanModel->getKategoriPekerjaan(); //Untuk menampilkan nama kategori pekerjaan di excel
         export_pekerjaan_excel($data_pekerjaan_onprogres, $file_name, $data_status_pekerjaan, $data_kategori_pekerjaan);
@@ -1078,6 +1155,17 @@ class Pekerjaan extends BaseController
             $data_pekerjaan_onprogres = $this->pekerjaanModel->getPekerjaanByUserIdIdStatusPekerjaan_tahun(session()->get('id_user'), 2, $tahun);
             $file_name = 'Data_Pekerjaan_Onprogres_' . session()->get('nama') . '_' . $tahun . '.pdf';
         }
+
+        foreach ($data_pekerjaan_onprogres as &$pekerjaan) {
+            $id_pekerjaan = $pekerjaan['id_pekerjaan'];
+
+            $pekerjaan['status_pengerjaan'] = $this->pekerjaanModel->getStatusPengerjaanPekerjaanByPekerjaan($id_pekerjaan);
+            $pekerjaan['task_on_progress'] = $this->pekerjaanModel->countTaskOnProgressByIdPekerjaan($id_pekerjaan);
+            $pekerjaan['task_overdue'] = $this->pekerjaanModel->countTaskOverdueByIdPekerjaan($id_pekerjaan);
+            $pekerjaan['task_on_target'] = $this->pekerjaanModel->countTaskOnTargetByIdPekerjaan($id_pekerjaan);
+            $pekerjaan['task_percepatan'] = $this->pekerjaanModel->countTaskPercepatanByIdPekerjaan($id_pekerjaan);
+        }
+
         $data = [
             'data_pekerjaan' => $data_pekerjaan_onprogres,
             'file_name' => $file_name,
@@ -1101,6 +1189,17 @@ class Pekerjaan extends BaseController
             $data_pekerjaan_bast = $this->pekerjaanModel->getPekerjaanByUserIdIdStatusPekerjaan(session()->get('id_user'), 3);
             $file_name = 'Data_Pekerjaan_BAST_' . session()->get('nama') . '.xlsx';
         }
+
+        foreach ($data_pekerjaan_bast as &$pekerjaan) {
+            $id_pekerjaan = $pekerjaan['id_pekerjaan'];
+
+            $pekerjaan['status_pengerjaan'] = $this->pekerjaanModel->getStatusPengerjaanPekerjaanByPekerjaan($id_pekerjaan);
+            $pekerjaan['task_on_progress'] = $this->pekerjaanModel->countTaskOnProgressByIdPekerjaan($id_pekerjaan);
+            $pekerjaan['task_overdue'] = $this->pekerjaanModel->countTaskOverdueByIdPekerjaan($id_pekerjaan);
+            $pekerjaan['task_on_target'] = $this->pekerjaanModel->countTaskOnTargetByIdPekerjaan($id_pekerjaan);
+            $pekerjaan['task_percepatan'] = $this->pekerjaanModel->countTaskPercepatanByIdPekerjaan($id_pekerjaan);
+        }
+
         $data_status_pekerjaan = $this->statusPekerjaanModel->getStatusPekerjaan(); //Untuk menampilkan nama status pekerjaan di excel
         $data_kategori_pekerjaan = $this->kategoriPekerjaanModel->getKategoriPekerjaan(); //Untuk menampilkan nama kategori pekerjaan di excel
         export_pekerjaan_excel($data_pekerjaan_bast, $file_name, $data_status_pekerjaan, $data_kategori_pekerjaan);
@@ -1115,6 +1214,17 @@ class Pekerjaan extends BaseController
             $data_pekerjaan_bast = $this->pekerjaanModel->getPekerjaanByUserIdIdStatusPekerjaan(session()->get('id_user'), 3);
             $file_name = 'Data_Pekerjaan_BAST_' . session()->get('nama') . '.pdf';
         }
+
+        foreach ($data_pekerjaan_bast as &$pekerjaan) {
+            $id_pekerjaan = $pekerjaan['id_pekerjaan'];
+
+            $pekerjaan['status_pengerjaan'] = $this->pekerjaanModel->getStatusPengerjaanPekerjaanByPekerjaan($id_pekerjaan);
+            $pekerjaan['task_on_progress'] = $this->pekerjaanModel->countTaskOnProgressByIdPekerjaan($id_pekerjaan);
+            $pekerjaan['task_overdue'] = $this->pekerjaanModel->countTaskOverdueByIdPekerjaan($id_pekerjaan);
+            $pekerjaan['task_on_target'] = $this->pekerjaanModel->countTaskOnTargetByIdPekerjaan($id_pekerjaan);
+            $pekerjaan['task_percepatan'] = $this->pekerjaanModel->countTaskPercepatanByIdPekerjaan($id_pekerjaan);
+        }
+
         $data = [
             'data_pekerjaan' => $data_pekerjaan_bast,
             'file_name' => $file_name,
@@ -1135,6 +1245,16 @@ class Pekerjaan extends BaseController
             $data_pekerjaan_bast = $this->pekerjaanModel->getPekerjaanByUserIdIdStatusPekerjaan_tahun(session()->get('id_user'), 3, $tahun);
             $file_name = 'Data_Pekerjaan_BAST_' . session()->get('nama') . '_' . $tahun . '.xlsx';
         }
+
+        foreach ($data_pekerjaan_bast as &$pekerjaan) {
+            $id_pekerjaan = $pekerjaan['id_pekerjaan'];
+
+            $pekerjaan['status_pengerjaan'] = $this->pekerjaanModel->getStatusPengerjaanPekerjaanByPekerjaan($id_pekerjaan);
+            $pekerjaan['task_on_progress'] = $this->pekerjaanModel->countTaskOnProgressByIdPekerjaan($id_pekerjaan);
+            $pekerjaan['task_overdue'] = $this->pekerjaanModel->countTaskOverdueByIdPekerjaan($id_pekerjaan);
+            $pekerjaan['task_on_target'] = $this->pekerjaanModel->countTaskOnTargetByIdPekerjaan($id_pekerjaan);
+            $pekerjaan['task_percepatan'] = $this->pekerjaanModel->countTaskPercepatanByIdPekerjaan($id_pekerjaan);
+        }
         $data_status_pekerjaan = $this->statusPekerjaanModel->getStatusPekerjaan(); //Untuk menampilkan nama status pekerjaan di excel
         $data_kategori_pekerjaan = $this->kategoriPekerjaanModel->getKategoriPekerjaan(); //Untuk menampilkan nama kategori pekerjaan di excel
         export_pekerjaan_excel($data_pekerjaan_bast, $file_name, $data_status_pekerjaan, $data_kategori_pekerjaan);
@@ -1149,6 +1269,17 @@ class Pekerjaan extends BaseController
             $data_pekerjaan_bast = $this->pekerjaanModel->getPekerjaanByUserIdIdStatusPekerjaan_tahun(session()->get('id_user'), 3, $tahun);
             $file_name = 'Data_Pekerjaan_BAST_' . session()->get('nama') . '_' . $tahun . '.pdf';
         }
+
+        foreach ($data_pekerjaan_bast as &$pekerjaan) {
+            $id_pekerjaan = $pekerjaan['id_pekerjaan'];
+
+            $pekerjaan['status_pengerjaan'] = $this->pekerjaanModel->getStatusPengerjaanPekerjaanByPekerjaan($id_pekerjaan);
+            $pekerjaan['task_on_progress'] = $this->pekerjaanModel->countTaskOnProgressByIdPekerjaan($id_pekerjaan);
+            $pekerjaan['task_overdue'] = $this->pekerjaanModel->countTaskOverdueByIdPekerjaan($id_pekerjaan);
+            $pekerjaan['task_on_target'] = $this->pekerjaanModel->countTaskOnTargetByIdPekerjaan($id_pekerjaan);
+            $pekerjaan['task_percepatan'] = $this->pekerjaanModel->countTaskPercepatanByIdPekerjaan($id_pekerjaan);
+        }
+
         $data = [
             'data_pekerjaan' => $data_pekerjaan_bast,
             'file_name' => $file_name,
@@ -1172,6 +1303,17 @@ class Pekerjaan extends BaseController
             $data_pekerjaan_support = $this->pekerjaanModel->getPekerjaanByUserIdIdStatusPekerjaan(session()->get('id_user'), 4);
             $file_name = 'Data_Pekerjaan_Support_' . session()->get('nama') . '.xlsx';
         }
+
+        foreach ($data_pekerjaan_support as &$pekerjaan) {
+            $id_pekerjaan = $pekerjaan['id_pekerjaan'];
+
+            $pekerjaan['status_pengerjaan'] = $this->pekerjaanModel->getStatusPengerjaanPekerjaanByPekerjaan($id_pekerjaan);
+            $pekerjaan['task_on_progress'] = $this->pekerjaanModel->countTaskOnProgressByIdPekerjaan($id_pekerjaan);
+            $pekerjaan['task_overdue'] = $this->pekerjaanModel->countTaskOverdueByIdPekerjaan($id_pekerjaan);
+            $pekerjaan['task_on_target'] = $this->pekerjaanModel->countTaskOnTargetByIdPekerjaan($id_pekerjaan);
+            $pekerjaan['task_percepatan'] = $this->pekerjaanModel->countTaskPercepatanByIdPekerjaan($id_pekerjaan);
+        }
+
         $data_status_pekerjaan = $this->statusPekerjaanModel->getStatusPekerjaan(); //Untuk menampilkan nama status pekerjaan di excel
         $data_kategori_pekerjaan = $this->kategoriPekerjaanModel->getKategoriPekerjaan(); //Untuk menampilkan nama kategori pekerjaan di excel
         export_pekerjaan_excel($data_pekerjaan_support, $file_name, $data_status_pekerjaan, $data_kategori_pekerjaan);
@@ -1186,6 +1328,17 @@ class Pekerjaan extends BaseController
             $data_pekerjaan_support = $this->pekerjaanModel->getPekerjaanByUserIdIdStatusPekerjaan(session()->get('id_user'), 4);
             $file_name = 'Data_Pekerjaan_Support_' . session()->get('nama') . '.pdf';
         }
+
+        foreach ($data_pekerjaan_support as &$pekerjaan) {
+            $id_pekerjaan = $pekerjaan['id_pekerjaan'];
+
+            $pekerjaan['status_pengerjaan'] = $this->pekerjaanModel->getStatusPengerjaanPekerjaanByPekerjaan($id_pekerjaan);
+            $pekerjaan['task_on_progress'] = $this->pekerjaanModel->countTaskOnProgressByIdPekerjaan($id_pekerjaan);
+            $pekerjaan['task_overdue'] = $this->pekerjaanModel->countTaskOverdueByIdPekerjaan($id_pekerjaan);
+            $pekerjaan['task_on_target'] = $this->pekerjaanModel->countTaskOnTargetByIdPekerjaan($id_pekerjaan);
+            $pekerjaan['task_percepatan'] = $this->pekerjaanModel->countTaskPercepatanByIdPekerjaan($id_pekerjaan);
+        }
+
         $data = [
             'data_pekerjaan' => $data_pekerjaan_support,
             'file_name' => $file_name,
@@ -1206,6 +1359,16 @@ class Pekerjaan extends BaseController
             $data_pekerjaan_support = $this->pekerjaanModel->getPekerjaanByUserIdIdStatusPekerjaan_tahun(session()->get('id_user'), 4, $tahun);
             $file_name = 'Data_Pekerjaan_Support_' . session()->get('nama') . '_' . $tahun . '.xlsx';
         }
+
+        foreach ($data_pekerjaan_support as &$pekerjaan) {
+            $id_pekerjaan = $pekerjaan['id_pekerjaan'];
+
+            $pekerjaan['status_pengerjaan'] = $this->pekerjaanModel->getStatusPengerjaanPekerjaanByPekerjaan($id_pekerjaan);
+            $pekerjaan['task_on_progress'] = $this->pekerjaanModel->countTaskOnProgressByIdPekerjaan($id_pekerjaan);
+            $pekerjaan['task_overdue'] = $this->pekerjaanModel->countTaskOverdueByIdPekerjaan($id_pekerjaan);
+            $pekerjaan['task_on_target'] = $this->pekerjaanModel->countTaskOnTargetByIdPekerjaan($id_pekerjaan);
+            $pekerjaan['task_percepatan'] = $this->pekerjaanModel->countTaskPercepatanByIdPekerjaan($id_pekerjaan);
+        }
         $data_status_pekerjaan = $this->statusPekerjaanModel->getStatusPekerjaan(); //Untuk menampilkan nama status pekerjaan di excel
         $data_kategori_pekerjaan = $this->kategoriPekerjaanModel->getKategoriPekerjaan(); //Untuk menampilkan nama kategori pekerjaan di excel
         export_pekerjaan_excel($data_pekerjaan_support, $file_name, $data_status_pekerjaan, $data_kategori_pekerjaan);
@@ -1220,6 +1383,17 @@ class Pekerjaan extends BaseController
             $data_pekerjaan_support = $this->pekerjaanModel->getPekerjaanByUserIdIdStatusPekerjaan_tahun(session()->get('id_user'), 4, $tahun);
             $file_name = 'Data_Pekerjaan_Support_' . session()->get('nama') . '_' . $tahun . '.pdf';
         }
+
+        foreach ($data_pekerjaan_support as &$pekerjaan) {
+            $id_pekerjaan = $pekerjaan['id_pekerjaan'];
+
+            $pekerjaan['status_pengerjaan'] = $this->pekerjaanModel->getStatusPengerjaanPekerjaanByPekerjaan($id_pekerjaan);
+            $pekerjaan['task_on_progress'] = $this->pekerjaanModel->countTaskOnProgressByIdPekerjaan($id_pekerjaan);
+            $pekerjaan['task_overdue'] = $this->pekerjaanModel->countTaskOverdueByIdPekerjaan($id_pekerjaan);
+            $pekerjaan['task_on_target'] = $this->pekerjaanModel->countTaskOnTargetByIdPekerjaan($id_pekerjaan);
+            $pekerjaan['task_percepatan'] = $this->pekerjaanModel->countTaskPercepatanByIdPekerjaan($id_pekerjaan);
+        }
+
         $data = [
             'data_pekerjaan' => $data_pekerjaan_support,
             'file_name' => $file_name,
@@ -1243,6 +1417,17 @@ class Pekerjaan extends BaseController
             $data_pekerjaan_cancel = $this->pekerjaanModel->getPekerjaanByUserIdIdStatusPekerjaan(session()->get('id_user'), 5);
             $file_name = 'Data_Pekerjaan_Cancel_' . session()->get('nama') . '.xlsx';
         }
+
+        foreach ($data_pekerjaan_cancel as &$pekerjaan) {
+            $id_pekerjaan = $pekerjaan['id_pekerjaan'];
+
+            $pekerjaan['status_pengerjaan'] = $this->pekerjaanModel->getStatusPengerjaanPekerjaanByPekerjaan($id_pekerjaan);
+            $pekerjaan['task_on_progress'] = $this->pekerjaanModel->countTaskOnProgressByIdPekerjaan($id_pekerjaan);
+            $pekerjaan['task_overdue'] = $this->pekerjaanModel->countTaskOverdueByIdPekerjaan($id_pekerjaan);
+            $pekerjaan['task_on_target'] = $this->pekerjaanModel->countTaskOnTargetByIdPekerjaan($id_pekerjaan);
+            $pekerjaan['task_percepatan'] = $this->pekerjaanModel->countTaskPercepatanByIdPekerjaan($id_pekerjaan);
+        }
+
         $data_status_pekerjaan = $this->statusPekerjaanModel->getStatusPekerjaan(); //Untuk menampilkan nama status pekerjaan di excel
         $data_kategori_pekerjaan = $this->kategoriPekerjaanModel->getKategoriPekerjaan(); //Untuk menampilkan nama kategori pekerjaan di excel
         export_pekerjaan_excel($data_pekerjaan_cancel, $file_name, $data_status_pekerjaan, $data_kategori_pekerjaan);
@@ -1257,6 +1442,17 @@ class Pekerjaan extends BaseController
             $data_pekerjaan_cancel = $this->pekerjaanModel->getPekerjaanByUserIdIdStatusPekerjaan(session()->get('id_user'), 5);
             $file_name = 'Data_Pekerjaan_Cancel_' . session()->get('nama') . '.pdf';
         }
+
+        foreach ($data_pekerjaan_cancel as &$pekerjaan) {
+            $id_pekerjaan = $pekerjaan['id_pekerjaan'];
+
+            $pekerjaan['status_pengerjaan'] = $this->pekerjaanModel->getStatusPengerjaanPekerjaanByPekerjaan($id_pekerjaan);
+            $pekerjaan['task_on_progress'] = $this->pekerjaanModel->countTaskOnProgressByIdPekerjaan($id_pekerjaan);
+            $pekerjaan['task_overdue'] = $this->pekerjaanModel->countTaskOverdueByIdPekerjaan($id_pekerjaan);
+            $pekerjaan['task_on_target'] = $this->pekerjaanModel->countTaskOnTargetByIdPekerjaan($id_pekerjaan);
+            $pekerjaan['task_percepatan'] = $this->pekerjaanModel->countTaskPercepatanByIdPekerjaan($id_pekerjaan);
+        }
+
         $data = [
             'data_pekerjaan' => $data_pekerjaan_cancel,
             'file_name' => $file_name,
@@ -1277,6 +1473,16 @@ class Pekerjaan extends BaseController
             $data_pekerjaan_cancel = $this->pekerjaanModel->getPekerjaanByUserIdIdStatusPekerjaan_tahun(session()->get('id_user'), 5, $tahun);
             $file_name = 'Data_Pekerjaan_Cancel_' . session()->get('nama') . '_' . $tahun . '.xlsx';
         }
+
+        foreach ($data_pekerjaan_cancel as &$pekerjaan) {
+            $id_pekerjaan = $pekerjaan['id_pekerjaan'];
+
+            $pekerjaan['status_pengerjaan'] = $this->pekerjaanModel->getStatusPengerjaanPekerjaanByPekerjaan($id_pekerjaan);
+            $pekerjaan['task_on_progress'] = $this->pekerjaanModel->countTaskOnProgressByIdPekerjaan($id_pekerjaan);
+            $pekerjaan['task_overdue'] = $this->pekerjaanModel->countTaskOverdueByIdPekerjaan($id_pekerjaan);
+            $pekerjaan['task_on_target'] = $this->pekerjaanModel->countTaskOnTargetByIdPekerjaan($id_pekerjaan);
+            $pekerjaan['task_percepatan'] = $this->pekerjaanModel->countTaskPercepatanByIdPekerjaan($id_pekerjaan);
+        }
         $data_status_pekerjaan = $this->statusPekerjaanModel->getStatusPekerjaan(); //Untuk menampilkan nama status pekerjaan di excel
         $data_kategori_pekerjaan = $this->kategoriPekerjaanModel->getKategoriPekerjaan(); //Untuk menampilkan nama kategori pekerjaan di excel
         export_pekerjaan_excel($data_pekerjaan_cancel, $file_name, $data_status_pekerjaan, $data_kategori_pekerjaan);
@@ -1291,6 +1497,17 @@ class Pekerjaan extends BaseController
             $data_pekerjaan_cancel = $this->pekerjaanModel->getPekerjaanByUserIdIdStatusPekerjaan_tahun(session()->get('id_user'), 5, $tahun);
             $file_name = 'Data_Pekerjaan_Cancel_' . session()->get('nama') . '_' . $tahun . '.pdf';
         }
+
+        foreach ($data_pekerjaan_cancel as &$pekerjaan) {
+            $id_pekerjaan = $pekerjaan['id_pekerjaan'];
+
+            $pekerjaan['status_pengerjaan'] = $this->pekerjaanModel->getStatusPengerjaanPekerjaanByPekerjaan($id_pekerjaan);
+            $pekerjaan['task_on_progress'] = $this->pekerjaanModel->countTaskOnProgressByIdPekerjaan($id_pekerjaan);
+            $pekerjaan['task_overdue'] = $this->pekerjaanModel->countTaskOverdueByIdPekerjaan($id_pekerjaan);
+            $pekerjaan['task_on_target'] = $this->pekerjaanModel->countTaskOnTargetByIdPekerjaan($id_pekerjaan);
+            $pekerjaan['task_percepatan'] = $this->pekerjaanModel->countTaskPercepatanByIdPekerjaan($id_pekerjaan);
+        }
+
         $data = [
             'data_pekerjaan' => $data_pekerjaan_cancel,
             'file_name' => $file_name,
@@ -1304,7 +1521,7 @@ class Pekerjaan extends BaseController
 
 
 
-    //Untuk mendownload data semua pekerjaan
+    //Untuk mendownload data semua pekerjaan.
     public function download_pekerjaan_semua_pekerjaan_excel()
     {
         if (session()->get('user_level') != 'staff' && session()->get('user_level') != 'supervisi') {
@@ -1314,6 +1531,17 @@ class Pekerjaan extends BaseController
             $data_pekerjaan_all = $this->pekerjaanModel->getPekerjaanByUserId(session()->get('id_user'));
             $file_name = 'Data_Pekerjaan_' . session()->get('nama') . '.xlsx';
         }
+
+        foreach ($data_pekerjaan_all as &$pekerjaan) {
+            $id_pekerjaan = $pekerjaan['id_pekerjaan'];
+
+            $pekerjaan['status_pengerjaan'] = $this->pekerjaanModel->getStatusPengerjaanPekerjaanByPekerjaan($id_pekerjaan);
+            $pekerjaan['task_on_progress'] = $this->pekerjaanModel->countTaskOnProgressByIdPekerjaan($id_pekerjaan);
+            $pekerjaan['task_overdue'] = $this->pekerjaanModel->countTaskOverdueByIdPekerjaan($id_pekerjaan);
+            $pekerjaan['task_on_target'] = $this->pekerjaanModel->countTaskOnTargetByIdPekerjaan($id_pekerjaan);
+            $pekerjaan['task_percepatan'] = $this->pekerjaanModel->countTaskPercepatanByIdPekerjaan($id_pekerjaan);
+        }
+
         $data_status_pekerjaan = $this->statusPekerjaanModel->getStatusPekerjaan(); //Untuk menampilkan nama status pekerjaan di excel
         $data_kategori_pekerjaan = $this->kategoriPekerjaanModel->getKategoriPekerjaan(); //Untuk menampilkan nama kategori pekerjaan di excel
         export_pekerjaan_excel($data_pekerjaan_all, $file_name, $data_status_pekerjaan, $data_kategori_pekerjaan);
@@ -1328,6 +1556,17 @@ class Pekerjaan extends BaseController
             $data_pekerjaan_all = $this->pekerjaanModel->getPekerjaanByUserId(session()->get('id_user'));
             $file_name = 'Data_Pekerjaan_' . session()->get('nama') . '.pdf';
         }
+
+        foreach ($data_pekerjaan_all as &$pekerjaan) {
+            $id_pekerjaan = $pekerjaan['id_pekerjaan'];
+
+            $pekerjaan['status_pengerjaan'] = $this->pekerjaanModel->getStatusPengerjaanPekerjaanByPekerjaan($id_pekerjaan);
+            $pekerjaan['task_on_progress'] = $this->pekerjaanModel->countTaskOnProgressByIdPekerjaan($id_pekerjaan);
+            $pekerjaan['task_overdue'] = $this->pekerjaanModel->countTaskOverdueByIdPekerjaan($id_pekerjaan);
+            $pekerjaan['task_on_target'] = $this->pekerjaanModel->countTaskOnTargetByIdPekerjaan($id_pekerjaan);
+            $pekerjaan['task_percepatan'] = $this->pekerjaanModel->countTaskPercepatanByIdPekerjaan($id_pekerjaan);
+        }
+
         $data = [
             'data_pekerjaan' => $data_pekerjaan_all,
             'file_name' => $file_name,
@@ -1348,6 +1587,17 @@ class Pekerjaan extends BaseController
             $data_pekerjaan_all = $this->pekerjaanModel->getAllPekerjaanByUserId_tahun(session()->get('id_user'), $tahun);
             $file_name = 'Data_Pekerjaan_' . session()->get('nama') . '_' . $tahun . '.xlsx';
         }
+
+        foreach ($data_pekerjaan_all as &$pekerjaan) {
+            $id_pekerjaan = $pekerjaan['id_pekerjaan'];
+
+            $pekerjaan['status_pengerjaan'] = $this->pekerjaanModel->getStatusPengerjaanPekerjaanByPekerjaan($id_pekerjaan);
+            $pekerjaan['task_on_progress'] = $this->pekerjaanModel->countTaskOnProgressByIdPekerjaan($id_pekerjaan);
+            $pekerjaan['task_overdue'] = $this->pekerjaanModel->countTaskOverdueByIdPekerjaan($id_pekerjaan);
+            $pekerjaan['task_on_target'] = $this->pekerjaanModel->countTaskOnTargetByIdPekerjaan($id_pekerjaan);
+            $pekerjaan['task_percepatan'] = $this->pekerjaanModel->countTaskPercepatanByIdPekerjaan($id_pekerjaan);
+        }
+
         $data_status_pekerjaan = $this->statusPekerjaanModel->getStatusPekerjaan(); //Untuk menampilkan nama status pekerjaan di excel
         $data_kategori_pekerjaan = $this->kategoriPekerjaanModel->getKategoriPekerjaan(); //Untuk menampilkan nama kategori pekerjaan di excel
         export_pekerjaan_excel($data_pekerjaan_all, $file_name, $data_status_pekerjaan, $data_kategori_pekerjaan);
@@ -1362,6 +1612,17 @@ class Pekerjaan extends BaseController
             $data_pekerjaan_all = $this->pekerjaanModel->getAllPekerjaanByUserId_tahun(session()->get('id_user'), $tahun);
             $file_name = 'Data_Pekerjaan_' . session()->get('nama') . '_' . $tahun . '.pdf';
         }
+
+        foreach ($data_pekerjaan_all as &$pekerjaan) {
+            $id_pekerjaan = $pekerjaan['id_pekerjaan'];
+
+            $pekerjaan['status_pengerjaan'] = $this->pekerjaanModel->getStatusPengerjaanPekerjaanByPekerjaan($id_pekerjaan);
+            $pekerjaan['task_on_progress'] = $this->pekerjaanModel->countTaskOnProgressByIdPekerjaan($id_pekerjaan);
+            $pekerjaan['task_overdue'] = $this->pekerjaanModel->countTaskOverdueByIdPekerjaan($id_pekerjaan);
+            $pekerjaan['task_on_target'] = $this->pekerjaanModel->countTaskOnTargetByIdPekerjaan($id_pekerjaan);
+            $pekerjaan['task_percepatan'] = $this->pekerjaanModel->countTaskPercepatanByIdPekerjaan($id_pekerjaan);
+        }
+
         $data = [
             'data_pekerjaan' => $data_pekerjaan_all,
             'file_name' => $file_name,

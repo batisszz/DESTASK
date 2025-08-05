@@ -41,6 +41,14 @@ function export_pekerjaan_excel($pekerjaan, $nama_file, $status_pekerjaan, $kate
    $sheet->setCellValue('L1', 'Deskripsi Pekerjaan');
    $sheet->setCellValue('M1', 'Target Waktu Selesai');
    $sheet->setCellValue('N1', 'Waktu Selesai');
+   if (session()->get('user_level') == 'hod') {
+      $sheet->setCellValue('O1', 'Status Pengerjaan');
+      $sheet->setCellValue('P1', 'Task On Progress');
+      $sheet->setCellValue('Q1', 'Task Overdue');
+      $sheet->setCellValue('R1', 'Task On Target');
+      $sheet->setCellValue('S1', 'Task Percepatan');
+   }
+
    //index kolom
    $column = 2;
    //Looping untuk memuat data
@@ -80,7 +88,35 @@ function export_pekerjaan_excel($pekerjaan, $nama_file, $status_pekerjaan, $kate
       $sheet->setCellValue('L' . $column, $ps['deskripsi_pekerjaan']);
       $sheet->setCellValue('M' . $column, $target_waktu_selesai);
       $sheet->setCellValue('N' . $column, $waktu_selesai);
+      if (session()->get('user_level') == 'hod') {
+         $sheet->setCellValue('O' . $column, $ps['status_pengerjaan']);
+         $sheet->setCellValue('P' . $column, $ps['task_on_progress']);
+         $sheet->setCellValue('Q' . $column, $ps['task_overdue']);
+         $sheet->setCellValue('R' . $column, $ps['task_on_target']);
+         $sheet->setCellValue('S' . $column, $ps['task_percepatan']);
+      }
       $column++;
+   }
+
+   if (session()->get('user_level') == 'hod') {
+      $sheet->getStyle('A1:S1')->getFont()->setBold(true);
+      $sheet->getStyle('A1:S1')->getFill()
+         ->setFillType(\PhpOffice\PhpSpreadsheet\Style\Fill::FILL_SOLID)
+         ->getStartColor()->setARGB('FFFFFF00');
+
+      $styleArray = [
+         'borders' => [
+            'allBorders' => [
+               'borderStyle' => \PhpOffice\PhpSpreadsheet\Style\Border::BORDER_THIN,
+               'color' => ['argb' => 'FF000000'],
+            ],
+         ],
+      ];
+      $sheet->getStyle('A1:S' . ($column - 1))->applyFromArray($styleArray);
+
+      foreach (range('A', 'S') as $col) {
+         $sheet->getColumnDimension($col)->setAutoSize(true);
+      }
    }
    //biar title file excelnya jadi bold
    $sheet->getStyle('A1:N1')->getFont()->setBold(true);

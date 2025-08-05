@@ -396,7 +396,7 @@ class PekerjaanModel extends Model
         END AS status_pengerjaan_pekerjaan ")
             ->where('pekerjaan.id_pekerjaan', $id_pekerjaan)
             ->where('pekerjaan.deleted_at', null)
-            ->findAll();
+            ->first()['status_pengerjaan_pekerjaan'] ?? '-';
     }
 
 

@@ -47,6 +47,14 @@
             <th>Deskripsi Pekerjaan</th>
             <th>Target Waktu Selesai</th>
             <th>Waktu Selesai</th>
+            <?php if (session()->get('user_level') == 'hod') : ?>
+               <th>Status Pengerjaan</th>
+               <th>Task On Progress</th>
+               <th>Task Overdue</th>
+               <th>Task On Target</th>
+               <th>Task Percepatan</th>
+            <?php endif;
+            ?>
          </tr>
       </thead>
       <tbody>
@@ -85,6 +93,13 @@
                      <?= '' ?>
                   <?php endif; ?>
                </td>
+               <?php if (session()->get('user_level') == 'hod') : ?>
+                  <td><?= $p['status_pengerjaan'] ?></td>
+                  <td><?= $p['task_on_progress'] ?></td>
+                  <td><?= $p['task_overdue'] ?></td>
+                  <td><?= $p['task_on_target'] ?></td>
+                  <td><?= $p['task_percepatan'] ?></td>
+               <?php endif; ?>
             </tr>
          <?php endforeach; ?>
       </tbody>
