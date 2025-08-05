@@ -50,12 +50,16 @@ class Pekerjaan extends BaseController
             $pekerjaan = $this->pekerjaanModel->getPekerjaanByUserId(session()->get('id_user'));
             $task_on_progress = [];
             $task_overdue = [];
-            $task_selesai = [];
+            $task_ontarget = [];
+            $task_percepatan = [];
+            $status_pengerjaan = [];
         } else {
             $pekerjaan = $this->pekerjaanModel->getPekerjaan();
             $task_on_progress = [];
             $task_overdue = [];
-            $task_selesai = [];
+            $task_ontarget = [];
+            $task_percepatan = [];
+            $status_pengerjaan = [];
 
             foreach ($pekerjaan as $p) {
                 $id = $p['id_pekerjaan'];
@@ -78,6 +82,12 @@ class Pekerjaan extends BaseController
                     'id_pekerjaan' => $id,
                     'jumlah_task_percepatan' => $this->pekerjaanModel->countTaskPercepatanByIdPekerjaan($id)
                 ];
+
+                $status = $this->pekerjaanModel->getStatusPengerjaanPekerjaanByPekerjaan($id);
+                $status_pengerjaan[] = [
+                    'id_pekerjaan' => $id,
+                    'status_pengerjaan_pekerjaan' => $status[0]['status_pengerjaan_pekerjaan'] ?? null
+                ];
             }
         }
         $data = [
@@ -91,6 +101,7 @@ class Pekerjaan extends BaseController
             'task_overdue' => $task_overdue,
             'task_ontarget' => $task_ontarget,
             'task_percepatan' => $task_percepatan,
+            'status_pengerjaan_pekerjaan' => $status_pengerjaan,
             'url1' => '/pekerjaan/daftar_pekerjaan',
             'url' => '/pekerjaan/daftar_pekerjaan',
             'filter_pekerjaan_pm' => '',
@@ -206,7 +217,9 @@ class Pekerjaan extends BaseController
             $pekerjaan = $this->pekerjaanModel->getPekerjaan();
             $task_on_progress = [];
             $task_overdue = [];
-            $task_selesai = [];
+            $task_ontarget = [];
+            $task_percepatan = [];
+            $status_pengerjaan = [];
 
             foreach ($pekerjaan as $p) {
                 $id = $p['id_pekerjaan'];
@@ -224,10 +237,16 @@ class Pekerjaan extends BaseController
                 $task_ontarget[] = [
                     'id_pekerjaan' => $id,
                     'jumlah_task_ontarget' => $this->pekerjaanModel->countTaskOnTargetByIdPekerjaan($id)
-                ];  
+                ];
                 $task_percepatan[] = [
                     'id_pekerjaan' => $id,
                     'jumlah_task_percepatan' => $this->pekerjaanModel->countTaskPercepatanByIdPekerjaan($id)
+                ];
+
+                $status = $this->pekerjaanModel->getStatusPengerjaanPekerjaanByPekerjaan($id);
+                $status_pengerjaan[] = [
+                    'id_pekerjaan' => $id,
+                    'status_pengerjaan_pekerjaan' => $status[0]['status_pengerjaan_pekerjaan'] ?? null
                 ];
             }
         }
@@ -244,6 +263,7 @@ class Pekerjaan extends BaseController
             'task_overdue' => $task_overdue,
             'task_ontarget' => $task_ontarget,
             'task_percepatan' => $task_percepatan,
+            'status_pengerjaan_pekerjaan' => $status_pengerjaan,
             'filter_pekerjaan_pm' => $filter_pekerjaan_pm,
             'filter_pekerjaan_jenislayanan' => $filter_pekerjaan_jenislayanan,
             'filter_pekerjaan_kategori_pekerjaan' => $filter_pekerjaan_kategori_pekerjaan,
