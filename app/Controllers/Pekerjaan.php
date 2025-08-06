@@ -286,7 +286,7 @@ class Pekerjaan extends BaseController
             }
         }
         $jumlah_semua_task_di_pekerjaan_ini = $this->taskModel->countTaskAll_ByIdPekerjaan($id_pekerjaan);
-        $jumlah_task_selesai_di_pekerjaan_ini = $this->taskModel->countTaskOnTarget_ByIdPekerjaan($id_pekerjaan);
+        $jumlah_task_selesai_di_pekerjaan_ini = $this->taskModel->countTaskSelesai_ByIdPekerjaan($id_pekerjaan);
         // Menghitung persentase task selesai
         if ($jumlah_semua_task_di_pekerjaan_ini > 0) {
             $persentase_selesai = ($jumlah_task_selesai_di_pekerjaan_ini / $jumlah_semua_task_di_pekerjaan_ini) * 100;

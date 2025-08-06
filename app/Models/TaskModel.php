@@ -515,8 +515,56 @@ class TaskModel extends Model
         return count($this->where(['YEAR(tgl_selesai)' => $tahun, 'MONTH(tgl_selesai)' => $bulan, 'id_user' => $id_user, 'deleted_at' => null, 'id_status_task' => 3])->findAll());
     }
 
-
-
+    //Fungsi untuk menghitung task on target berdasarkan id pekerjaan
+    public function countTaskOnTargetByIdPekerjaan($id_pekerjaan)
+    {
+        return $this
+            ->where('id_pekerjaan', $id_pekerjaan)
+            ->where('deleted_at', null)
+            ->where('tgl_selesai IS NOT NULL', null, false)
+            ->where('tgl_selesai = tgl_planing')
+            ->countAllResults();
+    }
+    //Fungsi untuk menghitung task percepatan berdasarkan id pekerjaan dan
+    public function countTaskPercepatanByIdPekerjaan($id_pekerjaan)
+    {
+        return $this
+            ->where('id_pekerjaan', $id_pekerjaan)
+            ->where('deleted_at', null)
+            ->where('tgl_selesai IS NOT NULL', null, false)
+            ->where('tgl_selesai < tgl_planing')
+            ->countAllResults();
+    }
+    //Fungsi untuk menghitung task overdue berdasarkan id pekerjaan
+    public function countTaskOverdueByIdPekerjaan($id_pekerjaan)
+    {
+        return $this
+            ->where('id_pekerjaan', $id_pekerjaan)
+            ->where('deleted_at', null)
+            ->groupStart()
+            ->groupStart()
+            ->where('tgl_selesai', null)
+            ->where('NOW() > tgl_planing')
+            ->groupEnd()
+            ->orgroupStart()
+            ->where('tgl_selesai IS NOT NULL', null, false)
+            ->Where('tgl_selesai > tgl_planing')
+            ->groupEnd()
+            ->groupEnd()
+            ->countAllResults();
+    }
+    //Fungsi untuk menghitung task on progress berdasarkan id pekerjaan
+    public function countTaskOnProgressByIdPekerjaan($id_pekerjaan)
+    {
+        return $this
+            ->where('id_pekerjaan', $id_pekerjaan)
+            ->where('deleted_at', null)
+            ->groupStart()
+            ->where('tgl_selesai', null)
+            ->where('NOW() <= tgl_planing')
+            ->groupEnd()
+            ->countAllResults();
+    }
 
     //Fungsi untuk mendapatkan task berdasarkan id_kategori_task (untuk pengecekan kategori task, kalo ada task yang terkait dengan
     //kategori task tertentu maka kategori task tersebut tidak bisa dihapus)
